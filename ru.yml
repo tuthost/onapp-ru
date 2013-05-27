@@ -306,7 +306,7 @@ ru:
         description_: "To edit a backup server, change the properties below and click the Edit Backup Server button."
         title: "Редактировать сервер резервного копирования"
         title_: "Edit backup server"
-      title: "Правка - . - . -"
+      title: "Правка %{label}"
       title_: "Edit %{label}"
     form: 
       add: "Добавить резервному серверу"
@@ -368,7 +368,7 @@ ru:
       delete_backup_: "Delete this backup"
       new_backup: "Создание новой резервной копии"
       new_backup_: "Create new Backup"
-      no_content: "Там нет резервных копий"
+      no_content: "Нет резервных копий"
       no_content_: "There are no Backups"
       not_built_yet: "еще не построен"
       not_built_yet_: "not built yet"
