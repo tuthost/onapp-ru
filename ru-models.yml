@@ -1,0 +1,2099 @@
+--- 
+ru: 
+  activemodel: 
+    attributes: 
+      dns_zone: 
+        record: 
+          ttl: TTL
+          ttl_: TTL
+        record_a: 
+          ip: "Очки для"
+          ip_: "Points to"
+          name: хозяин
+          name_: Host
+        record_aaaa: 
+          ip: "Очки для"
+          ip_: "Points to"
+          name: хозяин
+          name_: Host
+        record_cname: 
+          hostname: "Очки для"
+          hostname_: "Points to"
+          name: хозяин
+          name_: Host
+        record_mx: 
+          hostname: "Переход к"
+          hostname_: "Goes to"
+          name: хозяин
+          name_: Host
+          priority: приоритет
+          priority_: Priority
+        record_ns: 
+          destroy_error: "NS запись для корневого домена не может быть удалена"
+          destroy_error_: "NS record for root domain can never be deleted"
+          hostname: адрес
+          hostname_: Address
+          name: хозяин
+          name_: Host
+        record_soa: 
+          destroy_error: "SOA запись не может быть удалена"
+          destroy_error_: "SOA record can never be deleted"
+          expire: истекать
+          expire_: Expire
+          minimum: минимальный
+          minimum_: Minimum
+          refresh: обновление
+          refresh_: Refresh
+          retry: Повторить
+          retry_: Retry
+        record_srv: 
+          hostname: "Очки для"
+          hostname_: "Points to"
+          name: хозяин
+          name_: Host
+          port: порт
+          port_: Port
+          priority: приоритет
+          priority_: Priority
+          weight: вес
+          weight_: Weight
+        record_txt: 
+          name: хозяин
+          name_: Host
+          txt: значение
+          txt_: Value
+      on_app/configuration: 
+        cloud_boot_enabled: "Включить CloudBoot"
+        cloud_boot_enabled_: "Enable CloudBoot"
+        cloud_boot_target: "CP сервера Cloudboot целевой"
+        cloud_boot_target_: "CP server Cloudboot target"
+        nfs_root_ip: "Статические целевой Config"
+        nfs_root_ip_: "Static Config target"
+        prefer_local_reads: "Использование местных прочитать путь"
+        prefer_local_reads_: "Use local read path"
+        storage_enabled: "Включить OnApp хранения"
+        storage_enabled_: "Enable OnApp Storage"
+        endpoint: 
+          any_zone: "Любая зона гипервизора"
+          any_zone_: "Any Hypervisor Zone"
+          zone_id: "гипервизор зоны"
+          zone_id_: "Hypervisor Zone"
+      storage/data_store: 
+        max_vdisk_size: "Максимальный размер диска"
+        max_vdisk_size_: "Maximum VDisk size"
+        no_overcommit: Нет
+        no_overcommit_: None
+        performance_type: 
+          ? "0"
+          : Низкий
+          ? "0_"
+          : Low
+          ? "1"
+          : Нормальный
+          ? "1_"
+          : Normal
+          ? "2"
+          : Высокий
+          ? "2_"
+          : High
+        total_size: "Всего места"
+        total_size_: "Total space"
+        total_usable_size: "Использовано места"
+        total_usable_size_: "Usable space"
+        unlimited_overcommit: Неограниченно
+        unlimited_overcommit_: Unlimited
+      storage/endpoint: 
+        zone_id: "Зона гипервизора"
+        zone_id_: "Hypervisor Zone"
+    errors: 
+      messages: 
+        aflexi: 
+          cdn_error: "Сервис CDN временно недоступен"
+          cdn_error_: "CDN service is temporarily unavailable"
+          cdn_not_activated: "CDN не была активирована для данного пользователя"
+          cdn_not_activated_: "CDN has not been activated for this user"
+          permission_denied: "Доступ запрещен."
+          permission_denied_: "Permission denied. You are not allowed to perform this action."
+        dns_zone_record: 
+          missed_required_attribute: "Пропущенный обязательный атрибут : %{attribute}"
+          missed_required_attribute_: "Missed required attribute :%{attribute}"
+          unknown_record_type: "Неизвестный тип записи %{type}"
+          unknown_record_type_: "Unknown record type %{type}"
+        domain: 
+          invalid: "является недействительным"
+          invalid_: "is invalid"
+          label_length: "длина этикетки ограничен %{label_length} символов"
+          label_length_: "label length is limited to %{label_length} characters"
+          length: "длина ограничена %{length} символов"
+          length_: "length is limited to %{length} characters"
+      models: 
+        base_resource: 
+          limits_incorrect_value: "Ограничения неправильное значение"
+          limits_incorrect_value_: "Limits incorrect value"
+          prices_incorrect_value: "Цены неправильное значение"
+          prices_incorrect_value_: "Prices incorrect value"
+        dns_zone: 
+          record_cname: 
+            domain: 
+              invalid: "должно бытьимя хоста"
+              invalid_: "must be a valid hostname"
+          record_mx: 
+            domain: 
+              invalid: "должно бытьимя хоста"
+              invalid_: "must be a valid hostname"
+          record_ns: 
+            domain: 
+              invalid: "должно бытьимя хоста"
+              invalid_: "must be a valid hostname"
+          record_srv: 
+            domain: 
+              invalid: "должно бытьимя хоста"
+              invalid_: "must be a valid hostname"
+        on_app: 
+          dns_configuration: 
+            domain: 
+              invalid: "является неправильное доменное имя"
+              invalid_: "is invalid domain name"
+              label_length: "каждая длина этикетки ограничен %{label_length} символов"
+              label_length_: "each label length is limited to %{label_length} characters"
+              length: "Длина доменного имени ограничивается %{length} символов"
+              length_: "domain name length is limited to %{length} characters"
+        role: 
+          permission_not_found: "Разрешения не найдено ( %{ids} )"
+          permission_not_found_: "Permissions not found (%{ids})"
+        storage/disk: 
+          cannot_rebalance_disk_with_running_transactions: "не могу ребалансировать диск на котором есть запущенные транзакции"
+          cannot_rebalance_disk_with_running_transactions_: "cannot rebalance disk that has running transactions"
+          cannot_repair_disk_with_running_transactions: "не могу восстановить диск на котором есть запущенные транзакции"
+          cannot_repair_disk_with_running_transactions_: "cannot repair disk that has running transactions"
+          only_one_node_can_be_rebalanced: "только одна нода может быть ребалансирована"
+          only_one_node_can_be_rebalanced_: "only one node can be rebalanced"
+          should_contain_exactly_N_nodes: "должно содержать ровно %{num} узлов"
+          should_contain_exactly_N_nodes_: "should contain exactly %{num} nodes"
+        storage/drive: 
+          cannot_deactivate_disk: "не могу деактивировать диск %{disk}: %{error}"
+          cannot_deactivate_disk_: "cannot deactivate disk %{disk}: %{error}"
+          unassign_leaves_inconsistent_storage: "не могу отключить диск: отключение приведет к потере целостности хранилища"
+          unassign_leaves_inconsistent_storage_: "cannot unassign drive: unassign leaves inconsistent storage"
+  activerecord: 
+    attributes: 
+      auto_scaling: 
+        in: 
+          cpu: 
+            units: "КАК В CPU: Единицы"
+            units_: "AS IN CPU: Units"
+            value: "КАК В CPU: Значение"
+            value_: "AS IN CPU: Value"
+          memory: 
+            units: "AS в памяти: Единицы"
+            units_: "AS IN Memory: Units"
+            value: "AS в памяти : Соотношение цена"
+            value_: "AS IN Memory: Value"
+        out: 
+          cpu: 
+            units: "Как из CPU: Единицы"
+            units_: "AS OUT CPU: Units"
+            value: "Как из CPU: Значение"
+            value_: "AS OUT CPU: Value"
+          memory: 
+            units: "Как из памяти: Единицы"
+            units_: "AS OUT Memory: Units"
+            value: "Как из памяти : Соотношение цена"
+            value_: "AS OUT Memory: Value"
+      autobackup_template: 
+        duration: продолжительность
+        duration_: Duration
+        enabled: Доступно
+        enabled_: Enabled
+        period: период
+        period_: Period
+      backup: 
+        backup_server_id: "Backup Server"
+        backup_server_id_: "Backup Server"
+        backup_size: "Резервное копирование Размеры"
+        backup_size_: "Backup Size"
+        backup_type: "Тип резервного копирования"
+        backup_type_: "Backup Type"
+        created_at: "Дата / время"
+        created_at_: Date/Time
+        disk_id: диск
+        disk_id_: Disk
+        state: статус
+        state_: Status
+      backup_server: 
+        backup_server_group_id: "Резервное копирование сервера зоны"
+        backup_server_group_id_: "Backup Server Zone"
+        backups: "Резервные копии"
+        backups_: Backups
+        capacity: мощность
+        capacity_: Capacity
+        enabled: Доступно
+        enabled_: Enabled
+        ip_address: IP-адрес
+        ip_address_: "IP Address"
+        label: Название
+        label_: Label
+        templates: Шаблоны
+        templates_: Templates
+      base_resource: 
+        price_off: "В.М. выключены"
+        price_off_: "VM powered OFF"
+        price_on: "В.М. включенный"
+        price_on_: "VM powered ON"
+        target_id: цель
+        target_id_: Target
+      billing_plan: 
+        allows_kms: "KMS лицензирования"
+        allows_kms_: "KMS Licensing"
+        allows_mak: "MAK лицензирования"
+        allows_mak_: "MAK Licensing"
+        allows_own: Лицензионное
+        allows_own_: "User License"
+        currency_code: "Тип валюты"
+        currency_code_: "Type of Currency"
+        label: Название
+        label_: Label
+        monthly_price: "Цена за месяц"
+        monthly_price_: "Monthly Price"
+      cdn_resource: 
+        cdn_hostname: "CDN хоста"
+        cdn_hostname_: "CDN hostname"
+        cdn_reference: "CDN ссылки"
+        cdn_reference_: "CDN reference"
+        content_origin: "Содержимое происхождения"
+        content_origin_: "Content Origin"
+        ftp_password: "FTP- паролей"
+        ftp_password_: "FTP password"
+        ftp_password_confirmation: "FTP подтверждение пароля"
+        ftp_password_confirmation_: "FTP password confirmation"
+        secondary_hostnames: "Вторичные имена"
+        secondary_hostnames_: "Secondary hostnames"
+        user: владелец
+        user_: Owner
+      currencies: 
+        code: код
+        code_: Code
+        delimiter: Разделитель
+        delimiter_: Delimiter
+        format: формат
+        format_: Format
+        precision: точность
+        precision_: Precision
+        precision_for_unit: "Precision Per Unit"
+        precision_for_unit_: "Precision Per Unit"
+        separator: разделитель
+        separator_: Separator
+        unit: блок
+        unit_: Unit
+      currency: 
+        code: код
+        code_: Code
+        delimiter: Разделитель
+        delimiter_: Delimiter
+        format: формат
+        format_: Format
+        id: ID
+        id_: ID
+        name: имя
+        name_: Name
+        precision: точность
+        precision_: Precision
+        precision_for_unit: "Precision Per Unit"
+        precision_for_unit_: "Precision Per Unit"
+        separator: разделитель
+        separator_: Separator
+        unit: блок
+        unit_: Unit
+      customer_network: 
+        ip_address_pool_id: "IP адрес Бассейн"
+        ip_address_pool_id_: "IP Address Pool"
+        label: этикетка
+        label_: Label
+        prefix_size: "Префикс размера"
+        prefix_size_: "Prefix Size"
+      customer_vlan: 
+        vlan: VLAN
+        vlan_: VLAN
+      data_store: 
+        data_store_group_id: "Хранилище данных зоны"
+        data_store_group_id_: "Data Store Zone"
+        data_store_size: "Емкость дисков"
+        data_store_size_: "Disk Capacity"
+        disk_capacity: "Емкость дисков"
+        disk_capacity_: "Disk Capacity"
+        disk_usage: "Использование диска"
+        disk_usage_: "Disk Usage"
+        enabled: Доступно
+        enabled_: Enabled
+        identifier: идентифицировать
+        identifier_: Identifier
+        ip: "IP адрес"
+        ip_: "IP address"
+        label: этикетка
+        label_: Label
+        local_hypervisor: "местные гипервизора"
+        local_hypervisor_: "Local hypervisor"
+        shared: Общие?
+        shared_: Shared?
+      data_store_group: 
+        label: Название
+        label_: Label
+      disk: 
+        add_to_linux_fstab: "Добавить в Linux Fstab"
+        add_to_linux_fstab_: "Add to Linux FSTAB"
+        data_store_id: "Data Store"
+        data_store_id_: "Data Store"
+        disk_size: размер
+        disk_size_: Size
+        is_swap: "Пространство подкачки"
+        is_swap_: "Swap Space"
+        mount_point: "Точка монтирования"
+        mount_point_: "Mount Point"
+        new_size: "Новый размер диска"
+        new_size_: "New Disk Size"
+        primary: "Первичный диск"
+        primary_: "Primary Disk"
+        require_format_disk: "Требовать формат диска"
+        require_format_disk_: "Require Format Disk"
+      disk_usage_statistic: 
+        data_read: "IOPS чтение"
+        data_read_: "IOPS Read"
+        data_written: "IOPS запись"
+        data_written_: "IOPS Written"
+        disk_id: Диск
+        disk_id_: Disk
+        total: Всего
+        total_: Total
+      dns_zone: 
+        auto_populate: "Автоматическое заполнение существующих записей DNS"
+        auto_populate_: "Auto populate with existing DNS record"
+        name: "Доменное имя"
+        name_: "Domain Name"
+      edge_group: 
+        label: этикетка
+        label_: Label
+      edge_server: 
+        required_virtual_machine_build: "Построить края сервера автоматически"
+        required_virtual_machine_build_: "Build edge server automatically"
+      firewall: 
+        inside_cidr: "CIDR для CP связи"
+        inside_cidr_: "CIDR to CP link"
+        inside_interface: "VLAN Interface Name"
+        inside_interface_: "VLAN Interface Name"
+        inside_ip_address: "IP-адрес для CP связи"
+        inside_ip_address_: "IP Address to CP link"
+        name_of_default_rule: "По умолчанию правила"
+        name_of_default_rule_: "Default Rule"
+        outside_cidr: "Внешний CIDR"
+        outside_cidr_: "External CIDR"
+        outside_gateway_address: "Внешний шлюз"
+        outside_gateway_address_: "External Gateway"
+        outside_interface: "Внешнее имя интерфейса"
+        outside_interface_: "External Interface Name"
+        outside_ip_address: "Внешний IP-адрес"
+        outside_ip_address_: "External IP Address"
+        password: пароль
+        password_: Password
+        preshared_cluster_secret: "Кластер тайну"
+        preshared_cluster_secret_: "Cluster secret"
+        username: "имя пользователя"
+        username_: "User Name"
+      firewall_rule: 
+        address: "адрес источника"
+        address_: "Source Address"
+        command: команда
+        command_: Command
+        interface: интерфейс
+        interface_: Interface
+        network_interface_id: интерфейс
+        network_interface_id_: Interface
+        port: "Порт назначения"
+        port_: "Destination Port"
+        position: "Правило №"
+        position_: "Rule #"
+        protocol: протокол
+        protocol_: Protocol
+        virtual_machine_id: "Виртуальная машина"
+        virtual_machine_id_: "Virtual Machine"
+      group: 
+        cpu_guarantee: "Ресурсов процессора гарантии"
+        cpu_guarantee_: "CPU resource guarantee"
+        label: группа
+        label_: Group
+        price_cpu: процессор
+        price_cpu_: CPU
+        price_cpu_share: "CPU Priority"
+        price_cpu_share_: "CPU Priority"
+        price_disk_size: "Размер диска"
+        price_disk_size_: "Disk Size"
+        price_ip_address: IP-адрес
+        price_ip_address_: "IP Address"
+        price_memory: память
+        price_memory_: Memory
+        price_storage_disk_size: Шаблоны
+        price_storage_disk_size_: "Templates & Backups Storage"
+      hypervisor: 
+        cluster_name: "Имя кластера"
+        cluster_name_: "Cluster Name"
+        custom_config: "Пользовательские Config"
+        custom_config_: "Custom Config"
+        disable_failover: "Отключить отказоустойчивости"
+        disable_failover_: "Disable failover"
+        distributed_virtual_switch_name: "Имя распределенного виртуального свича"
+        distributed_virtual_switch_name_: "Distributed Virtual Switch Name"
+        enabled: Доступно
+        enabled_: Enabled
+        host: хозяин
+        host_: Host
+        hypervisor_group_id: "гипервизор зоны"
+        hypervisor_group_id_: "Hypervisor Zone"
+        hypervisor_type: "гипервизор типа"
+        hypervisor_type_: "Hypervisor Type"
+        ip_address: IP-адрес
+        ip_address_: "IP Address"
+        label: этикетка
+        label_: Label
+        mac: MAC
+        mac_: MAC
+        machine: машина
+        machine_: Machine
+        memory_available: "RAM Доступно"
+        memory_available_: "RAM Available"
+        memory_usage: "Использование оперативной памяти"
+        memory_usage_: "RAM Usage"
+        pxe_ip_address: "CloudBoot IP-адресов"
+        pxe_ip_address_: "CloudBoot IP Address"
+        release: Отпустите
+        release_: Release
+        state: состояние
+        state_: State
+      hypervisor_group: 
+        label: Название
+        label_: Label
+        prefer_local_reads: "Использование местных прочитать путь"
+        prefer_local_reads_: "Use local read path"
+      image_template: 
+        allow_resize_without_reboot: "Изменение ресурсов без перезагрузки"
+        allow_resize_without_reboot_: "Allow resize without reboot"
+        allowed_swap: "SWAP разрешен"
+        allowed_swap_: "Allowed swap"
+        file_name: "имя файла"
+        file_name_: "File name"
+        label: Название
+        label_: Label
+        min_disk_size: "Мин DiskSize"
+        min_disk_size_: "Min disk size"
+        min_memory_size: "Размер Мин памяти"
+        min_memory_size_: "Min memory size"
+        operating_system: "Операционная система"
+        operating_system_: "Operating system"
+        version: Версия
+        version_: Version
+      image_template_group: 
+        kms: KMS
+        kms_: KMS
+        kms_host: "KMS Server Host"
+        kms_host_: "KMS Server Host"
+        kms_port: "KMS Server Port"
+        kms_port_: "KMS Server Port"
+        kms_server_label: "Сервер этикетки"
+        kms_server_label_: "Server Label"
+        label: Название
+        label_: Label
+        mak: MAK
+        mak_: MAK
+        your_templates: "Ваши шаблоны"
+        your_templates_: "Your templates"
+      ip_address: 
+        address: IP-адрес
+        address_: "IP Address"
+        gateway: шлюз
+        gateway_: Gateway
+        netmask: Netmask
+        netmask_: Netmask
+      ip_address_join: 
+        ip_address_id: IP-адрес
+        ip_address_id_: "IP Address"
+        network_interface_id: "Сетевой интерфейс"
+        network_interface_id_: "Network Interface"
+      ip_address_pool: 
+        cidr: CIDR
+        cidr_: CIDR
+        ipv4: протокол
+        ipv4_: Protocol
+        network_address: "Network Address"
+        network_address_: "Network Address"
+        range: "Диапазон IP-адресов"
+        range_: "IP Address Range"
+      iso: 
+        file_name: файл
+        file_name_: File
+        label: Название
+        label_: Label
+        shared: общественность
+        shared_: Public
+        user_id: пользователь
+        user_id_: User
+      load_balancing: 
+        cluster: 
+          auto_scaling_in_cpu: 
+            units: "КАК В CPU: Единицы"
+            units_: "AS IN CPU: Units"
+            value: "КАК В CPU: Значение"
+            value_: "AS IN CPU: Value"
+          auto_scaling_in_memory: 
+            units: "AS в памяти: Единицы"
+            units_: "AS IN Memory: Units"
+            value: "AS в памяти : Соотношение цена"
+            value_: "AS IN Memory: Value"
+          auto_scaling_out_cpu: 
+            units: "Как из CPU: Единицы"
+            units_: "AS OUT CPU: Units"
+            value: "Как из CPU: Значение"
+            value_: "AS OUT CPU: Value"
+          auto_scaling_out_memory: 
+            units: "Как из памяти: Единицы"
+            units_: "AS OUT Memory: Units"
+            value: "Как из памяти : Соотношение цена"
+            value_: "AS OUT Memory: Value"
+          config_max_node_amount: "Максимальное количество узлов"
+          config_max_node_amount_: "Max Node Amount"
+          config_min_node_amount: "Минимальное количество узлов"
+          config_min_node_amount_: "Min Node Amount"
+          image_template_id: "Изображение шаблон"
+          image_template_id_: "Image template"
+          load_balancer: 
+            hostname: "Балансировки нагрузки хоста"
+            hostname_: "Load balancer hostname"
+            label: "Этикетке балансировки нагрузки"
+            label_: "Load balancer label"
+            one: "балансировки нагрузки"
+            one_: "Load balancer"
+            template_id: "Шаблон балансировки нагрузки"
+            template_id_: "Load balancer template"
+          name: имя
+          name_: Name
+          nodes: узлов
+          nodes_: Nodes
+          port: порт
+          port_: Port
+      load_balancing_cluster: 
+        cluster_types: 
+          autoscaleout: AutoScaling
+          autoscaleout_: Autoscaling
+          cluster: кластер
+          cluster_: Cluster
+      nameserver: 
+        address: адрес
+        address_: Address
+        network: сеть
+        network_: Network
+        network_id: сеть
+        network_id_: Network
+      network: 
+        identifier: идентифицировать
+        identifier_: Identifier
+        label: этикетка
+        label_: Label
+        network_group_id: "Сеть зоне"
+        network_group_id_: "Network Zone"
+        vlan: Vlan
+        vlan_: Vlan
+      network_interface: 
+        interface: интерфейс
+        interface_: Interface
+        label: этикетка
+        label_: Label
+        network_id: сеть
+        network_id_: Network
+        network_join: "Сеть присоединиться"
+        network_join_: "Network join"
+        network_join_id: "Физическая сеть"
+        network_join_id_: "Physical Network"
+        primary: "Первичный интерфейс?"
+        primary_: "Primary Interface?"
+        rate_limit: "Скорость порта"
+        rate_limit_: "Port Speed"
+      network_join: 
+        interface: интерфейс
+        interface_: Interface
+      pack: 
+        label: этикетка
+        label_: Label
+      payment: 
+        amount: количество
+        amount_: Amount
+        created_at: "дата платежа"
+        created_at_: "Payment Date"
+        invoice_number: "номер накладной"
+        invoice_number_: "Invoice Number"
+      permission: 
+        identifier: идентифицировать
+        identifier_: Identifier
+        label: этикетка
+        label_: Label
+      resource/backup_server_group: 
+        limit_backup: "Резервные копии"
+        limit_backup_: Backups
+        limit_backup_disk_size: "Резервное копирование Размер диска"
+        limit_backup_disk_size_: "Backup Disk Size"
+        limit_backup_disk_size_free: "Резервное копирование Размер диска бесплатно"
+        limit_backup_disk_size_free_: "Backup Disk Size for Free"
+        limit_backup_free: "Резервные копии бесплатно"
+        limit_backup_free_: "Backups for Free"
+        limit_template: Шаблоны
+        limit_template_: Templates
+        limit_template_disk_size: "Размер шаблона диска"
+        limit_template_disk_size_: "Template Disk Size"
+        limit_template_disk_size_free: "Шаблон Размер диска бесплатно"
+        limit_template_disk_size_free_: "Template Disk Size for Free"
+        limit_template_free: "Шаблоны для бесплатно"
+        limit_template_free_: "Templates for Free"
+        price_backup: "Цена резервных копий"
+        price_backup_: "Price Backups"
+        price_backup_disk_size: "Цена Резервное копирование Размер диска"
+        price_backup_disk_size_: "Price Backup Disk Size"
+        price_template: "Цена Шаблоны"
+        price_template_: "Price Templates"
+        price_template_disk_size: "Цена шаблона Размер диска"
+        price_template_disk_size_: "Price Template Disk Size"
+      resource/cpu: 
+        limit: процессор
+        limit_: CPU
+        limit_free: "Процессор бесплатно"
+        limit_free_: "CPU for Free"
+        price: цена
+        price_: Price
+      resource/cpu_share: 
+        limit: "CPU Priority"
+        limit_: "CPU Priority"
+        limit_free: "CPU Priority бесплатно"
+        limit_free_: "CPU Priority for Free"
+      resource/customer_network: 
+        limit: "пользовательскую сеть"
+        limit_: "Custom Network"
+        limit_free: "Пользовательские сети бесплатно"
+        limit_free_: "Custom Network for Free"
+      resource/data_store_group: 
+        limit: "Размер диска"
+        limit_: "Disk Size"
+        limit_data_read_free: "Считывание данных"
+        limit_data_read_free_: "Data Read"
+        limit_data_written_free: "Данные письменное"
+        limit_data_written_free_: "Data Written"
+        limit_free: "Размер диска бесплатно"
+        limit_free_: "Disk Size for Free"
+        limit_reads_completed_free: "Входной просит"
+        limit_reads_completed_free_: "Input Requests"
+        limit_writes_completed_free: "Выходные просит"
+        limit_writes_completed_free_: "Output Requests"
+        price_data_read: "Цена чтения данных"
+        price_data_read_: "Price Data Read"
+        price_data_written: "Цена записанными"
+        price_data_written_: "Price Data Written"
+        price_reads_completed: "Просит Цена входного"
+        price_reads_completed_: "Price Input Requests"
+        price_writes_completed: "Запросы цен на продукцию"
+        price_writes_completed_: "Price Output Requests"
+      resource/disk_size: 
+        limit: "Размер диска"
+        limit_: "Disk Size"
+        limit_free: "Размер диска бесплатно"
+        limit_free_: "Disk Size for Free"
+      resource/edge_group: 
+        limit: данные
+        limit_: Data
+        limit_free: "Данные за бесплатно"
+        limit_free_: "Data for Free"
+        price: "Цена данных"
+        price_: "Price Data"
+      resource/ip_address: 
+        limit: IP-адрес
+        limit_: "IP Address"
+        limit_free: "IP-адрес бесплатно"
+        limit_free_: "IP Address for Free"
+      resource/memory: 
+        limit: память
+        limit_: Memory
+        limit_free: "Память для бесплатно"
+        limit_free_: "Memory for Free"
+      resource/network_group: 
+        limit_data_received_free: "Данные, полученные"
+        limit_data_received_free_: "Data Received"
+        limit_data_sent_free: "данные, передаваемые"
+        limit_data_sent_free_: "Data Sent"
+        limit_ip: IP-адрес
+        limit_ip_: "IP Address"
+        limit_ip_free: IP-адрес
+        limit_ip_free_: "IP Address"
+        limit_rate: "Скорость порта"
+        limit_rate_: "Port Speed"
+        limit_rate_free: "Скорость порта анкету"
+        limit_rate_free_: "Port Speed for Free"
+        price_in: "цены в"
+        price_in_: "Price In"
+        price_ip_off: "В.М. выключены"
+        price_ip_off_: "VM powered OFF"
+        price_ip_on: "В.М. включенный"
+        price_ip_on_: "VM powered ON"
+        price_out: "цена Снят"
+        price_out_: "Price Out"
+        price_rate_off: "В.М. выключены"
+        price_rate_off_: "VM powered OFF"
+        price_rate_on: "В.М. включенный"
+        price_rate_on_: "VM powered ON"
+      resource/solid_fire: 
+        limit: "мин IOPS"
+        limit_: "min IOPS"
+        limit_free: "мин IOPS бесплатно"
+        limit_free_: "min IOPS for Free"
+      resource/storage_disk_size: 
+        limit: "Размер диска"
+        limit_: "Disk Size"
+        limit_free: "Размер диска бесплатно"
+        limit_free_: "Disk Size for Free"
+      resource/vm_limit: 
+        limit: "В. М. граф"
+        limit_: "VM Count"
+        limit_free: "В.М. рассчитывать на бесплатные"
+        limit_free_: "VM Count for Free"
+      resource_limit: 
+        backups_templates_count: "Резервное копирование / Templates"
+        backups_templates_count_: Backups/Templates
+        cpu_guarantee: "Ресурсов процессора гарантии"
+        cpu_guarantee_: "CPU resource guarantee"
+        cpu_shares: "CPU Priority"
+        cpu_shares_: "CPU Priority"
+        cpus: процессоры
+        cpus_: CPUs
+        disk_size: "Размер диска"
+        disk_size_: "Disk Size"
+        ip_address_count: "Количество IP- адресов"
+        ip_address_count_: "IP Address count"
+        ip_address_mask: "IP- адрес маски"
+        ip_address_mask_: "IP Address mask"
+        memory: память
+        memory_: Memory
+        storage_disk_size: Шаблоны
+        storage_disk_size_: "Templates & Backups Storage"
+        virtual_machines_count: "Виртуальные машины"
+        virtual_machines_count_: "Virtual Machines"
+      role: 
+        filter: Фильтр
+        filter_: Filter
+        groups: Группы
+        groups_: Groups
+        identifier: идентифицировать
+        identifier_: Identifier
+        label: этикетка
+        label_: Label
+        users: Пользователи
+        users_: Users
+      schedule: 
+        action: действие
+        action_: Action
+        created_at: дата
+        created_at_: Date
+        duration: продолжительность
+        duration_: Duration
+        enabled: Доступно
+        enabled_: Enabled
+        id: ИД
+        id_: Ref
+        period: период
+        period_: Period
+        start_at: "Следующий начало"
+        start_at_: "Next Start"
+        status: Статус
+        status_: Status
+        target: цель
+        target_: Target
+        user: пользователь
+        user_: User
+      session: 
+        remember_me: "Запомнить меня на 2 недели"
+        remember_me_: "Remember me for 2 weeks"
+      software_license: 
+        count: считать
+        count_: Count
+        license: лицензия
+        license_: License
+        total: Всего
+        total_: Total
+      ssh_key: 
+        key: ключ
+        key_: Key
+      storage_server: 
+        required_virtual_machine_build: "Построить Storage Server автоматически"
+        required_virtual_machine_build_: "Build Storage Server automatically"
+        storage_server_type: "Тип Storage Server"
+        storage_server_type_: "Storage Server type"
+      template: 
+        allowed_swap: "Сменный диск разрешено?"
+        allowed_swap_: "Swap disk allowed?"
+        backup_server_id: "Backup Server"
+        backup_server_id_: "Backup Server"
+      theme: 
+        active: активный
+        active_: Active
+        application_title: название
+        application_title_: Title
+        body_background_color: цвет
+        body_background_color_: Color
+        body_background_image: "схема тела"
+        body_background_image_: "Body image"
+        disable_body_background_image: "Отключение образа тела"
+        disable_body_background_image_: "Disable body image"
+        disable_favicon: "Отключить значок"
+        disable_favicon_: "Disable favicon"
+        disable_logo: "Отключить логотип"
+        disable_logo_: "Disable logo"
+        disable_wrapper_bottom_background_image: "Отключение нижней изображение"
+        disable_wrapper_bottom_background_image_: "Disable bottom image"
+        disable_wrapper_top_background_image: "Отключить верхнее изображение"
+        disable_wrapper_top_background_image_: "Disable top image"
+        favicon: Favicon
+        favicon_: Favicon
+        html_footer: "нижний колонтитул"
+        html_footer_: Footer
+        html_header: заголовок
+        html_header_: Header
+        label: этикетка
+        label_: Label
+        logo: логотип
+        logo_: Logo
+        powered_by_color: цвет
+        powered_by_color_: Color
+        powered_by_hide: скрывать
+        powered_by_hide_: Hide
+        powered_by_text: текст
+        powered_by_text_: Text
+        powered_by_url: Url
+        powered_by_url_: Url
+        remove_body_background_image: "Удалить изображение тела"
+        remove_body_background_image_: "Remove body image"
+        remove_favicon: "Удалить значок"
+        remove_favicon_: "Remove favicon"
+        remove_logo: "Убрать логотип"
+        remove_logo_: "Remove logo"
+        remove_wrapper_bottom_background_image: "Снимите нижнюю изображение"
+        remove_wrapper_bottom_background_image_: "Remove bottom image"
+        remove_wrapper_top_background_image: "Снимите верхнюю изображение"
+        remove_wrapper_top_background_image_: "Remove top image"
+        wrapper_background_color: цвет
+        wrapper_background_color_: Color
+        wrapper_bottom_background_image: "Нижнее изображение"
+        wrapper_bottom_background_image_: "Bottom image"
+        wrapper_top_background_image: "Топ изображений"
+        wrapper_top_background_image_: "Top image"
+      transaction: 
+        action: действие
+        action_: Action
+        actor: пользователь
+        actor_: User
+        created_at: дата
+        created_at_: Date
+        dependent_transaction: Зависимость
+        dependent_transaction_: Dependent
+        id: ИД
+        id_: Ref
+        parent: цель
+        parent_: Target
+        running_at: "Запущено на"
+        running_at_: "Running at"
+        started_at: "работы в"
+        started_at_: "Started at"
+        status: статус
+        status_: Status
+      user: 
+        additional_fields: "Дополнительные поля"
+        additional_fields_: "Additional Fields"
+        api_key: "API Key"
+        api_key_: "API Key"
+        api_password: "API пароль"
+        api_password_: "API Password"
+        billing_plan_id: "Платежный план"
+        billing_plan_id_: "Billing plan"
+        disable_auto_suspend: "Отключить автоматическое приостановление"
+        disable_auto_suspend_: "Disable Auto Suspending"
+        email: E-mail
+        email_: Email
+        first_name: имя
+        first_name_: "First name"
+        fullname: "полное имя"
+        fullname_: "Full name"
+        last_name: фамилия
+        last_name_: "Last name"
+        locale: местный
+        locale_: Locale
+        login: Войти
+        login_: Login
+        password: пароль
+        password_: Password
+        password_confirmation: "Повторить пароль"
+        password_confirmation_: "Repeat Password"
+        roles: Роли
+        roles_: Roles
+        suspend_after_hours: "Приостановить после"
+        suspend_after_hours_: "Suspend after"
+        suspend_at: "Приостановить на"
+        suspend_at_: "Suspend at"
+        time_zone: "Часовой пояс"
+        time_zone_: "Time Zone"
+        user_group: "Группа пользователей"
+        user_group_: "User Group"
+        user_group_id: "группа пользователей"
+        user_group_id_: "User group"
+      user_additional_fields: 
+        data_type: тип
+        data_type_: Type
+        default_value: "значение по умолчанию"
+        default_value_: "Default Value"
+        name: имя
+        name_: Name
+      user_group: 
+        label: этикетка
+        label_: Label
+      user_white_list: 
+        description: описание
+        description_: Description
+        ip: IP
+        ip_: IP
+      virtual_machine: 
+        backups: "Резервные копии"
+        backups_: Backups
+        command: команда
+        command_: Command
+        cpu_guarantee: "процессор гарантии"
+        cpu_guarantee_: "CPU guarantee"
+        cpu_shares: "CPU Priority"
+        cpu_shares_: "CPU Priority"
+        cpus: "процессорных ядер"
+        cpus_: "CPU Cores"
+        data_store_group_primary_id: "Хранилище данных зоны"
+        data_store_group_primary_id_: "Data Store Zone"
+        data_store_group_swap_id: "Хранилище данных зоны"
+        data_store_group_swap_id_: "Data Store Zone"
+        disk_size: "Размер диска"
+        disk_size_: "Disk Size"
+        enable_autoscale: "Включить Autoscale"
+        enable_autoscale_: "Enable Autoscale"
+        hostname: Hostname
+        hostname_: Hostname
+        hypervisor_group_id: "гипервизор зоны"
+        hypervisor_group_id_: "Hypervisor Zone"
+        hypervisor_id: гипервизор
+        hypervisor_id_: Hypervisor
+        initial_root_password: пароль
+        initial_root_password_: Password
+        initial_root_password_confirmation: "подтверждение пароля"
+        initial_root_password_confirmation_: "Password confirmation"
+        initial_root_password_encryption_key: "ключ шифрования"
+        initial_root_password_encryption_key_: "Encryption passphrase"
+        initial_root_password_encryption_key_confirmation: "Потдверждение фразы шифрования"
+        initial_root_password_encryption_key_confirmation_: "Encryption passphrase confirmation"
+        interface: интерфейс
+        interface_: Interface
+        ip_addresses: IP-адреса
+        ip_addresses_: "IP Addresses"
+        label: этикетка
+        label_: Label
+        licensing_key: "Лицензионный ключ"
+        licensing_key_: "License Key"
+        login: Войти
+        login_: Login
+        memory: RAM
+        memory_: RAM
+        primary_disk_size: "Первичный размер диска"
+        primary_disk_size_: "Primary disk size"
+        primary_network_group_id: "Сеть зоне"
+        primary_network_group_id_: "Network Zone"
+        rate_limit: "Скорость порта"
+        rate_limit_: "Port Speed"
+        required_automatic_backup: "Обеспечение автоматизированного резервного копирования"
+        required_automatic_backup_: "Enable Automated Backup"
+        required_ip_address_assignment: "НазначитьIP автоматически"
+        required_ip_address_assignment_: "Assign an IP automatically"
+        required_virtual_machine_build: "Построить Virtual Machine"
+        required_virtual_machine_build_: "Build Virtual Machine"
+        required_virtual_machine_startup: "Загрузите Virtual Machine"
+        required_virtual_machine_startup_: "Boot Virtual Machine"
+        swap_disk_size: "Поменять размер диска"
+        swap_disk_size_: "Swap disk size"
+        template: шаблон
+        template_: Template
+        template_id: шаблон
+        template_id_: Template
+        type: тип
+        type_: Type
+        vip: VIP
+        vip_: VIP
+      vm_stat: 
+        amount: количество
+        amount_: Amount
+        cpu_count: процессоры
+        cpu_count_: CPUs
+        cpu_share: "CPU Priority"
+        cpu_share_: "CPU Priority"
+        disk_size: "Размер диска"
+        disk_size_: "Disk Size"
+        ip_addresses_count: IP-адреса
+        ip_addresses_count_: "IP Addresses"
+        mem: память
+        mem_: Memory
+        number_of_hours: часов
+        number_of_hours_: Hours
+    errors: 
+      messages: 
+        blank: "не может быть пустым"
+        blank_: "can't be blank"
+        image: 
+          bad_format: "Bad формат изображений"
+          bad_format_: "Bad image format"
+          size: 
+            greater_than: "должны иметь %{side} больше или равна %{size}px"
+            greater_than_: "should have %{side} greater than or equal %{size}px"
+            is_equal: "должны иметь равный %{side} %{size}px"
+            is_equal_: "should have %{side} equal to %{size}px"
+            less_than: "должны иметь %{side} меньше, чем %{size}px"
+            less_than_: "should have %{side} less than %{size}px"
+            less_than_equal: "должны иметь %{side} меньше или равна %{size}px"
+            less_than_equal_: "should have %{side} less than or equal %{size}px"
+        invalid: "является недействительным"
+        invalid_: "is invalid"
+        max_number_of_new_ip_address: "Не удается создать более %{number} IP-адресов за один шаг"
+        max_number_of_new_ip_address_: "Cannot create more than %{number} IP Addresses in one step"
+        password: 
+          case: "должна включать в себя прописных и строчных букв"
+          case_: "should include uppercase and lowercase characters"
+          latin: "должно содержать только латинские символы"
+          latin_: "should only contain Latin characters"
+          length: "должно быть больше или равно %{min_length} символов"
+          length_: "should be longer than or equal to %{min_length} characters"
+          numbers: "должна включать буквы и цифры"
+          numbers_: "should include letters and digits"
+          symbols: "должна включать в себя специальные символы"
+          symbols_: "should include special characters"
+          uniqueness: "Пароль равна одной из последних %{history} пароли. "
+          uniqueness_: "password is equal to one of last %{history} passwords. Please choose another one."
+          windows: "Не правильный пароль для Windows"
+          windows_: "is not valid Windows password"
+        unique: "уже принято"
+        unique_: "has already been taken"
+        vm_locked: "Виртуальная машина заблокирована"
+        vm_locked_: "Virtual Machine is locked"
+      models: 
+        auto_scaling/in/cpu: 
+          attributes: 
+            value: 
+              value_should_be_between_zero_and_100: "должно быть между 1 и 100 (%)"
+              value_should_be_between_zero_and_100_: "should be between 1 and 100 (%)"
+        auto_scaling/in/memory: 
+          attributes: 
+            value: 
+              only_integer_value: "должны быть целым"
+              only_integer_value_: "should be integer"
+              value_should_be_above_zero: "должна быть больше нуля"
+              value_should_be_above_zero_: "should be greater than zero"
+              value_should_be_greater_or_equal_to: "должна быть больше или равна %{value}"
+              value_should_be_greater_or_equal_to_: "should be greater or equal to %{value}"
+        auto_scaling/out/cpu: 
+          attributes: 
+            value: 
+              value_should_be_between_zero_and_100: "должно быть между 1 и 100 (%)"
+              value_should_be_between_zero_and_100_: "should be between 1 and 100 (%)"
+        auto_scaling/out/memory: 
+          attributes: 
+            value: 
+              only_integer_value: "должны быть целыми"
+              only_integer_value_: "should be integer"
+              value_should_be_above_zero: "должна быть больше нуля"
+              value_should_be_above_zero_: "should be greater than zero"
+        auto_scaling_configuration: 
+          vm_is_autoscale_node: "Есть узла кластера AutoScale в"
+          vm_is_autoscale_node_: "is a AutoScale Cluster's node"
+        auto_scaling_resource: 
+          invalid_add_units: "должна быть меньше или равна %{value} (макс. количество узлов - количество мин узла)"
+          invalid_add_units_: "should be less or equal %{value} (max node amount - min node amount)"
+          invalid_delete_units: "должна быть меньше или равна %{value} (макс. количество узлов - количество мин узла)"
+          invalid_delete_units_: "should be less or equal %{value} (max node amount - min node amount)"
+          value_should_be_above_zero: "должна быть больше нуля"
+          value_should_be_above_zero_: "should be greater than zero"
+        backup_server: 
+          present: "все еще присутствуют на сервере резервного копирования"
+          present_: "are still present on backup server"
+        backup_server_group: 
+          count_limit_exceeded: "Вы достигли предела создания резервной копии на сервере резервного копирования зоны"
+          count_limit_exceeded_: "You have reached your backup creation limit on backup server zone"
+          disk_size_limit_exceeded: "Вы не хватает дискового пространства на сервере резервного копирования зоны"
+          disk_size_limit_exceeded_: "You do not have enough disk space on backup server zone"
+        backups: 
+          can_not_be_restored: "Вы достигли предельного размера диска на сервер резервного копирования"
+          can_not_be_restored_: "You have reached disk size limit on backup server"
+          count_limit_exceeded: "Вы достигли предела создания резервной копии"
+          count_limit_exceeded_: "You have reached your backup creation limit"
+          disk_deleted: "Диск был удален"
+          disk_deleted_: "Disk has been deleted"
+          has_not_enough_storage_disk_space: "У вас нет достаточно места на диске хранения"
+          has_not_enough_storage_disk_space_: "You do not have enough storage disk space"
+          limit_system_exceeded: "Резервное копирование серверов не хватает дискового пространства для резервного копирования"
+          limit_system_exceeded_: "Backup server haven't enough disk space for backup"
+          min_disk_size_can_not_be_less: "не может быть меньше , чем %{memory}Gb"
+          min_disk_size_can_not_be_less_: "can not be less than %{memory}Gb"
+          min_memory_size_can_not_be_less: "не может быть меньше , чем %{memory}Mb"
+          min_memory_size_can_not_be_less_: "can not be less than %{memory}Mb"
+          not_backed: "Этот диск не может быть подкреплены"
+          not_backed_: "This disk cannot be backed up"
+          storage_disk_size_limit_exceeded: "У вас нет достаточно места на диске хранения"
+          storage_disk_size_limit_exceeded_: "You do not have enough storage disk space"
+          user_attained_limit_to_create: "Вы достигли предела создания шаблонов"
+          user_attained_limit_to_create_: "You have reached your template creation limit"
+          user_has_not_available_backup_server: "Вы не доступен сервер резервного копирования"
+          user_has_not_available_backup_server_: "You don't have available backup server"
+          virtual_machine_deleted: "Виртуальная машина была удалена"
+          virtual_machine_deleted_: "Virtual Machine has been deleted"
+          virtual_machine_locked: "Виртуальная машина заблокирована"
+          virtual_machine_locked_: "Virtual Machine is locked"
+        billing_plan: 
+          changed_currency: "не может быть изменен в связи с существовали статистики, она должна быть %{currency_code}"
+          changed_currency_: "cannot be changed due to existed statistics, it should be %{currency_code}"
+          must_be_included_in_list: "должны быть включены в список валют"
+          must_be_included_in_list_: "must be included in list of currencies"
+          still_used: "Платежная план по-прежнему назначаются для некоторых пользователей"
+          still_used_: "Billing plan is still assigned for some users"
+        cdn_resource: 
+          attributes: 
+            cdn_hostname: 
+              domain_level: "домен должен быть четвертого уровня"
+              domain_level_: "should be fourth-level domain name"
+              invalid: "'%{hostname}' неверный хостнейм"
+              invalid_: "'%{hostname}' is not a valid hostname"
+              invalid_ssl: "должно заканчиваться . r.worldssl.net \""
+              invalid_ssl_: "must end with '.r.worldssl.net'"
+              secondary_hostname_not_allowed_for_ssl: "вторичные имена не разрешены , когда SSL включен"
+              secondary_hostname_not_allowed_for_ssl_: "secondary hostnames are not allowed when SSL is enabled"
+              taken: "уже принято"
+              taken_: "has already been taken"
+            origins: 
+              maximum_exceeded: "превысил максимум из %{maximum}"
+              maximum_exceeded_: "has exceeded maximum of %{maximum}"
+            secondary_hostname: 
+              same: "должен отличаться от основного хостнейма CDN"
+              same_: "must differ from primary CDN hostname"
+              taken: "'%{hostname}' уже используется"
+              taken_: "'%{hostname}' has already been taken"
+          resource_not_found: "Проищошла ошибка при попытке открыть CDN ресурс, пожалуйста свяжитесь с поддержкой"
+          resource_not_found_: "An error occurred while trying to open CDN Resource, please contact support"
+          unexpected_edge_groups: "%{ids} не отнесены к тарифного плана ."
+          unexpected_edge_groups_: "%{ids} are not assigned to billing plan."
+        cluster: 
+          auto_scaling_resources_invalid: "Неверная конфигурация Автомасштабирование ресурсов"
+          auto_scaling_resources_invalid_: "Invalid configuration of Autoscaling Resources"
+          invalid_max_node_amount: "может быть только целым"
+          invalid_max_node_amount_: "can only be integer"
+          invalid_min_node_amount: "может быть только целым"
+          invalid_min_node_amount_: "can only be integer"
+          invalid_port: "может быть только целым"
+          invalid_port_: "can only be integer"
+          max_node_amount_should_be_greater_than_min_node_amount: "должно быть больше, чем %{min_node_amount}"
+          max_node_amount_should_be_greater_than_min_node_amount_: "should be greater than %{min_node_amount}"
+          min_node_amount_should_be_greater_than_zero: "должна быть больше нуля"
+          min_node_amount_should_be_greater_than_zero_: "should be greater than zero"
+          no_ports: "Нет портов были заданы для кластера"
+          no_ports_: "No ports were specified for the cluster"
+          template_is_not_allowed: "из Линуксов разрешено для автомасштабирования LB типа. Linux и Windows только для кластера LB типа."
+          template_is_not_allowed_: "of Linux is allowed for Autoscaling LB type. Linux and Windows ones - for Cluster LB type"
+        cluster_node: 
+          cant_create_in_load_balancer_network: "Не может быть создан в той же сети, балансировки нагрузки имеют"
+          cant_create_in_load_balancer_network_: "can't be created in same network as Load Balancer have"
+        configuration: 
+          missing_cloud_boot_configs: "Не удается включить CloudBoot из-за отсутствия файлов конфигурации: %{files}"
+          missing_cloud_boot_configs_: "Cannot enable CloudBoot because of missing config files: %{files}"
+        currency: 
+          attributes: 
+            precision: 
+              inclusion: "может быть только между 0 и 5."
+              inclusion_: "can only be between 0 and 5."
+            precision_for_unit: 
+              inclusion: "может быть только между 0 и 8"
+              inclusion_: "can only be between 0 and 8"
+          has_billing_plans: "Валюта все еще имеет тарифные планы , связанные с ним"
+          has_billing_plans_: "Currency still has billing plans associated with it"
+        customer_network: 
+          limit_exceeded: "Лимит сетевых ресурсов клиента исчерпан"
+          limit_exceeded_: "Customer network limit exceeded"
+          no_outside_ip_address: "не был назначен. "
+          no_outside_ip_address_: "was not assigned. Please check whether the VMware hypervisor's Network has free outside IP address and belongs to the Network Zone"
+          no_subnet_available: "Не достаточно доступны для выбранного бассейна IP-адреса"
+          no_subnet_available_: "not enough is available for the selected Ip Address Pool"
+          no_user_firewall_available: "не имеет брандмауэр настроен."
+          no_user_firewall_available_: "has no firewall configured."
+          no_vlan_available: "Не достаточно неназначенных клиентов VLAN"
+          no_vlan_available_: "not enough unassigned Customer VLAN"
+          prefix_size_out_of_range: "должны быть в %{min} .. %{max}"
+          prefix_size_out_of_range_: "should be in %{min}..%{max}"
+        customer_vlan: 
+          not_a_number: "VLAN 'начинаетс с' и 'заканчивается' должно быть числом."
+          not_a_number_: "VLAN 'starts from' and 'ends to' should be a number."
+          not_a_number_ends: "VLAN концы должны быть рядом ."
+          not_a_number_ends_: "VLAN ends to should be a number."
+          not_a_number_starts: "VLAN начинается должно быть число ."
+          not_a_number_starts_: "VLAN starts from should be a number."
+          starts_is_greather_than_ends: "VLAN начинается должно быть меньше , чем концы ."
+          starts_is_greather_than_ends_: "VLAN 'starts from' should be less than 'ends to'."
+        data_store: 
+          data_store_used: "Хранилище данных используется"
+          data_store_used_: "Data store is used"
+          local_datastore_cant_be_connected_to_hypervisors: "Локальное хранилище данных не может быть подключен к любой другой гипервизор"
+          local_datastore_cant_be_connected_to_hypervisors_: "Local Data Store can't be connected to any other Hypervisor"
+          size_limit: "не может быть меньше , чем %{size} Гб"
+          size_limit_: "can't be less than %{size} GB"
+        data_store_group: 
+          still_used: "Данные магазине зоны по-прежнему ассоциируется с тарифного плана"
+          still_used_: "Data store zone is still associated with billing plan"
+        data_store_join: 
+          local_data_store_warn: "Не могу присоединить данные к этому хранилищу."
+          local_data_store_warn_: "This Local Data Store can't be joined."
+          still_hosted: "Виртуальные машины по-прежнему , размещенных на этом хранилище данных"
+          still_hosted_: "Virtual machines are still hosted on this data store"
+        disk: 
+          available_data_store: "не доступно хранилище данных для дисков"
+          available_data_store_: "is not available data store for disk"
+          cannot_be_less_then: "не может быть меньше , чем %{min_size}"
+          cannot_be_less_then_: "cannot be less than %{min_size}"
+          cannot_be_migrated: "В настоящее время этот диск не могут быть перенесены"
+          cannot_be_migrated_: "Currently this disk cannot be migrated"
+          data_store_assoc: "Хранилище данных не может быть связана с этой виртуальной машины."
+          data_store_assoc_: "Data store cannot be associated with this virtual machine."
+          data_store_group_limit_exceeded: "Превышен предел для этой зоны хранилища данных"
+          data_store_group_limit_exceeded_: "limit exceeded for this data store zone"
+          disk_not_more: "Размер диска не может быть больше, чем %{size}"
+          disk_not_more_: "size of disk cannot be more than %{size}"
+          disk_was_not_detected: "не может быть установлен для этой зоны хранилища данных"
+          disk_was_not_detected_: "cannot be set for this data store zone"
+          freebsd_cannot_be_decreased: "для FreeBSD диски не могут быть уменьшены"
+          freebsd_cannot_be_decreased_: "for FreeBSD disks cannot be decreased"
+          freebsd_primary_not_resizable: "для FreeBSD основной диск не может быть изменена"
+          freebsd_primary_not_resizable_: "for FreeBSD primary disk cannot be changed"
+          guest_os_system_limit: "Максимальное количество дисков достигла предела ."
+          guest_os_system_limit_: "Max Disks count limit have reached."
+          limit_exceeded: "превышен предел"
+          limit_exceeded_: "limit exceeded"
+          limit_system_exceeded: "Система превышен лимит"
+          limit_system_exceeded_: "system limit exceeded"
+          must_one_primary: "должна иметь только один первичный диск"
+          must_one_primary_: "must only have one primary disk"
+          no_decrease_for_vmware: "не может быть меньше , чем текущий размер : %{size}Gb (уменьшение размера диска не поддерживается в VMware)."
+          no_decrease_for_vmware_: "can not be less than the current size: %{size}Gb (disk size decrease is not supported under VMware)."
+          no_decrease_size_win: "Не может быть уменьшен для этой версии ОС Windows"
+          no_decrease_size_win_: "cannot be decreased for this version Windows"
+          no_resize_required: "Новый размер диска так же, как старый. "
+          no_resize_required_: "New disk size is the same as the old one. No resize nessessary."
+          only_formated_to_fstab: "Толькоотформатированный диск может быть добавлен к Fstab"
+          only_formated_to_fstab_: "only a formatted disk can be added to fstab"
+          power_is_on: "Виртуальная машина , связанные с этим диском в настоящее время включен. "
+          power_is_on_: "The virtual machine associated with this disk is currently powered on. Power off before requesting changes to disks."
+          primary_less: "первичного диска не может быть меньше, чем %{size}"
+          primary_less_: "of primary disk cannot be less than %{size}"
+          resize_is_not_supported_for_sf: "изменение размеров в настоящее время не поддерживается для SolidFire"
+          resize_is_not_supported_for_sf_: "resize currently is not supported for SolidFire"
+          solid_fire_limit_exceeded: "minIOPS лимит превышен"
+          solid_fire_limit_exceeded_: "minIOPS limit exceeded"
+          swap_cant_be_primary: "подкачки диски не могут быть помечены как первичные"
+          swap_cant_be_primary_: "swap disks cannot be marked as primary"
+          vm_locked: "Транзакция не может быть запущена в то время как виртуальная машина заблокирована."
+          vm_locked_: "Transaction cannot be started while virtual machine locked."
+          wrong_file_system: "Неправильная файловая система"
+          wrong_file_system_: "Wrong file system"
+        dns_zone: 
+          attributes: 
+            name: 
+              taken: "домен уже приняты. "
+              taken_: "domain has already been taken. Please contact support to verify the ownership"
+          records_not_found: "Произошла ошибка при попытке открыть DNS- зоны , пожалуйста, обратитесь в службу поддержки"
+          records_not_found_: "An error occurred while trying to open DNS zone, please contact support"
+        edge_group: 
+          base_resource_destroy: "краю группы, связанные с тарифные планы не могут быть удалены"
+          base_resource_destroy_: "edge groups associated with billing plans cannot be deleted"
+          cdn_resource_destroy: "краю группы, связанные с ресурсами CDN не может быть удален"
+          cdn_resource_destroy_: "edge groups associated with CDN resources cannot be deleted"
+          location_ids_invalid_format: "должен быть массивом чисел"
+          location_ids_invalid_format_: "must be an array of numbers "
+        firewall: 
+          not_a_valid_ip_address: "не является допустимым IP-адреса"
+          not_a_valid_ip_address_: "is not a valid IP Address"
+        group: 
+          not_empty: "список не пуст"
+          not_empty_: "list is not empty"
+        hypervisor: 
+          no_statistics: "Значение не может быть установлен. "
+          no_statistics_: "value cannot be set. Please wait for statistics from the hypervisor to return and try again"
+          should_have_san_nic: "CloudBoot гипервизора должны иметь по крайней мере одну NIC прикреплены к подсети SAN"
+          should_have_san_nic_: "CloudBoot Hypervisor should have at least one NIC attached to SAN subnet"
+          still_used: "Гипервизор по-прежнему ассоциируется с виртуальными машинами"
+          still_used_: "Hypervisor is still associated with virtual machines"
+        hypervisor_group: 
+          limit_exceeded: "превышен предел"
+          limit_exceeded_: "limit exceeded"
+          still_used: "Гипервизор зоны по-прежнему ассоциируется с гипервизорами"
+          still_used_: "Hypervisor Zone is still associated with hypervisors"
+        image_template: 
+          still_used: "Это изображение шаблона используетсявиртуальная машина"
+          still_used_: "This Image Template is used by a Virtual Machine"
+          wrong_file_name: "должны довольствоваться только символы от А до Я , AZ, 0-9 , -, _ ,."
+          wrong_file_name_: "should content only chars from A-Z, a-z, 0-9, -, _, ."
+        image_template_group: 
+          limit_exceeded: "превышен предел"
+          limit_exceeded_: "limit exceeded"
+          still_used: "Группа изображения шаблона по-прежнему ассоциируется с пользователями"
+          still_used_: "Image Template Group is still associated with users"
+        image_template_group_options: 
+          attributes: 
+            kms_port: 
+              greater_than_or_equal_to: "должна быть больше или равна %{count}"
+              greater_than_or_equal_to_: "must be greater than or equal to %{count}"
+              less_than_or_equal_to: "должна быть меньше или равна %{count}"
+              less_than_or_equal_to_: "must be less than or equal to %{count}"
+          blank: "не может быть пустым"
+          blank_: "can't be blank"
+          kms_no_server: "должна быть обеспечена , когда KMS лицензирования выбран тип"
+          kms_no_server_: "should be provided when KMS licensing type is chosen"
+          kms_wrong_licensing_type: "Лицензирование видов должны включать , когда KMS KMS KMS хост или порт осуществляется"
+          kms_wrong_licensing_type_: "Licencing types should include KMS when KMS host or KMS port is provided"
+        ip_address: 
+          can_not_be_blank: "не может быть пустым"
+          can_not_be_blank_: "can not be blank"
+          cannot_disallow_primary_in_use: "Не может быть установлен для адреса в использовании"
+          cannot_disallow_primary_in_use_: "cannot be set for address in use"
+          has_customer_network: "не может быть удален , пока назначен сети заказчика."
+          has_customer_network_: "can not be deleted until assigned to customer network."
+          has_network_interfaces: "Не удается удалить IP-адрес , потому что это зависит от виртуальных машин"
+          has_network_interfaces_: "Cannot delete IP Address because it depends on Virtual Machines"
+          in_same_subnet: "должны быть в той же подсети, что и IP-адрес"
+          in_same_subnet_: "should be in the same subnet as ip address"
+          in_use: "уже используется"
+          in_use_: "is already in use"
+          ipv6_disabled: "Протокол IPv6 отключен"
+          ipv6_disabled_: "IPv6 is disabled"
+          must_be_valid_ip_address: "должен быть действительным IP- адресом"
+          must_be_valid_ip_address_: "must be valid IP address"
+          must_be_valid_ipv4: "должен быть действительным адресом IPv4"
+          must_be_valid_ipv4_: "must be a valid IPv4 address"
+          must_be_valid_ipv6: "должен быть действительным адресом IPv6"
+          must_be_valid_ipv6_: "must be a valid IPv6 address"
+          must_be_valid_ipv6_prefix: "должен быть допустимый префикс IPv6"
+          must_be_valid_ipv6_prefix_: "must be a valid IPv6 prefix"
+          must_be_valid_netmask: "должен быть действителен маски / префикса"
+          must_be_valid_netmask_: "must be valid netmask/prefix"
+          reserved_ipv6: "является зарезервированным адресом IPv6"
+          reserved_ipv6_: "is a reserved IPv6 address"
+          same_broadcast_address: "%{address} так же, как широковещательный адрес"
+          same_broadcast_address_: "%{address} is the same as broadcast address"
+          same_gateway_address: "%{address} так же, как шлюз"
+          same_gateway_address_: "%{address} is the same as gateway"
+          same_network_address: "%{address} так же, как сетевой адрес"
+          same_network_address_: "%{address} is the same as network address"
+        ip_address_join: 
+          associated_with_cluster_node: "связаны в узелнагрузки в"
+          associated_with_cluster_node_: "is associated to the load balancer's node"
+          available_network: "не доступна сеть для IP-адреса"
+          available_network_: "is not available network for ip address"
+          cant_be_accociated: "Не может быть связан с этой виртуальной машины"
+          cant_be_accociated_: "cannot be associated with this virtual machine"
+          invalid_user: "%{ip_address_model} принадлежит другому пользователю"
+          invalid_user_: "%{ip_address_model} belongs to another user"
+          ipv6_disabled: "Протокол IPv6 отключен"
+          ipv6_disabled_: "IPv6 is disabled"
+          is_allocated: "уже выделены на эту сетевую карту"
+          is_allocated_: "is already allocated to this network card"
+          limit_exceeded: "не может быть использован , потому что вы достигли предела IP адрес"
+          limit_exceeded_: "can't be used, because you have reached your IP address limit"
+          mask_limit: "не может быть использован , потому что у вас есть предел сетевой маски"
+          mask_limit_: "can't be used, because you have a network mask limit"
+        ip_address_pool: 
+          has_intersections: "Существует пересечения с уже существующими бассейна : %{pool} ( %{range} )"
+          has_intersections_: "There is intersection with already existing pool: %{pool} (%{range})"
+          not_ip_address: "не является допустимым IPv4/IPv6 адрес"
+          not_ip_address_: "is not a valid IPv4/IPv6 Address"
+          out_of_cidr_range: "должна быть в 1 .. %{max}"
+          out_of_cidr_range_: "should be in 1..%{max}"
+        language: 
+          code: 
+            must_be_in: "должны быть в ( %{locales} )"
+            must_be_in_: "must be in (%{locales})"
+        load_balancer: 
+          label_non_ascii_symbols: "Только ASCII символы разрешены для этикеток"
+          label_non_ascii_symbols_: "Only ASCII symbols allowed for label"
+        load_balancing_cluster: 
+          can_not_use_windows_nodes: "Невозможно присоединить Windows, узлов"
+          can_not_use_windows_nodes_: "Can not attach Windows nodes"
+          nodes_not_on_same_network: "Невозможно присоединить узлы из разных сетей с IP-адреса : %{ip_addresses}"
+          nodes_not_on_same_network_: "Can not attach nodes from different networks with IPs: %{ip_addresses}"
+          undefined: неопределенных
+          undefined_: undefined
+        log_item: 
+          cancel_pending_done: "До задачи были отменены"
+          cancel_pending_done_: "Pending tasks have been canceled"
+          cancel_pending_not_found: "До задачи не были найдены, ничего не было отменено"
+          cancel_pending_not_found_: "Pending tasks haven't been found, nothing was canceled"
+          clean_all_done: "Журналы были очищены"
+          clean_all_done_: "Logs have been cleaned"
+          clean_all_not_found: "Журналы не были найдены , ничего не убиралось"
+          clean_all_not_found_: "Logs haven't been found, nothing was cleaned"
+          clean_pending_done: "В ожидании резервного копирования задач были очищены"
+          clean_pending_done_: "Pending Backups tasks have been cleaned"
+          clean_pending_not_found: "В ожидании резервного копирования задач, так и не нашли , ничего не убиралось"
+          clean_pending_not_found_: "Pending Backups tasks haven't been found, nothing was cleaned"
+        network: 
+          have_joined_interfaces: "Сеть по-прежнему присоединился сетевых интерфейсов."
+          have_joined_interfaces_: "Network still has joined network interfaces."
+          have_joins: "Сеть до сих пор связан гипервизоров или сетевых интерфейсов."
+          have_joins_: "Network still has associated hypervisors or network interfaces."
+        network_group: 
+          still_used: "Сеть зоне по-прежнему ассоциируется с тарифного плана"
+          still_used_: "Network zone is still associated with billing plan"
+        network_interface: 
+          being_deleted: "Сетевой интерфейс удаляется"
+          being_deleted_: "Network interface is being deleted"
+          err_make_changes: "Виртуальная машина , связанных с этой сетевой интерфейс в настоящее время включен. "
+          err_make_changes_: "The virtual machine associated with this network interface is currently powered on. Power off before requesting changes to network interfaces."
+          limit_exceeded: "Оценить превышен лимит"
+          limit_exceeded_: "Rate limit exceeded"
+          limit_system_exceeded: "Ограничение скорости системы превысил"
+          limit_system_exceeded_: "Rate system limit exceeded"
+          net_cant_assoc: "Физическая сеть не может быть связана с этой виртуальной машины."
+          net_cant_assoc_: "Physical network cannot be associated with this virtual machine."
+          network_join_exists: "не существует."
+          network_join_exists_: "does not exist."
+          primary_allocated: "уже имеет первичное распределение ."
+          primary_allocated_: "already has primary allocation."
+          uniqueness: "должен быть уникальным для виртуальной машины"
+          uniqueness_: "has to be unique for the virtual machine"
+        network_join: 
+          use_network: "Виртуальные машины по-прежнему использовать эту сеть"
+          use_network_: "Virtual machines still use this network"
+        publication: 
+          cannot_assign_outside_ip_address: "уже присвоен к другой публикации или клиентской сети"
+          cannot_assign_outside_ip_address_: "is already assigned to another Publication or Customer Network"
+        remote_access: 
+          blank_access_port: "Виртуальная машина не имеет удаленного порта доступа"
+          blank_access_port_: "Virtual Machine don't have remote access port."
+          session_exist: "Активного сеанса удаленного доступа для этой виртуальной машины уже существует"
+          session_exist_: "An active remote access session for this virtual machine already exists"
+        resource: 
+          edge_group: 
+            location_is_present: "уже содержит местах, которые находятся в группе краю добавляется"
+            location_is_present_: "already contains locations which are present in edge group being added"
+        schedule: 
+          action: 
+            not_valid: "является недопустимым."
+            not_valid_: "is not valid."
+          target: 
+            not_present: "нет. "
+            not_present_: "is not present. Check target_id, please."
+        software_license: 
+          arch: "должно быть одним из x86 или x64"
+          arch_: "should be one of x86 or x64"
+          distro: "должно быть одним из XP , 2003, 2008 или 7"
+          distro_: "should be one of XP, 2003, 2008 or 7"
+          edition: "должно быть одним из WEB, STD , ЛОР, постоянный ток или PRO"
+          edition_: "should be one of WEB, STD, ENT, DC or PRO"
+          tail: "должны быть R2 или пустой"
+          tail_: "should be R2 or empty"
+        ssh_key: 
+          unique_key: "должно быть уникальным ключом"
+          unique_key_: "must be unique key"
+          wrong_format: "имеет неверный формат"
+          wrong_format_: "has wrong format"
+        templates: 
+          count_limit_exceeded: "Вы достигли предела создания шаблонов"
+          count_limit_exceeded_: "You have reached your template creation limit"
+          has_not_enough_storage_disk_space: "У вас нет достаточно места на диске хранения"
+          has_not_enough_storage_disk_space_: "You don't have enough storage disk space"
+          storage_disk_size_limit_exceeded: "У вас нет достаточно места на диске хранения"
+          storage_disk_size_limit_exceeded_: "You do not have enough storage disk space"
+          user_attained_limit_to_create: "Вы достигли предела создания шаблонов"
+          user_attained_limit_to_create_: "You have reached your template creation limit"
+        transactions: 
+          cancelled_as_abandoned: "Автоматически отменяется , как брошенные задачи , идти вперед и сделать это сейчас."
+          cancelled_as_abandoned_: "Automatically cancelled as abandoned task, go ahead and do this now."
+          cancelled_as_dependent: "Автоматически отменяется зависимым сделка была %{msg} ."
+          cancelled_as_dependent_: "Automatically cancelled as dependent transaction has been %{msg}."
+          manualy_canceled_pending: "Вручную отменено: в ожидании задач. "
+          manualy_canceled_pending_: "Manually cancelled: pending tasks. %{msg}"
+        user: 
+          billing_plan_with_changed_currency: "уже был использован в расчете статистики. "
+          billing_plan_with_changed_currency_: "already was used in calculation statistic. You can use billing plan with currency %{currency_code}."
+          invalid_group: "является недействительным"
+          invalid_group_: "is invalid"
+          login: "не может быть изменен"
+          login_: "can't be changed"
+          password: "не может быть изменен"
+          password_: "can't be changed"
+        user_additional_field: 
+          integer: "должны быть целыми"
+          integer_: "should be integer"
+          integer_default: "должны быть целыми"
+          integer_default_: "should be integer"
+        virtual_machine: 
+          auto_scaling_is_not_supported: "Автоматическое масштабирование для этой виртуальной машины не поддерживается"
+          auto_scaling_is_not_supported_: "Auto Scaling for this Virtual Machine is not supported"
+          backup_remove: "У вас нет разрешения на уничтожение резервных копий"
+          backup_remove_: "You lack the permissions to destroy backups"
+          booted: "Ресурсы не могут быть изменены в то время как машина загрузится"
+          booted_: "Resources cannot be changed while machine is booted"
+          can_not_be_primary: "не могут быть выбраны в качестве первичной"
+          can_not_be_primary_: "can't be selected as primary"
+          cannot_be_migrated: "Виртуальная машина не могут быть перенесены"
+          cannot_be_migrated_: "Virtual Machine cannot be migrated"
+          cant_less: "не может быть меньше , чем %{limit}"
+          cant_less_: "cannot be less than %{limit}"
+          cant_more: "не может быть больше , чем %{limit}"
+          cant_more_: "cannot be more than %{limit}"
+          count_limit: "достигла максимального числа виртуальных машин"
+          count_limit_: "reached maximum number of virtual machines"
+          cpu_limit_resource_reached: "Ресурсов процессора гарантии лимита"
+          cpu_limit_resource_reached_: "CPU resource guarantee limit is reached"
+          cpu_shares_limit_exceeded: "превышен предел"
+          cpu_shares_limit_exceeded_: "limit exceeded"
+          cpu_shares_system_limit_exceeded: "Система превышен лимит"
+          cpu_shares_system_limit_exceeded_: "system limit exceeded"
+          cpus_limit_exceeded: "превышен предел"
+          cpus_limit_exceeded_: "limit exceeded"
+          cpus_system_limit_exceeded: "Процессор системы превышен лимит"
+          cpus_system_limit_exceeded_: "CPU system limit exceeded"
+          disks_locked: "один или несколько дисков заблокирован"
+          disks_locked_: "one or more disks locked"
+          edge_storage_server_template_needed: "Должен быть установшел шаблон сервера/хранилища CDN edge"
+          edge_storage_server_template_needed_: "The CDN edge server/storage server template must be installed"
+          incorrect_parameters: "Неверные параметры"
+          incorrect_parameters_: "Incorrect parameters"
+          is_ip_online: "IP адрес для этой виртуальной машины уже используются для других виртуальных машин, у вас есть интернет ."
+          is_ip_online_: "IP address for this virtual machine already used for other virtual machines you have online."
+          is_locked_boot: "Машина закрыта, пожалуйста, подождите, пока машина будет разблокирована , прежде чем обратитьсязагрузки"
+          is_locked_boot_: "Machine is locked: please wait for the machine to be unlocked before requesting a boot"
+          is_locked_disk: "Один или несколько дисков эта машина находится взаблокированном состоянии"
+          is_locked_disk_: "One or more of this machine's disks is in a locked state"
+          is_running: "Машина уже запущена"
+          is_running_: "Machine is already running"
+          is_suspended: "Машина приостановлена. "
+          is_suspended_: "Machine is suspended. Unsuspend it first."
+          licensing_type: 
+            blank: "Нет лицензирования типа при условии,"
+            blank_: "No licensing type is provided"
+            can_not_be_licensed: "Текущий шаблон не может быть лицензирован"
+            can_not_be_licensed_: "Current template can not be licensed"
+            kms: 
+              unknown: "Неизвестный сервер KMS"
+              unknown_: "Unknown KMS server"
+              unsupported: "KMS лицензии, не могут быть использованы с шаблоном"
+              unsupported_: "KMS licensing can not be used with current template"
+            mak: 
+              unsupported: "MAK лицензии, не могут быть использованы с этим шаблоном"
+              unsupported_: "MAK licensing can not be used with current template"
+            own: 
+              invalid: "Неверный ключ для Windows Лицензирование"
+              invalid_: "Invalid Windows licensing key"
+              unsupported: "Собственный ключ лицензии, не могут быть использованы с шаблоном"
+              unsupported_: "OWN licensing key can not be used with current template"
+          memory_guest_limit_exceeded: "Ограничение по памяти гостей превысило"
+          memory_guest_limit_exceeded_: "Memory guest limit exceeded"
+          memory_is_lower_than_template_minimum: "меньше, чем %{size} MBминимум для шаблона"
+          memory_is_lower_than_template_minimum_: "is less than %{size} MB the minimum for the template"
+          memory_limit_exceeded: "превышен предел"
+          memory_limit_exceeded_: "limit exceeded"
+          memory_system_limit_exceeded: "Ограничение по памяти системы превысил"
+          memory_system_limit_exceeded_: "Memory system limit exceeded"
+          migrate_with_local_data_store: "Не могут быть перенесены с локального хранилища данных ."
+          migrate_with_local_data_store_: "Can't be migrated with local data store."
+          more_than_max_memory: "Не может быть увеличена до %{size} для запуска виртуальной машины"
+          more_than_max_memory_: "can not be increased to %{size} for running virtual machine"
+          need_bigger_disk: "Должен иметь больший размер основного диска"
+          need_bigger_disk_: "Needs to have bigger size for primary disk"
+          need_ipv4_address: "Должен иметь по крайней мере один адрес IPv4"
+          need_ipv4_address_: "Needs to have at least one IPv4 address"
+          need_least_one_ip: "Должен быть выделены по крайней мере одного IP адреса"
+          need_least_one_ip_: "Needs to be allocated at least one IP address"
+          need_least_prim_disk: "Должен иметь по крайней мере один основной диск"
+          need_least_prim_disk_: "Needs to have at least one primary disk"
+          need_more_memory: "Виртуальная машина должна иметь по крайней мере %{memory}Mb оперативной памяти"
+          need_more_memory_: "Virtual machine must have at least %{memory}Mb of RAM"
+          need_primary_interface: "Должен иметь основной сетевой интерфейс"
+          need_primary_interface_: "Needs to have a primary network interface"
+          need_template: "Необходимо создать шаблон"
+          need_template_: "Needs to have a template"
+          network_not_selected: "не может быть выбран"
+          network_not_selected_: "can not be selected"
+          no_available_license: "К сожалению, нет свободных лицензий для"
+          no_available_license_: "Sorry, no available license for "
+          no_available_resources: "Пользователь ресурсы достигают пределов"
+          no_available_resources_: "User resources reach limits"
+          no_change_owner_under_vmware: "Изменение владельца не поддерживается в VMWare"
+          no_change_owner_under_vmware_: "Changing owner is not supported under VMWare"
+          no_free_primary: "нет бесплатного начального адреса"
+          no_free_primary_: "no free primary addresses"
+          no_migrate_under_vmware: "Миграция не поддерживается в VMware"
+          no_migrate_under_vmware_: "Migrate is not supported under VMware"
+          no_recovery_under_vmware: "Режим восстановления не поддерживается в VMware"
+          no_recovery_under_vmware_: "Recovery mode is not supported under VMware"
+          no_segregate_under_vmware: "Отделять не поддерживается в VMware"
+          no_segregate_under_vmware_: "Segregate is not supported under VMware"
+          no_vip_under_vmware: "VIP режим не поддерживается под VMWare"
+          no_vip_under_vmware_: "VIP mode is not supported under VMWare"
+          not_assign_ip: "Нет доступных IP -адресов будут назначены"
+          not_assign_ip_: "No available IP addresses to be assigned"
+          not_auto_select: "не был выбран , потому что ресурсов не хватает"
+          not_auto_select_: "was not selected because resources are not enough"
+          not_available_hypervisor_type: "не доступно"
+          not_available_hypervisor_type_: "is not available"
+          not_built_yet: "Это виртуальная машина не может быть запущена , потому что он еще не построен ."
+          not_built_yet_: "This virtual machine cannot be started because it's not built yet."
+          not_cold_resized: "Не может быть горячим размера , потому что новая память превышает максимальный объем памяти"
+          not_cold_resized_: "Can't be hot resized because new memory exceeds max memory"
+          not_created: "не был создан."
+          not_created_: "was not created."
+          not_enough_cpus: "не хватает процессоры"
+          not_enough_cpus_: "does not have enough cpus"
+          not_enough_disk: "не хватает места на диске"
+          not_enough_disk_: "does not have enough disk space"
+          not_enough_free_ram: "не хватает свободной оперативной памяти"
+          not_enough_free_ram_: "does not have enough free RAM"
+          not_enough_hv_ram_for_vm_boot: "Не хватает оперативной памяти на HV для загрузки виртуальной машины."
+          not_enough_hv_ram_for_vm_boot_: "Not enough RAM on HV for boot virtual machine."
+          not_found: "не может быть найдено ."
+          not_found_: "could not be found."
+          not_include_net: "не включает в себя необходимые сети"
+          not_include_net_: "does not include required network"
+          not_queued_build: "Сборка не было очередей"
+          not_queued_build_: "Build has not been queued"
+          prefer_local_reads: "Использование местных прочитать путь"
+          prefer_local_reads_: "Use local read path"
+          rebuild_network_without_reboot: "Не удается восстановить сеть без перезагрузки"
+          rebuild_network_without_reboot_: "Can't rebuild network without reboot"
+          selected_ip_address_is_assigned: "уже назначен ."
+          selected_ip_address_is_assigned_: "is already assigned."
+          selected_ip_address_is_out_of_network: "не выделяется в первичной сети."
+          selected_ip_address_is_out_of_network_: "is not allocated in primary network."
+          shutdown_type: "Shutdown типа не поддерживается"
+          shutdown_type_: "Shutdown type is not supported"
+          strict_vm_in_online: "Это виртуальная машина не может загрузиться, посколькустрогие В.М. уже загрузилась."
+          strict_vm_in_online_: "This virtual machine can't boot because a strict VM is already booted."
+          swap_is_not_allowed: "Не допускается на шаблоне вы используете"
+          swap_is_not_allowed_: "is not allowed on the template you are using"
+          swap_needed: "по крайней мере один подкачки на диске, необходимое"
+          swap_needed_: "at least one swap disk needed"
+          total_disk_size: "Общий размер диска должна быть меньше или равна предела пользователей"
+          total_disk_size_: "Total disk size must be less than or equal to user's limit"
+          unavailable_template: недоступно
+          unavailable_template_: "is unavailable"
+          vm_limit_exceeded: "Виртуальная машина превысила предел"
+          vm_limit_exceeded_: "Virtual machine limit exceeded"
+          vm_monit_exceeded: "Виртуальная машина с автомасштаба превышен лимит"
+          vm_monit_exceeded_: "Virtual machine with autoscale limit exceeded"
+          vm_used_by_cluster: "К сожалению, виртуальная машина не может быть уничтожен , поскольку он используется для балансировки нагрузки"
+          vm_used_by_cluster_: "Sorry, Virtual Machine cannot be destroyed because it is used for Load Balancing"
+          wrong_encryption_key: "При условии, ключ шифрования неправильно"
+          wrong_encryption_key_: "Provided encryption key is wrong"
+    models: 
+      auto_scaling_resource: 
+        cpu: 
+          one: процессор
+          one_: CPU
+          other: процессоры
+          other_: CPUS
+        load: 
+          one: загрузка
+          one_: Load
+          other: загрузка
+          other_: Load
+        memory: 
+          one: Память
+          one_: Memory
+          other: Воспоминания
+          other_: Memories
+        one: "Масштабирование ресурсов"
+        one_: "Scaling Resource"
+        other: "Масштабирование ресурсов"
+        other_: "Scaling Resources"
+      backup: 
+        one: "Резервное копирование"
+        one_: Backup
+        other: "Резервные копии"
+        other_: Backups
+      billing_plan: 
+        one: "Платежный план"
+        one_: "Billing plan"
+        other: "тарифные планы"
+        other_: "Billing plans"
+      cdn_hostname: 
+        one: "CDN Hostname"
+        one_: "CDN Hostname"
+        other: "CDN Hostname"
+        other_: "CDN Hostname"
+      cdn_resource: 
+        one: "CDN ресурсов"
+        one_: "CDN Resource"
+        other: "CDN ресурсов"
+        other_: "CDN Resources"
+      cpu: 
+        one: процессор
+        one_: CPU
+        other: процессоры
+        other_: CPUs
+      cpushare: 
+        one: "CPU Priority"
+        one_: "CPU Priority"
+        other: "CPU Priority"
+        other_: "CPU Priority"
+      currency: 
+        one: валюта
+        one_: Currency
+        other: Валюты
+        other_: Currencies
+      data_store: 
+        one: "Хранилище данных"
+        one_: "Data Store"
+        other: "Хранилища данных"
+        other_: "Data Stores"
+      data_store_group: 
+        one: "Хранилище данных зоны"
+        one_: "Data Store Zone"
+        other: "Зоны Data Store"
+        other_: "Data Store Zones"
+      disk: 
+        one: Диск
+        one_: Disk
+        other: Диски
+        other_: Disks
+      disk_size: 
+        one: "Размер диска"
+        one_: "Disk Size"
+        other: "Размеры дисков"
+        other_: "Disk Sizes"
+      edge_group: 
+        one: "пограничный группы"
+        one_: "Edge Group"
+        other: "пограничный группы"
+        other_: "Edge Groups"
+      firewall_rule: 
+        one: "Правила брандмауэра"
+        one_: "Firewall Rule"
+        other: "Правила брандмауэра"
+        other_: "Firewall Rules"
+      group: 
+        one: группа
+        one_: Group
+        other: Группы
+        other_: Groups
+      hypervisor: 
+        one: Гипервизор
+        one_: Hypervisor
+        other: Гипервизоры
+        other_: Hypervisors
+      hypervisor_group: 
+        one: "Гипервизор зоны"
+        one_: "Hypervisor Zone"
+        other: "Гипервизор зоны"
+        other_: "Hypervisor Zones"
+      image_template: 
+        one: Шаблон
+        one_: Template
+        other: Шаблоны
+        other_: Templates
+      ip_address: 
+        one: IP-адрес
+        one_: "IP Address"
+        other: IP-адреса
+        other_: "IP Addresses"
+      ip_address_join: 
+        one: "IP-адрес регистрации"
+        one_: "IP Address Join"
+        other: "IP-адрес играя"
+        other_: "IP Address Joins"
+      iso: 
+        one: ISO
+        one_: ISO
+        other: ISO
+        other_: ISO
+      load_balancer: 
+        one: "Балансировщик нагрузки"
+        one_: "Load Balancer"
+        other: "Балансировщики нагрузки"
+        other_: "Load Balancers"
+      load_balancing: 
+        cluster: 
+          one: Кластер
+          one_: Cluster
+          other: Кластер
+          other_: Clusters
+      load_balancing_cluster: 
+        one: Кластер
+        one_: Cluster
+        other: Кластер
+        other_: Cluster
+      log_item: 
+        one: "Вход пункта"
+        one_: "Log item"
+        other: "Вход пунктов"
+        other_: "Log items"
+      memory: 
+        one: память
+        one_: Memory
+        other: память
+        other_: Memory
+      nameserver: 
+        one: "Name Server"
+        one_: "Name Server"
+        other: "Name Servers"
+        other_: "Name Servers"
+      network: 
+        one: Сеть
+        one_: Network
+        other: Сеть
+        other_: Network
+      network_group: 
+        one: "Сеть зоне"
+        one_: "Network Zone"
+        other: "Сеть зон"
+        other_: "Network Zones"
+      network_interface: 
+        one: "Сетевой интерфейс"
+        one_: "Network Interface"
+        other: "Сетевые интерфейсы"
+        other_: "Network Interfaces"
+      network_join: 
+        one: "Сеть регистрации"
+        one_: "Network Join"
+        other: "Сеть играя"
+        other_: "Network Joins"
+      payment: 
+        one: Платеж
+        one_: Payment
+        other: Платежи
+        other_: Payments
+      permission: 
+        one: разрешение
+        one_: Permission
+        other: Разрешения
+        other_: Permissions
+      remote_access_session: 
+        one: "удаленный доступ"
+        one_: "Remote Access"
+        other: "удаленный доступ"
+        other_: "Remote Access"
+      resource: 
+        backup: "Резервное копирование Ограничения"
+        backup_: "Backup Limits"
+        cpu: "процессор Ограничения"
+        cpu_: "CPU Limits"
+        cpu_share: "РОграничения CPU Priority"
+        cpu_share_: "CPU Priority Limits"
+        customer_network: "Ограничения клиентов сети"
+        customer_network_: "Customer Network Limits"
+        data_store_group: "Ограничения хранилища данных"
+        data_store_group_: "Data Store Limits"
+        disk_size: "Ограничения Размер диска"
+        disk_size_: "Disk Size Limits"
+        eg_group: "CDN Пределы пограничной группы"
+        eg_group_: "CDN Edge Group Limits"
+        hypervisor_group: "гипервизор Ограничения"
+        hypervisor_group_: "Hypervisor Limits"
+        ip_address: "Ограничения IP адреса"
+        ip_address_: "IP Address Limits"
+        memory: "Ограничения памяти"
+        memory_: "Memory Limits"
+        network_group: "Ограничения сети"
+        network_group_: "Network Limits"
+        storage_disk_size: Шаблоны
+        storage_disk_size_: "Templates & Backups Storage Limits"
+        template: "Шаблон ограничений"
+        template_: "Template Limits"
+        template_group: "Шаблон группы"
+        template_group_: "Template Group"
+        vm_limit: "Виртуальные машины Ограничения"
+        vm_limit_: "Virtual Machines Limits"
+        vm_monit: "Автомасштабирование Ограничения"
+        vm_monit_: "Autoscaling Limits"
+      resource_limit: 
+        one: "Ресурс Limit"
+        one_: "Resource Limit"
+        other: "Ограничения ресурсов"
+        other_: "Resource Limits"
+      role: 
+        one: Роль
+        one_: Role
+        other: Роли
+        other_: Roles
+      schedule: 
+        one: расписание
+        one_: Schedule
+        other: Расписания
+        other_: Schedules
+      schedule_log: 
+        one: "Расписание войти"
+        one_: "Schedule log"
+        other: "Расписание журналы"
+        other_: "Schedule logs"
+      session: 
+        one: сессия
+        one_: Session
+        other: сессия
+        other_: Session
+      storage_disk_size: 
+        one: Шаблоны
+        one_: "Templates & Backups Storage"
+        other: Шаблоны
+        other_: "Templates & Backups Storage"
+      template: 
+        one: Шаблон
+        one_: Template
+        other: Шаблоны
+        other_: Templates
+      template_group: 
+        one: "Шаблон группы"
+        one_: "Template Group"
+        other: "Шаблон группы"
+        other_: "Template Groups"
+      transaction: 
+        one: сделка
+        one_: Transaction
+        other: Сделки
+        other_: Transactions
+      user: 
+        one: пользователь
+        one_: User
+        other: Пользователи
+        other_: Users
+      user_group: 
+        one: "группа пользователей"
+        one_: "User group"
+        other: "группы пользователей"
+        other_: "User groups"
+      virtual_machine: 
+        one: "Виртуальная машина"
+        one_: "Virtual Machine"
+        other: "Виртуальные машины"
+        other_: "Virtual Machines"
+      vm_stat: 
+        one: "Виртуальные машины статистика"
+        one_: "Virtual Machines Statistic"
+        other: "Виртуальные машины статистика"
+        other_: "Virtual Machines Statistic"
+    models_in_single: 
+      backup: "Резервное копирование"
+      backup_: Backup
+      cpu: процессор
+      cpu_: CPU
+      cpushare: "CPU приоритет"
+      cpushare_: "CPU Priority"
+      customer_network: "Клиент сети"
+      customer_network_: "Customer Network"
+      data_store_group: "Хранилище данных зоны"
+      data_store_group_: "Data Store Zone"
+      disk: диск
+      disk_: Disk
+      disk_size: "Размер диска"
+      disk_size_: "Disk Size"
+      hypervisor_group: "гипервизор зоны"
+      hypervisor_group_: "Hypervisor Zone"
+      ip_address: IP-адрес
+      ip_address_: "IP Address"
+      ip_address_join: "IP-адрес регистрации"
+      ip_address_join_: "IP Address Join"
+      memory: память
+      memory_: Memory
+      monit: Monit
+      monit_: Monit
+      network_group: "Сеть зоне"
+      network_group_: "Network Zone"
+      network_interface: "Сетевой интерфейс"
+      network_interface_: "Network Interface"
+      resource_limit: "Ресурс Limit"
+      resource_limit_: "Resource Limit"
+      storage_disk_size: Шаблоны
+      storage_disk_size_: "Templates & Backups Storage"
+      template: шаблон
+      template_: Template
+      template_group: "Шаблон группы"
+      template_group_: "Template Group"
+      virtual_machine: "Виртуальная машина"
+      virtual_machine_: "Virtual Machine"
+  errors: 
+    attribute_name: это
+    attribute_name_: This
+    format: "%{attribute} %{message}"
+    format_: "%{attribute} %{message}"
+    messages: 
+      accepted: "должны быть приняты"
+      accepted_: "must be accepted"
+      blank: "не может быть пустым"
+      blank_: "can't be blank"
+      confirmation: "не соответствуют подтверждения"
+      confirmation_: "doesn't match confirmation"
+      domain: 
+        invalid: "является неправильное доменное имя"
+        invalid_: "is invalid domain name"
+        label_length: "каждая длина этикетки ограничен %{label_length} символов"
+        label_length_: "each label length is limited to %{label_length} characters"
+        length: "Длина доменного имени ограничивается %{length} символов"
+        length_: "domain name length is limited to %{length} characters"
+      empty: "не может быть пустым"
+      empty_: "can't be empty"
+      equal_to: "должна быть равна %{count}"
+      equal_to_: "must be equal to %{count}"
+      even: "должно быть четным"
+      even_: "must be even"
+      exclusion: зарезервировано
+      exclusion_: "is reserved"
+      greater_than: "должно быть больше , чем %{count}"
+      greater_than_: "must be greater than %{count}"
+      greater_than_or_equal_to: "должна быть больше или равна %{count}"
+      greater_than_or_equal_to_: "must be greater than or equal to %{count}"
+      inclusion: "Не включены в список"
+      inclusion_: "is not included in the list"
+      invalid: "является недействительным"
+      invalid_: "is invalid"
+      ip_address: 
+        invalid: 
+          general: "Недопустимый IP-адрес"
+          general_: "is invalid ip address"
+          ipv4: "Недопустимый адрес IPv4"
+          ipv4_: "is invalid IPv4 address"
+          ipv6: "Недопустимый адрес IPv6"
+          ipv6_: "is invalid IPv6 address"
+        prefix_disallowed: "префикс не допускается"
+        prefix_disallowed_: "prefix is not allowed"
+        prefix_invalid: 
+          ipv4: "префикс должен быть в диапазоне 1 .. 32"
+          ipv4_: "prefix must be in range 1..32"
+          ipv6: "префикс должен быть в диапазоне 1 .. 128"
+          ipv6_: "prefix must be in range 1..128"
+      less_than: "должна быть меньше %{count}"
+      less_than_: "must be less than %{count}"
+      less_than_or_equal_to: "должна быть меньше или равна %{count}"
+      less_than_or_equal_to_: "must be less than or equal to %{count}"
+      not_a_number: "не является числом"
+      not_a_number_: "is not a number"
+      not_an_integer: "должно быть целым числом"
+      not_an_integer_: "must be an integer"
+      odd: "должно быть нечетным"
+      odd_: "must be odd"
+      other_than: "должны быть другими , чем %{count}"
+      other_than_: "must be other than %{count}"
+      too_long: "Слишком длинный (максимум %{count} символов)"
+      too_long_: "is too long (maximum is %{count} characters)"
+      too_short: "слишком короткий ( минимум %{count} символов)"
+      too_short_: "is too short (minimum is %{count} characters)"
+      wrong_length: "имеет неправильную длину (должно быть %{count} символов)"
+      wrong_length_: "is the wrong length (should be %{count} characters)"
+  virtual_mashine_destroy: 
+    msg: 
+      api: "Уничтожить с просьбой API"
+      api_: "Destroy from API request"
+      scale: "Уничтожить от масштаба действия"
+      scale_: "Destroy from scale action"
+      user_destroy: "Уничтожить действий пользователя"
+      user_destroy_: "Destroy User Action"
+      web: "Уничтожить с веб- интерфейсом"
+      web_: "Destroy from Web interface"
+  web_: "Destroy from Web interface"

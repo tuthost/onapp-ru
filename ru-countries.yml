@@ -1,0 +1,348 @@
+--- 
+ru: 
+  countries: 
+    AE: "Объединенные Арабские Эмираты"
+    AE_: "United Arab Emirates"
+    AF: Афганистан
+    AF_: Afghanistan
+    AL: Албания
+    AL_: Albania
+    AM: Армения
+    AM_: Armenia
+    AN: "Нидерландские Антильские острова"
+    AN_: "Netherlands Antilles"
+    AO: Ангола
+    AO_: Angola
+    AR: Аргентина
+    AR_: Argentina
+    AT: Австрия
+    AT_: Austria
+    AU: Австралия
+    AU_: Australia
+    AZ: Азербайджан
+    AZ_: Azerbaijan
+    BA: "Босния и Герцеговина"
+    BA_: "Bosnia and Herzegovina"
+    BB: Барбадос
+    BB_: Barbados
+    BD: Бангладеш
+    BD_: Bangladesh
+    BE: Бельгия
+    BE_: Belgium
+    BF: Буркина-Фасо
+    BF_: "Burkina Faso"
+    BG: Болгария
+    BG_: Bulgaria
+    BH: Бахрейн
+    BH_: Bahrain
+    BI: Бурунди
+    BI_: Burundi
+    BJ: Бенин
+    BJ_: Benin
+    BO: Боливия
+    BO_: Bolivia
+    BR: Бразилия
+    BR_: Brazil
+    BS: "Багамские острова"
+    BS_: Bahamas
+    BT: Бутан
+    BT_: Bhutan
+    BW: Ботсвана
+    BW_: Botswana
+    BY: Беларусь
+    BY_: Belarus
+    BZ: Белиз
+    BZ_: Belize
+    CA: Канада
+    CA_: Canada
+    CD: "Конго, Демократическая Республика"
+    CD_: "Congo, The Democratic Republic of the"
+    CF: "Центрально-Африканская Республика"
+    CF_: "Central African Republic"
+    CH: Швейцария
+    CH_: Switzerland
+    CI: "Берег Слоновой Кости"
+    CI_: "Cote d'Ivoire"
+    CL: Чили
+    CL_: Chile
+    CM: Камерун
+    CM_: Cameroon
+    CN: Китай
+    CN_: China
+    CO: Колумбия
+    CO_: Colombia
+    CR: Коста-Рика
+    CR_: "Costa Rica"
+    CU: Куба
+    CU_: Cuba
+    CV: Кабо-Верде
+    CV_: "Cape Verde"
+    CY: Кипр
+    CY_: Cyprus
+    CZ: "Чешская республика"
+    CZ_: "Czech Republic"
+    DE: Германия
+    DE_: Germany
+    DK: Дания
+    DK_: Denmark
+    DO: "Доминиканская Республика"
+    DO_: "Dominican Republic"
+    DZ: Алжир
+    DZ_: Algeria
+    EC: Эквадор
+    EC_: Ecuador
+    EE: Эстония
+    EE_: Estonia
+    EG: Египет
+    EG_: Egypt
+    ER: Эритрея
+    ER_: Eritrea
+    ES: Испания
+    ES_: Spain
+    ET: Эфиопия
+    ET_: Ethiopia
+    FI: Финляндия
+    FI_: Finland
+    FR: Франция
+    FR_: France
+    GA: Габон
+    GA_: Gabon
+    GB: Великобритания
+    GB_: "United Kingdom"
+    GE: Грузия
+    GE_: Georgia
+    GF: "французская Гвиана"
+    GF_: "French Guiana"
+    GH: Гана
+    GH_: Ghana
+    GM: Гамбия
+    GM_: Gambia
+    GN: Гвинея
+    GN_: Guinea
+    GP: Гваделупа
+    GP_: Guadeloupe
+    GQ: "Экваториальная Гвинея"
+    GQ_: "Equatorial Guinea"
+    GR: Греция
+    GR_: Greece
+    GT: Гватемала
+    GT_: Guatemala
+    GW: Гвинея-Бисау
+    GW_: Guinea-Bissau
+    GY: Гайана
+    GY_: Guyana
+    HK: Гонконг
+    HK_: "Hong Kong"
+    HN: Гондурас
+    HN_: Honduras
+    HR: Хорватия
+    HR_: Croatia
+    HT: Гаити
+    HT_: Haiti
+    HU: Венгрия
+    HU_: Hungary
+    ID: Индонезия
+    ID_: Indonesia
+    IE: Ирландия
+    IE_: Ireland
+    IL: Израиль
+    IL_: Israel
+    IN: Индия
+    IN_: India
+    IQ: Ирак
+    IQ_: Iraq
+    IR: "Иран, Исламская Республика"
+    IR_: "Iran, Islamic Republic of"
+    IS: Исландия
+    IS_: Iceland
+    IT: Италия
+    IT_: Italy
+    JM: Ямайка
+    JM_: Jamaica
+    JO: Иордания
+    JO_: Jordan
+    JP: Япония
+    JP_: Japan
+    KE: Кения
+    KE_: Kenya
+    KG: Киргизия
+    KG_: Kyrgyzstan
+    KH: Камбоджа
+    KH_: Cambodia
+    KR: "Корея, Республика"
+    KR_: "Korea, Republic of"
+    KW: Кувейт
+    KW_: Kuwait
+    KZ: Казахстан
+    KZ_: Kazakhstan
+    LA: "Лаосская Народно-Демократическая Республика"
+    LA_: "Lao People's Democratic Republic"
+    LB: Ливан
+    LB_: Lebanon
+    LK: "Шри Ланка"
+    LK_: "Sri Lanka"
+    LR: Либерия
+    LR_: Liberia
+    LS: Лесото
+    LS_: Lesotho
+    LT: Литва
+    LT_: Lithuania
+    LU: Люксембург
+    LU_: Luxembourg
+    LV: Латвия
+    LV_: Latvia
+    LY: "Ливийской Арабской Джамахирии"
+    LY_: "Libyan Arab Jamahiriya"
+    MA: Марокко
+    MA_: Morocco
+    MD: Молдова
+    MD_: "Moldova, Republic of"
+    ME: Черногория
+    ME_: Montenegro
+    MG: Мадагаскар
+    MG_: Madagascar
+    MK: Македония
+    MK_: Macedonia
+    ML: Мали
+    ML_: Mali
+    MM: Мьянма
+    MM_: Myanmar
+    MN: Монголия
+    MN_: Mongolia
+    MQ: Мартиника
+    MQ_: Martinique
+    MR: Мавритания
+    MR_: Mauritania
+    MU: Маврикий
+    MU_: Mauritius
+    MV: Мальдивы
+    MV_: Maldives
+    MW: Малави
+    MW_: Malawi
+    MX: Мексика
+    MX_: Mexico
+    MY: Малайзия
+    MY_: Malaysia
+    MZ: Мозамбик
+    MZ_: Mozambique
+    NA: Намибия
+    NA_: Namibia
+    NC: "Новая Каледония"
+    NC_: "New Caledonia"
+    NE: Нигер
+    NE_: Niger
+    NG: Нигерия
+    NG_: Nigeria
+    NI: Никарагуа
+    NI_: Nicaragua
+    NL: Нидерланды
+    NL_: Netherlands
+    ? "NO"
+    : Норвегия
+    NO_: Norway
+    NP: Непал
+    NP_: Nepal
+    NZ: "Новая Зеландия"
+    NZ_: "New Zealand"
+    OM: Оман
+    OM_: Oman
+    PA: Панама
+    PA_: Panama
+    PE: Перу
+    PE_: Peru
+    PG: "Папуа-Новая Гвинея"
+    PG_: "Papua New Guinea"
+    PH: Филиппины
+    PH_: Philippines
+    PK: Пакистан
+    PK_: Pakistan
+    PL: Польша
+    PL_: Poland
+    PT: Португалия
+    PT_: Portugal
+    PY: Парагвай
+    PY_: Paraguay
+    QA: Катар
+    QA_: Qatar
+    RE: воссоединение
+    RE_: Reunion
+    RO: Румыния
+    RO_: Romania
+    RS: Сербия
+    RS_: Serbia
+    RU: "Русские Федерации"
+    RU_: "Russian Federation"
+    RW: Руанда
+    RW_: Rwanda
+    SA: "Саудовская Аравия"
+    SA_: "Saudi Arabia"
+    SB: "Соломоновы острова"
+    SB_: "Solomon Islands"
+    SD: Судан
+    SD_: Sudan
+    SE: Швеция
+    SE_: Sweden
+    SG: Сингапур
+    SG_: Singapore
+    SI: Словения
+    SI_: Slovenia
+    SK: Словакия
+    SK_: Slovakia
+    SL: Сьерра-Леоне
+    SL_: "Sierra Leone"
+    SN: Сенегал
+    SN_: Senegal
+    SO: Сомали
+    SO_: Somalia
+    SR: Суринам
+    SR_: Suriname
+    SV: Сальвадор
+    SV_: "El Salvador"
+    SY: "Сирийской Арабской Республики"
+    SY_: "Syrian Arab Republic"
+    SZ: Свазиленд
+    SZ_: Swaziland
+    TD: Чад
+    TD_: Chad
+    TG: Того
+    TG_: Togo
+    TH: Таиланд
+    TH_: Thailand
+    TJ: Таджикистан
+    TJ_: Tajikistan
+    TM: Туркменистан
+    TM_: Turkmenistan
+    TN: Тунис
+    TN_: Tunisia
+    TR: Турция
+    TR_: Turkey
+    TT: "Тринидад и Тобаго"
+    TT_: "Trinidad and Tobago"
+    TW: Тайвань
+    TW_: Taiwan
+    TZ: "Танзания, Объединенная Республика"
+    TZ_: "Tanzania, United Republic of"
+    UA: Украина
+    UA_: Ukraine
+    UG: Уганда
+    UG_: Uganda
+    US: "Соединенные Штаты"
+    US_: "United States"
+    UY: Уругвай
+    UY_: Uruguay
+    UZ: Узбекистан
+    UZ_: Uzbekistan
+    VE: Венесуэла
+    VE_: Venezuela
+    VN: Вьетнам
+    VN_: Vietnam
+    YE: Йемен
+    YE_: Yemen
+    YT: Майотта
+    YT_: Mayotte
+    ZA: ЮАР
+    ZA_: "South Africa"
+    ZM: Замбия
+    ZM_: Zambia
+    ZW: Зимбабве
+    ZW_: Zimbabwe

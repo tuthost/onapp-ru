@@ -1,0 +1,1890 @@
+--- 
+ru: 
+  auto_scaling: 
+    create: 
+      flash: 
+        error: "Неправильная конфигурация."
+        error_: "Configuration is invalid"
+    destroy: 
+      flash: 
+        notice: "Конфигурация автомасштабирования удалена"
+        notice_: "Autoscaling configuration removed"
+    update: 
+      flash: 
+        error: "Неверная конфигурация"
+        error_: "Configuration is invalid"
+  backup_server_groups: 
+    create: 
+      flash: 
+        error: "Резервное копирование сервера зоны не были созданы."
+        error_: "Backup server zone has not been created."
+        notice: "Резервное копирование сервера зоны была успешно создана."
+        notice_: "Backup server zone has been created successfully."
+    destroy: 
+      flash: 
+        error: "Резервное копирование сервера зоны не был удален : %{msg}"
+        error_: "Backup server zone has not been deleted: %{msg}"
+        notice: "Резервное копирование сервера зоны была успешно удалена."
+        notice_: "Backup server zone has been deleted successfully."
+    update: 
+      flash: 
+        error: "Резервное копирование сервера зоны не были обновлены ."
+        error_: "Backup server zone has not been updated."
+        notice: "Резервное копирование сервера зоны были успешно обновлены."
+        notice_: "Backup server zone has been updated successfully."
+  backup_servers: 
+    attach: 
+      flash: 
+        error: "Резервное копирование серверов не прилагаются: %{msg}"
+        error_: "Backup server has not been attached: %{msg}"
+        notice: "Резервное копирование серверов была присоединена успешно."
+        notice_: "Backup server has been attached successfully."
+    create: 
+      flash: 
+        error: "Не удалось добавить сервер резервного копирования"
+        error_: "Couldn't add backup server"
+        notice: "Резервное копирование сервера была успешно создана"
+        notice_: "Backup server was successfully created"
+    destroy: 
+      flash: 
+        error: "Не удалось удалить сервер резервного копирования : %{msg}"
+        error_: "Couldn't remove the backup server: %{msg}"
+        notice: "Резервное копирование сервера была успешно удалена"
+        notice_: "Backup server was successfully removed"
+    detach: 
+      flash: 
+        error: "Резервное копирование серверов не была отделена : %{msg}"
+        error_: "Backup server has not been detached: %{msg}"
+        notice: "Резервное копирование серверов была отделена успешно."
+        notice_: "Backup server has been detached successfully."
+    update: 
+      flash: 
+        error: "Не удалось сохранить резервную копию сервера"
+        error_: "Couldn't save the backup server"
+        notice: "Резервное копирование серверов был успешно изменен"
+        notice_: "Backup server was successfully edited"
+  backups: 
+    convert: 
+      flash: 
+        error: "Резервное копирование не была запланирована для преобразования. "
+        error_: "Backup has not been scheduled for conversion. %{msg}"
+        notice: "Резервное копирование было запланировано на преобразование."
+        notice_: "Backup has been scheduled for conversion."
+    create: 
+      flash: 
+        error: "Резервное копирование не может быть сделано на данный момент : %{msg}"
+        error_: "Backup cannot be made at this time: %{msg}"
+        notice: "Резервное копирование была создана и будут приняты в ближайшее время."
+        notice_: "Backup has been created and will be taken shortly."
+    destroy: 
+      flash: 
+        error: "Резервное копирование не была удалена ."
+        error_: "Backup has not been removed."
+        notice: "Резервное копирование было запланировано на удаление."
+        notice_: "Backup has been scheduled for removal."
+    flash: 
+      error404: "Диск не найден, или у вас нет разрешения на это действие."
+      error404_: "Disk not found, or you do not have permissions for this action."
+      error422: "Резервные копии не допускаются к EdgeServer"
+      error422_: "Backups are not allowed for EdgeServer"
+      error422_2: "Преобразование в шаблоне не разрешен для StorageServer"
+      error422_2_: "Conversion to template is not allowed for StorageServer"
+    restore: 
+      flash: 
+        error: "Восстановление из резервной копии не были запланированы : %{msg} ."
+        error_: "Backup restore has not been scheduled: %{msg}."
+        notice: "Резервное копирование Восстановление было запланировано ."
+        notice_: "Backup restore has been scheduled."
+  base_resources: 
+    create: 
+      flash: 
+        error: "Ресурс не был добавлен : %{msg}"
+        error_: "Resource has not been added: %{msg}"
+        notice: "Ресурс был успешно добавлен ."
+        notice_: "Resource has been added successfully."
+    destroy: 
+      flash: 
+        error: "Ресурс не был удален : %{msg}"
+        error_: "Resource has not been deleted: %{msg}"
+        notice: "Ресурс был успешно удален."
+        notice_: "Resource has been deleted successfully."
+    update: 
+      flash: 
+        error: "Ресурс не обновляется ."
+        error_: "Resource has not been updated."
+        notice: "Ресурс был успешно обновлен ."
+        notice_: "Resource has been updated successfully."
+  billing_plans: 
+    clone: 
+      flash: 
+        error: "Платежная план не был клонирован."
+        error_: "Billing plan has not been cloned."
+        notice: "Платежная план был успешно клонирован для выбранного пользователя ."
+        notice_: "Billing plan has been cloned successfully for the selected user."
+    create: 
+      flash: 
+        error: "Платежная план не был создан ."
+        error_: "Billing plan has not been created."
+        notice: "Платежная план был успешно создан."
+        notice_: "Billing plan has been created successfully."
+    create_copy: 
+      flash: 
+        error: "Копия тарифного плана не была создана ."
+        error_: "Copy of billing plan has not been created."
+        notice: "Копия тарифного плана была успешно создана."
+        notice_: "Copy of billing plan has been created successfully."
+    destroy: 
+      flash: 
+        error: "Платежная план не был удален : %{msg}"
+        error_: "Billing plan has not been deleted: %{msg}"
+        notice: "Платежная план был успешно удален."
+        notice_: "Billing plan has been deleted successfully."
+    update: 
+      flash: 
+        error: "Платежная план не был обновлен ."
+        error_: "Billing plan has not been updated."
+        notice: "Платежная план был успешно обновлен ."
+        notice_: "Billing plan has been updated successfully."
+  cdn_resources: 
+    change_ftp_password: 
+      flash: 
+        error: "FTP пароль не был изменен : %{msg}"
+        error_: "FTP password has not been changed: %{msg}"
+        error_wrong_type: "Этот тип ресурсов не требует FTP пароль."
+        error_wrong_type_: "This type of resource does not require FTP password."
+        notice: "FTP пароль был изменен."
+        notice_: "FTP password has been changed."
+    create: 
+      flash: 
+        error: "CDN ресурс не был создан : %{msg}"
+        error_: "CDN Resource has not been created: %{msg}"
+        notice: "CDN ресурсов была успешно создана."
+        notice_: "CDN Resource was successfully created."
+    destroy: 
+      flash: 
+        error: "Произошла ошибка при попытке удалить CDN ресурсах , пожалуйста, обратитесь в службу поддержки ."
+        error_: "An error occurred while trying to delete CDN Resource, please contact support."
+        notice: "CDN ресурс был успешно удален ."
+        notice_: "CDN Resource was successfully deleted."
+    purge_all: 
+      flash: 
+        error: "Произошла ошибка при попытке вопроспродувки запросу"
+        error_: "An error occurred while trying issue the purge request"
+        notice: "Запрос был выполнен и содержание будут удалены в течение 5 минут"
+        notice_: "The request has been executed and contents will be purged within 5 minutes"
+    resume: 
+      flash: 
+        error: "Ресурс не возобновлялось"
+        error_: "Resource was not resumed"
+        notice: "Ресурс был возобновлен"
+        notice_: "Resource was resumed"
+    suspend: 
+      flash: 
+        error: "Ресурс не была приостановлена"
+        error_: "Resource was not suspended"
+        notice: "Ресурс был приостановлен"
+        notice_: "Resource was suspended"
+    update: 
+      flash: 
+        error: "CDN Ресурс не обновляется : ​​%{msg}"
+        error_: "CDN Resource has not been updated: %{msg}"
+        notice: "CDN ресурс был успешно обновлен."
+        notice_: "CDN Resource was successfully updated."
+  cloud_boot_ip_addresses: 
+    create: 
+      flash: 
+        error: "IP- адрес не был создан: %{msg}"
+        error_: "IP address has not been created: %{msg}"
+        notice: "%{count} IP- адрес (адреса) успешно создана."
+        notice_: "%{count} IP address(es) created successfully."
+    destroy: 
+      flash: 
+        error: "IP- адрес не был удален ."
+        error_: "IP address has not been removed."
+        notice: "IP -адрес был успешно удален."
+        notice_: "IP address has been removed successfully."
+    destroy_range: 
+      flash: 
+        notice: "IP адреса %{msg} успешно удалены."
+        notice_: "IP addresses %{msg} removed successfully."
+    update: 
+      flash: 
+        error: "IP- адрес не обновляется : ​​%{msg}"
+        error_: "IP address has not been updated: %{msg}"
+        notice: "IP -адрес был успешно обновлен."
+        notice_: "IP address has been updated successfully."
+  currencies: 
+    create: 
+      flash: 
+        error: "Валюта не была создана. "
+        error_: "Currency was not created. %{msg}"
+        notice: "Валюта была успешно создана."
+        notice_: "Currency was successfully created."
+    destroy: 
+      flash: 
+        error: "Валюта не уничтожены. "
+        error_: "Currency not destroyed. %{msg}"
+        notice: "Валюта была успешно уничтожена."
+        notice_: "Currency was successfully destroyed."
+    update: 
+      flash: 
+        error: "Валюта не обновляется. "
+        error_: "Currency not updated. %{msg}"
+        notice: "Валюта успешно обновлены."
+        notice_: "Currency successfully updated."
+  customer_networks: 
+    create: 
+      flash: 
+        error: "Клиент сетей не была создана . "
+        error2: "Нет гипервизор VMware доступна. "
+        error2_: "No VMware hypervisor available. %{msg} at first and try again."
+        error_: "Customer Networks has not been created. %{msg}"
+        notice: "Клиент сети была успешно создана."
+        notice_: "Customer Networks has been created successfully."
+    destroy: 
+      flash: 
+        error: "Клиент сети не были удалены. "
+        error_: "Customer Network has not been removed. %{msg}"
+        notice: "Клиент сети были успешно удалены ."
+        notice_: "Customer Network has been removed successfully."
+    update: 
+      flash: 
+        error: "Клиент сети не обновлялись . "
+        error_: "Customer Networks has not been updated. %{msg}"
+        notice: "Клиент сети были успешно обновлены."
+        notice_: "Customer Networks has been updated successfully."
+  customer_vlans: 
+    create: 
+      flash: 
+        error: "Клиент сети VLAN не была создана ."
+        error_: "Customer VLANs has not been created. %{msg}"
+        notice: "Клиент VLAN, была успешно создана."
+        notice_: "Customer VLANs has been created successfully."
+    destroy: 
+      flash: 
+        error: "Клиент VLAN не была удалена . "
+        error_: "Customer VLAN has not been removed. %{msg}"
+        notice: "Клиент VLAN были успешно удалены ."
+        notice_: "Customer VLAN has been removed successfully."
+    update: 
+      flash: 
+        error: "Клиент сети VLAN не была обновлена ​​. "
+        error_: "Customer VLANs has not been updated. %{msg}"
+        notice: "Клиент VLAN, были успешно обновлены."
+        notice_: "Customer VLANs has been updated successfully."
+  data_store_groups: 
+    create: 
+      flash: 
+        error: "Данные магазина зона не была создана."
+        error_: "Data store zone has not been created."
+        notice: "Данные магазина зона была успешно создана."
+        notice_: "Data store zone has been created successfully."
+    destroy: 
+      flash: 
+        error: "Данные магазина зоне не был удален : %{msg}"
+        error_: "Data store zone has not been deleted: %{msg}"
+        notice: "Данные магазина зона была успешно удалена."
+        notice_: "Data store zone has been deleted successfully."
+    update: 
+      flash: 
+        error: "Данные магазина зона не была обновлена."
+        error_: "Data store zone has not been updated."
+        notice: "Данные магазине зоны были успешно обновлены."
+        notice_: "Data store zone has been updated successfully."
+  data_store_joins: 
+    create: 
+      flash: 
+        error: "Данные магазина %{data_store} не были прикреплены к %{target_join} . "
+        error_: "Data store %{data_store} has not been attached to %{target_join}. %{msg}"
+        notice: "Данные магазина %{data_store} была присоединена к %{target_join} успешно."
+        notice_: "Data store %{data_store} has been attached to %{target_join} successfully."
+    destroy: 
+      flash: 
+        error: "Данные магазина %{data_store} которая не была отделена от %{target_join} : %{msg}"
+        error_: "Data store %{data_store} has not been detached from %{target_join}: %{msg}"
+        notice: "Данные магазина %{data_store} была отделена от %{target_join} успешно."
+        notice_: "Data store %{data_store} has been detached from %{target_join} successfully."
+  data_stores: 
+    attach: 
+      flash: 
+        error: "Данные магазине не было прилагаются: %{msg}"
+        error_: "Data store has not been attached: %{msg}"
+        notice: "Данные магазин был присоединен успешно."
+        notice_: "Data store has been attached successfully."
+    create: 
+      flash: 
+        error: "Данные магазине не было создано : %{msg}"
+        error_: "Data store has not been created: %{msg}"
+        notice: "Хранилище данных была успешно создана."
+        notice_: "Data store has been created successfully."
+    destroy: 
+      flash: 
+        error1: "Хранилище данных не была удалена ."
+        error1_: "Data store has not been removed."
+        error2: "Данные магазин не был удален - удалить все диски из этого хранилища данных в первую очередь."
+        error2_: "Data store has not been removed - remove all disks from this data store first."
+        notice: "Данные магазина были успешно удалены ."
+        notice_: "Data store has been removed successfully."
+    detach: 
+      flash: 
+        error: "Хранилище данных не была отделена : %{msg}"
+        error_: "Data store has not been detached: %{msg}"
+        notice: "Данные магазина была отделена успешно."
+        notice_: "Data store has been detached successfully."
+    update: 
+      flash: 
+        error: "Хранилище данных не обновляется : ​​%{msg}"
+        error_: "Data store has not been updated: %{msg}"
+        notice: "Данные магазин был успешно обновлен ."
+        notice_: "Data store has been updated successfully."
+  disks: 
+    autobackup_disable: 
+      flash: 
+        error: "Autobackup не был отключен ."
+        error_: "Autobackup has not been disabled."
+        notice: "Autobackup была отключена для этого диска."
+        notice_: "Autobackup has been disabled for this disk."
+    autobackup_enable: 
+      flash: 
+        error: "Autobackup не был включен."
+        error_: "Autobackup has not been enabled."
+        notice: "Autobackup была включена для этого диска."
+        notice_: "Autobackup has been enabled for this disk."
+    build: 
+      flash: 
+        error1: "Диск сборка не было очереди."
+        error1_: "Disk build has not been queued."
+        error2: "Диск уже был построен."
+        error2_: "Disk has already been built."
+        notice: "Диск сборки был поставлен в очередь успешно."
+        notice_: "Disk build has been queued successfully."
+    create: 
+      flash: 
+        error: "Диск не был добавлен : %{msg}"
+        error_: "Disk has not been added: %{msg}"
+        notice: "Диск был успешно добавлен ."
+        notice_: "Disk has been added successfully."
+    destroy: 
+      flash: 
+        error: "Диск не был удален . "
+        error2: "%{vm_type} диск не может быть уничтожен"
+        error2_: "%{vm_type} disk can not be destroyed"
+        error3: "Новый диск не может быть добавлен к %{vm_type}"
+        error3_: "New disk can not be added to %{vm_type}"
+        error_: "Disk has not been removed. %{msg}"
+        notice: "Диск был запланирован на уничтожение."
+        notice_: "Disk has been scheduled for destruction."
+    migrate: 
+      flash: 
+        error: "Диск миграции не было очереди. "
+        error_: "Disk migration has not been queued. %{msg}"
+        notice: "Диск миграции в очередь успешно."
+        notice_: "Disk migration has been queued successfully."
+    remove_zombie_lv: 
+      flash: 
+        error: "\"Zombie\" логических томов не был запланирован для удаления."
+        error_: "\"Zombie\" logical volume has not been scheduled for removal."
+        notice: "\"Zombie\" логических томов успешно запланировано удаление ."
+        notice_: "\"Zombie\" logical volume has been successfully scheduled for removal."
+    update: 
+      flash: 
+        error1: "Диск был успешно обновлен , но их размер не меняется : ​​%{msg}"
+        error1_: "Disk has been updated successfully, but not resized: %{msg}"
+        error2: "Диск не был обновлен : %{msg}"
+        error2_: "Disk has not been updated: %{msg}"
+        error_windows_transaction: "Диск был изменен. "
+        error_windows_transaction_: "Disk has been resized. There have been added more resources to your virtual machine, but you manually needs to extend the partition inside Windows, please refer to Windows documentation."
+        notice: "Диск размера была запрошена ."
+        notice2003: "Диск размера была запрошена . "
+        notice2003_: "Disk resize has been requested. There have been added more resources to your virtual machine, but you manually needs to extend the partition inside Windows, please refer to Windows documentation."
+        notice_: "Disk resize has been requested."
+        notice_min_iops_changed: "Диск Гарантированный IOPS были успешно обновлены."
+        notice_min_iops_changed_: "Disk Guaranteed IOPS has been successfully updated."
+  dns_zone_records: 
+    create: 
+      flash: 
+        error: "Не удалось сохранить новый рекорд."
+        error_: "Couldn't save new record."
+        notice: "Запись была успешно сохранена."
+        notice_: "Record was successfully saved."
+    destroy: 
+      flash: 
+        error: "Не удалось удалить запись."
+        error_: "Couldn't delete record."
+        notice: "Запись была успешно удалена."
+        notice_: "Record was successfully deleted."
+    update: 
+      flash: 
+        notice: "Запись была успешно сохранена."
+        notice_: "The record was successfully saved."
+  dns_zones: 
+    create: 
+      flash: 
+        error: "Не удалось создать новый домен."
+        error_: "Couldn't create new domain."
+        notice: "Домен был успешно добавлен."
+        notice_: "The domain was successfully added."
+    destroy: 
+      flash: 
+        error: "Произошла ошибка при попытке удалить DNS- зоны , пожалуйста, обратитесь в службу поддержки ."
+        error_: "An error occurred while trying to delete DNS zone, please contact support."
+        notice: "Домен был успешно удален ."
+        notice_: "Domain was successfully deleted."
+  drives: 
+    assign: 
+      flash: 
+        error: "Диск не был присвоен: %{msg}"
+        error_: "Drive was not assigned: %{msg}"
+        notice: "Диск был успешно присвоен к хранилищу."
+        notice_: "Drive was successfully assigned to OnApp Storage."
+    prepare: 
+      flash: 
+        error: "Диск не был приготовлен: %{msg}"
+        error_: "Drive was not prepared: %{msg}"
+        notice: "Диск был успешно приготовлен для хранилища."
+        notice_: "Drive was successfully prepared for OnApp Storage."
+    unassign: 
+      flash: 
+        error: "Диск не был отсоединен: %{msg}"
+        error_: "Drive was not unassigned: %{msg}"
+        notice: "Диск был успешно отсоединен от хранилища."
+        notice_: "Drive was successfully unassigned from OnApp Storage."
+  edge_groups: 
+    assign: 
+      flash: 
+        alert: "Произошла ошибка присвоения месте."
+        alert_: "An error occurred while assigning the location."
+        already_assigned: "Расположение уже назначено."
+        already_assigned_: "Location is already assigned."
+        error: "Расположение не могло быть добавлены в это время , пожалуйста, повторите попытку позже."
+        error2: "Пожалуйста укажите расположения для присвоения."
+        error2_: "Please specify location to be assigned"
+        error_: "The Location could not be added at this time, please try again later."
+        notice: "Расположение было успешно присвоено."
+        notice_: "Location was successfully assigned"
+        overlapping: "Расположение с ID %{ids} не может быть присвоено из-за перекрытия edge группой"
+        overlapping_: "Locations with IDs %{ids} can not be assigned due to overlapping Edge Groups"
+        unavailable: "Расположение с ID %{ids} не доступно"
+        unavailable_: "Locations with IDs %{ids} are unavailable"
+    create: 
+      flash: 
+        error: "Пограничный группа не была создана : %{msg}"
+        error_: "Edge group has not been created: %{msg}"
+        notice: "Пограничный группа была успешно создана."
+        notice_: "Edge group was successfully created."
+    destroy: 
+      flash: 
+        error: "Пограничный группы не был удален : %{msg}"
+        error_: "Edge group has not been deleted: %{msg}"
+        notice: "Пограничный группа была успешно удалена."
+        notice_: "Edge group was successfully deleted."
+    modify: 
+      flash: 
+        alert: "Edge группа была изменена с некоторыми ошибками."
+        alert_: "Edge Group was modified with some errors."
+        error: "Edge группа не была изменена из-за ошибок связи. Попробуйте немного позже."
+        error2: "Группа edge не может быть пустой."
+        error2_: "Edge Group can not be blank."
+        error_: "Edge Group was not modified due to communication error. Try again a bit later."
+        notice: "Группа edge успешно изменена."
+        notice2: "Никаких изменения не было"
+        notice2_: "No changes have been made"
+        notice_: "Edge Group was successfully modified."
+    unassign: 
+      flash: 
+        alert: "Произошла ошибка отменяете месте"
+        alert_: "An error occurred while unassigning the location"
+        error2: "Пожалуйста укажите расположение для отключения."
+        error2_: "Please specify location to be unassigned"
+        not_assigned: "Указанное расположение не присвоено поэтому оно не может быть отключено."
+        not_assigned_: "Given location is not assigned so it can not be unassigned."
+        notice: "Расположение было отключено."
+        notice_: "Location was successfully unassigned"
+    update: 
+      flash: 
+        error: "Пограничный группа не была обновлена ​​: %{msg}"
+        error_: "Edge group has not been updated: %{msg}"
+        notice: "Пограничный группы был успешно обновлен ."
+        notice_: "Edge group was successfully updated."
+  edge_servers: 
+    build: 
+      flash: 
+        error: "Пограничный сервер сборки не было очередей : %{msg}"
+        error_: "Edge server build has not been queued: %{msg}"
+        error_base: "сборка не удалось"
+        error_base_: "Build failed"
+        notice: "Пограничный сервер сборки был поставлен в очередь , и будет проходить вданный момент."
+        notice_: "Edge server build has been queued, and will take place in a moment."
+    change_owner: 
+      flash: 
+        error: "Владелец пограничный сервер не был изменен ."
+        error_: "Edge server owner has not been changed."
+        error_base: "Не удалось изменить владельца"
+        error_base_: "Failed to change owner"
+        notice: "Владелец пограничный сервер был успешно изменен."
+        notice_: "Edge server owner has been changed successfully."
+    choose_location: 
+      flash: 
+        error: "Пограничный сервер был успешно создан , но еще не были построены : %{msg} ."
+        error1: "Пограничный сервер не был создан: %{msg}"
+        error1_: "Edge server has not been created: %{msg}"
+        error_: "Edge server has been created successfully, but has not been built: %{msg}."
+        error_base: "Создание удалось: неверные параметры"
+        error_base_: "Creation failed: incorrect parameters"
+        notice: "Пограничный сервер был успешно создан , и его сборка была очередь."
+        notice1: "Пограничный сервер был успешно создан."
+        notice1_: "Edge server has been created successfully."
+        notice_: "Edge server has been created successfully, and its build has been queued."
+    console: 
+      flash: 
+        console_popup: "Удаленный доступ сессия не была найдена."
+        console_popup_: "Remote access session has not been found."
+        error: "Удаленный доступ сессия не была создана ."
+        error_: "Remote access session has not been created."
+    create: 
+      flash: 
+        error: "Пограничный сервер был успешно создан , но еще не были построены : %{msg} ."
+        error1: "Пограничный сервер не был создан: %{msg}"
+        error1_: "Edge server has not been created: %{msg}"
+        error_: "Edge server has been created successfully, but has not been built: %{msg}."
+        error_base: "Создание удалось: неверные параметры"
+        error_base_: "Creation failed: incorrect parameters"
+        notice: "Пограничный сервер был успешно создан , и его сборка была очередь."
+        notice1: "Пограничный сервер был успешно создан."
+        notice1_: "Edge server has been created successfully."
+        notice_: "Edge server has been created successfully, and its build has been queued."
+    destroy: 
+      flash: 
+        error: "Пограничный сервер не был удален . "
+        error_: "Edge server has not been removed. %{msg}."
+        notice: "Пограничный сервер был запланирован на уничтожение."
+        notice_: "Edge server has been scheduled for destruction."
+    new: 
+      flash: 
+        error: "[FAIL] "
+        error_: ""
+    popup_console: 
+      flash: 
+        error: "Удаленный доступ сессия не была создана ."
+        error_: "Remote access session has not been created."
+    reboot: 
+      flash: 
+        error: "Пограничный сервер не может быть перезагружен в данный момент."
+        error_: "Edge server cannot be rebooted at the moment."
+        error_base: "Перезагрузка не удалось"
+        error_base_: "Reboot failed"
+        notice: "Пограничный перезагрузки сервера была очередь."
+        notice_: "Edge server reboot has been queued."
+    rebuild_network: 
+      flash: 
+        error: "Сетевой интерфейс не может быть восстановлен на данный момент."
+        error2: "Вы должны иметь по крайней мере одного основного сетевого интерфейса."
+        error2_: "You must have at least one primary Network Interface."
+        error_: "Network interface cannot be rebuilt at the moment."
+        notice: "Сетевой интерфейс будет перестроен для этого пограничного сервера."
+        notice_: "Network interface will be rebuilt for this Edge server."
+    rerun_edge_scripts: 
+      flash: 
+        error: "Пограничный сервер не был запланирован повторного создания скриптов: Edge Server в автономном режиме, не построили или не имеет общественный IP -адрес."
+        error_: "Edge server hadn't been scheduled to rerun creation scripts: Edge Server is offline, not built or has no public IP address."
+        notice: "Пограничный сервер был запланирован на повторные создания скриптов"
+        notice_: "Edge server had been scheduled to rerun creation scripts"
+    reset_password: 
+      flash: 
+        error: "Пограничный корневого сервера пароль не может быть сброшен на данный момент."
+        error_: "Edge server root password cannot be reset at the moment."
+        error_base: "Не удалось остановить"
+        error_base_: "Stop failed"
+        notice: "Пограничный корневой сервер пароль будет сброшен."
+        notice_: "Edge server root password will be reset."
+    shutdown: 
+      flash: 
+        error: "Пограничный сервер не может быть закрыта в данный момент."
+        error_: "Edge server cannot be shut down at the moment."
+        error_base: "Завершить работу не удалось"
+        error_base_: "Shut down failed"
+        notice: "Пограничный сервер будет закрыта в ближайшее время."
+        notice_: "Edge server will be shut down shortly."
+    startup: 
+      flash: 
+        error: "Пограничный сервер не может быть запущен в данный момент. "
+        error_: "Edge server cannot be started at the moment. (%{msg})"
+        error_base: "Запустить не удалось"
+        error_base_: "Start up failed"
+        notice: "Запуск пограничный сервер был поставлен в очередь ."
+        notice_: "Edge server startup has been queued."
+    stop: 
+      flash: 
+        error: "Машина не может быть остановлен в данный момент."
+        error_: " machine cannot be stopped at the moment."
+        error_base: "Не удалось остановить"
+        error_base_: "Stop failed"
+        notice: "Пограничный сервер будет остановлен в ближайшее время."
+        notice_: "Edge server will be stopped shortly."
+    strict_vm: 
+      flash: 
+        error: "Раздельные сервера граничного не изменилась"
+        error_: "Segregated Edge server has not been changed"
+        notice: "Раздельные сервера граничного изменилась"
+        notice_: "Segregated Edge server has changed"
+    update: 
+      flash: 
+        error: "Пограничный сервер не был обновлен : %{msg}"
+        error_: "Edge server has not been updated: %{msg}"
+        notice: "Ресурсы успешно обновлены."
+        notice_: "Resources updated successfully."
+  firewall_rules: 
+    create: 
+      flash: 
+        error: "Правило не была добавлена ​​. "
+        error_: "Rule has not been added. %{msg}"
+        notice: "Правило было добавлено."
+        notice_: "Rule has been added."
+    destroy: 
+      flash: 
+        error: "Правило не была уничтожена. "
+        error_: "Rule has not been destroyed. %{msg}"
+        notice: "Правило была уничтожена."
+        notice_: "Rule has been destroyed."
+    destroy_batch: 
+      flash: 
+        notice: 
+          none: "Ничто , чтобы удалить"
+          none_: "Nothing to remove"
+          one: "Правила брандмауэра была успешно удалена"
+          one_: "A firewall rule was successfully removed"
+          other: "%{count} правила брандмауэра были успешно удалены"
+          other_: "%{count} firewall rules were successfully removed"
+    update: 
+      flash: 
+        error: "Правило не была добавлена ​​. "
+        error_: "Rule has not been added. %{msg}"
+        notice: "Правило было обновлено."
+        notice_: "Rule has been updated."
+    update_defaults: 
+      flash: 
+        notice: "По умолчанию правила были обновлены"
+        notice_: "Default rules has been updated"
+  firewalls: 
+    create: 
+      flash: 
+        error: "Брандмауэр не была создана ."
+        error_: "Firewall has not been created."
+        notice: "Firewall был создан успешно."
+        notice_: "Firewall has been created successfully."
+    destroy: 
+      flash: 
+        error: "Брандмауэр не была удалена . "
+        error_: "Firewall has not been removed. %{msg}"
+        notice: "Брандмауэр были успешно удалены ."
+        notice_: "Firewall has been removed successfully."
+    update: 
+      flash: 
+        error: "Межсетевой экран не обновляется . "
+        error_: "Firewall has not been updated. %{msg}"
+        notice: "Брандмауэр был успешно обновлен ."
+        notice_: "Firewall has been updated successfully."
+  groups: 
+    create: 
+      flash: 
+        error: "Группа не была установлена."
+        error_: "Group has not been set."
+        notice: "Группа была создана успешно."
+        notice_: "Group has been created successfully."
+    destroy: 
+      flash: 
+        error: "Группа не был удален : %{msg}"
+        error_: "Group has not been deleted: %{msg}"
+        notice: "Группа была успешно удалена."
+        notice_: "Group has been deleted successfully."
+    update: 
+      flash: 
+        error: "Группа не была обновлена ​​."
+        error_: "Group has not been updated."
+        notice: "Группа была успешно обновлена ​​."
+        notice_: "Group has been updated successfully."
+  help: 
+    index: 
+      flash: 
+        error: "Ваш запрос не был отправлен . "
+        error2: "Ваш запрос не был отправлен . "
+        error2_: "Your request has not been sent. Please enter a valid email address."
+        error_: "Your request has not been sent. Please complete all fields."
+        notice: "Спасибо. "
+        notice_: "Thank you. Your request has been sent to the support team."
+  hypervisor_groups: 
+    create: 
+      flash: 
+        error: "Гипервизор зона не была создана."
+        error_: "Hypervisor zone has not been created."
+        notice: "Гипервизор зона была успешно создана."
+        notice_: "Hypervisor zone has been created successfully."
+    destroy: 
+      flash: 
+        error: "Гипервизор зоне не был удален : %{msg}"
+        error_: "Hypervisor zone has not been deleted: %{msg}"
+        notice: "Гипервизор зона была успешно удалена."
+        notice_: "Hypervisor zone has been deleted successfully."
+    update: 
+      flash: 
+        error: "Гипервизор зона не была обновлена."
+        error_: "Hypervisor zone has not been updated."
+        notice: "Гипервизор зоне был успешно обновлен ."
+        notice_: "Hypervisor zone has been updated successfully."
+  hypervisors: 
+    attach: 
+      flash: 
+        error: "Гипервизор не прилагаются: %{msg}"
+        error_: "Hypervisor has not been attached: %{msg}"
+        notice: "Гипервизор был присоединен успешно."
+        notice_: "Hypervisor has been attached successfully."
+    detach: 
+      flash: 
+        error: "Гипервизор которая не была отделена : %{msg}"
+        error_: "Hypervisor has not been detached: %{msg}"
+        notice: "Гипервизор был отделен успешно."
+        notice_: "Hypervisor has been detached successfully."
+  image_template_groups: 
+    create: 
+      flash: 
+        error: "Шаблон группа не была создана ."
+        error_: "Template Group has not been created."
+        notice: "Шаблон Группа была создана успешно."
+        notice_: "Template Group has been created successfully."
+    destroy: 
+      flash: 
+        error: "Шаблон группы не был удален : %{msg}"
+        error_: "Template Group has not been deleted: %{msg}"
+        notice: "Шаблон Группа была успешно удалена."
+        notice_: "Template Group has been deleted successfully."
+    update: 
+      flash: 
+        error: "Шаблон группа не была обновлена ​​."
+        error_: "Template Group has not been updated."
+        notice: "Шаблон группы были успешно обновлены."
+        notice_: "Template Group has been updated successfully."
+  image_templates: 
+    create: 
+      flash: 
+        error1: "У вас уже есть этот шаблон в вашем хранилище."
+        error1_: "You already have this template in your repository."
+        error2: "Шаблон не был в очереди на загрузку."
+        error2_: "Template has not been queued for download."
+        error3: "Шаблон не была добавлена ​​."
+        error3_: "Template has not been added."
+        notice: "Шаблон был поставлен в очередь для загрузки."
+        notice_: "Template has been queued for download."
+    destroy: 
+      flash: 
+        error: "Шаблон не была удалена . "
+        error_: "Template has not been removed. %{msg}"
+        notice: "Шаблон успешно очереди на удаление."
+        notice_: "Template has been successfully queued for removal."
+    destroy_list: 
+      flash: 
+        error: "Эти шаблоны используются виртуальной машиной и не могут быть поставлены в очередь на удаление : %{msg}"
+        error_: "These templates are used by Virtual Machine and can't be queued for removal: %{msg}"
+        notice: "Шаблоны успешно очереди на удаление."
+        notice_: "Templates have been successfully queued for removal."
+    make_public: 
+      flash: 
+        error: "Шаблон не были обнародованы."
+        error_: "Template has not been made public."
+        notice: "Шаблон успешно обнародованы."
+        notice_: "Template has been successfully made public."
+    update: 
+      flash: 
+        error: "Шаблон не была обновлена ​​. "
+        error_: "Template has not been updated. %{msg}"
+        notice: "Шаблон был успешно обновлен ."
+        notice_: "Template has been updated successfully."
+  internationalization: 
+    create: 
+      flash: 
+        error: "Новый язык не был создан ."
+        error_: "New locale has not been created."
+        notice: "Новый язык был создан успешно."
+        notice_: "New locale has been created successfully."
+  ip_address_joins: 
+    create: 
+      flash: 
+        error: "IP- адрес не был назначен. "
+        error_: "IP address has not been assigned. %{msg}"
+        notice: "IP- адрес был назначен успешно."
+        notice_: "IP address has been assigned successfully."
+    destroy: 
+      flash: 
+        error: "Назначение IP- адрес не был удален: %{msg}"
+        error_: "IP address assignment has not been removed: %{msg}"
+        notice: "Назначение IP-адреса были успешно удалены ."
+        notice_: "IP address assignment has been removed successfully."
+  ip_address_pools: 
+    create: 
+      flash: 
+        error: "Ip адрес Бассейн не был создан . "
+        error_: "Ip Address Pool has not been created. %{msg}"
+        notice: "Ip адрес Бассейн был создан успешно."
+        notice_: "Ip Address Pool has been created successfully."
+    destroy: 
+      flash: 
+        error: "Ip адрес Бассейн не был удален . "
+        error_: "Ip Address Pool has not been removed. %{msg}"
+        notice: "Ip адрес Бассейн был успешно удален."
+        notice_: "Ip Address Pool has been removed successfully."
+    update: 
+      flash: 
+        error: "IP Pool адрес не обновляется . "
+        error_: "Ip Address Pool has not been updated. %{msg}"
+        notice: "Ip адрес Бассейн был успешно обновлен ."
+        notice_: "Ip Address Pool has been updated successfully."
+  ip_addresses: 
+    assign: 
+      flash: 
+        error: "Не могу назначить IP -адреса. "
+        error_: "Couldn't assign IP addresses. They are owned by someone else or assigned to the virtual machine of another user."
+        notice: 
+          one: "IP -адрес был успешно установлен"
+          one_: "IP address was successfully assigned"
+          other: "%{counter} IP адреса были успешно назначены"
+          other_: "%{counter} IP addresses were successfully assigned"
+          zero: "Нет IP- адреса были назначены"
+          zero_: "No IP addresses were assigned"
+    create: 
+      flash: 
+        error: "IP- адрес не был создан: %{msg}"
+        error_: "IP address has not been created: %{msg}"
+        notice: "%{count} IP- адрес (адреса) успешно создана."
+        notice_: "%{count} IP address(es) created successfully."
+    destroy: 
+      flash: 
+        error: "IP- адрес не был удален ."
+        error_: "IP address has not been removed."
+        notice: "IP -адрес был успешно удален."
+        notice_: "IP address has been removed successfully."
+    destroy_range: 
+      flash: 
+        notice: "IP адреса %{msg} успешно удалены."
+        notice_: "IP addresses %{msg} removed successfully."
+    unassign: 
+      flash: 
+        notice: 
+          one: "IP -адрес был успешно неназначенных"
+          one_: "IP address was successfully unassigned"
+          other: "%{counter} IP адреса были успешно неназначенных"
+          other_: "%{counter} IP addresses were successfully unassigned"
+          zero: "Нет IP- адреса были неназначенных"
+          zero_: "No IP addresses were unassigned"
+    update: 
+      flash: 
+        error: "IP- адрес не обновляется : ​​%{msg}"
+        error_: "IP address has not been updated: %{msg}"
+        notice: "IP -адрес был успешно обновлен."
+        notice_: "IP address has been updated successfully."
+  iso_joins: 
+    create: 
+      flash: 
+        error: "Изображение не присоединился."
+        error_: "Image has not been joined."
+        notice: "Изображение присоединились успешно."
+        notice_: "Image has been joined successfully."
+    destroy: 
+      flash: 
+        error: "Изображение не был демонтирован."
+        error_: "Image has not been unmounted."
+        notice: "Изображение была демонтирована успешно."
+        notice_: "Image has been unmounted successfully."
+  isos: 
+    create: 
+      flash: 
+        error: "Изображения не были загружены . "
+        error_: "Image has not been uploaded. %{msg}"
+        notice: "Изображения были успешно загружены."
+        notice_: "Image has been successfully uploaded."
+    destroy: 
+      flash: 
+        error: "Изображение не была удалена ."
+        error_: "Image has not been removed."
+        notice: "Изображение было успешно в очереди на удаление."
+        notice_: "Image has been successfully queued for removal."
+    make_public: 
+      flash: 
+        error: "Изображение не были обнародованы."
+        error_: "Image has not been made public."
+        notice: "Изображение успешно обнародованы."
+        notice_: "Image has been successfully made public."
+    update: 
+      flash: 
+        error: "Изображение не обновляется . "
+        error_: "Image has not been updated. %{msg}"
+        notice: "Изображения были успешно обновлены."
+        notice_: "Image has been updated successfully."
+  load_balancers: 
+    create: 
+      flash: 
+        error: "Балансировки не было создано : %{msg}"
+        error_: "Balancer has not been created: %{msg}"
+        notice: "Балансировки успешно создана"
+        notice1: "Балансировки успешно создан , но еще не построен"
+        notice1_: "Balancer has been created successfully but not built yet"
+        notice_: "Balancer has been created successfully"
+    destroy: 
+      flash: 
+        error: "Балансировки не была уничтожена . "
+        error_: "Balancer has not been destroyed. %{msg}"
+        notice: "Балансировки была запланирована на уничтожение."
+        notice_: "Balancer has been scheduled for destruction."
+    reboot: 
+      flash: 
+        error: "Балансировки не может быть перезагружен в данный момент."
+        error_: "Balancer cannot be rebooted at the moment."
+        error_base: "Перезагрузка не удалось"
+        error_base_: "Reboot failed"
+        notice: "Балансировки перезагрузка была очередь."
+        notice_: "Balancer reboot has been queued."
+    rebuild: 
+      flash: 
+        error: "Балансировки восстановления не был запущен . "
+        error_: "Balancer rebuild has not been started. %{msg}"
+        notice: "Балансировки восстановления в очередь ."
+        notice_: "Balancer rebuild has been queued."
+    shutdown: 
+      flash: 
+        error: "Балансировки не может быть закрыта в данный момент."
+        error_: "Balancer cannot be shut down at the moment."
+        error_base: "Завершить работу не удалось"
+        error_base_: "Shut down failed"
+        notice: "Балансировки будет закрыта в ближайшее время."
+        notice_: "Balancer will be shut down shortly."
+    startup: 
+      flash: 
+        error: "Балансировки не может быть запущено в данный момент. "
+        error_: "Balancer cannot be started at the moment. (%{msg})"
+        error_base: "Запустить не удалось"
+        error_base_: "Start up failed"
+        notice: "Балансировки загрузки в очередь ."
+        notice_: "Balancer startup has been queued."
+    stop: 
+      flash: 
+        error: "Балансировки не может быть остановлен в данный момент."
+        error_: "Balancer cannot be stopped at the moment."
+        error_base: "Не удалось остановить"
+        error_base_: "Stop failed"
+        notice: "Балансировки будет остановлена ​​в ближайшее время."
+        notice_: "Balancer will be stopped shortly."
+    update: 
+      flash: 
+        error: "Балансировки не был обновлен %{msg}"
+        error_: "Balancer has not been updated %{msg}"
+        notice: "Балансировки успешно обновлен"
+        notice_: "Balancer has been successfully updated"
+  load_balancing_clusters: 
+    create: 
+      flash: 
+        error: "Балансировки нагрузки не была создана : %{msg}"
+        error_: "Load balancer has not been created: %{msg}"
+        notice: "Балансировки нагрузки успешно создана"
+        notice1: "Балансировки нагрузки успешно создан , но еще не построен"
+        notice1_: "Load balancer has been created successfully but not built yet"
+        notice_: "Load balancer has been created successfully"
+    destroy: 
+      flash: 
+        error: "Кластер не был разрушен. "
+        error_: "Cluster was not destroyed. %{msg}"
+        notice: "Кластер был успешно уничтожен."
+        notice_: "Cluster was successfully destroyed."
+    update: 
+      flash: 
+        error: "Балансировки нагрузки не была обновлена ​​: %{msg}"
+        error_: "Load balancer has not been updated: %{msg}"
+        notice: "Балансировки нагрузки были успешно обновлены"
+        notice_: "Load balancer has been successfully updated"
+  log_items: 
+    clean: 
+      flash: 
+        error: "Не удалось выполнить операцию"
+        error_: "Operation failed"
+        notice: "Операция выполнена успешно : %{msg}"
+        notice_: "Operation completed successfully: %{msg}"
+    report: 
+      flash: 
+        error: "Только IP адрес докладе Статистика доступна в данный момент"
+        error_: "Only IP Address Usage report is available at the moment"
+  nameservers: 
+    create: 
+      flash: 
+        error: "Имя сервера не была создана ."
+        error_: "Name server has not been created."
+        notice: "Имя сервера была успешно создана."
+        notice_: "Name server has been created successfully."
+    destroy: 
+      flash: 
+        error: "Имя сервера не были удалены."
+        error_: "Name server has not been removed."
+        notice: "Имя сервера была успешно удалена."
+        notice_: "Name server has been removed successfully."
+    update: 
+      flash: 
+        error: "Имя сервера не были обновлены."
+        error_: "Name server has not been updated."
+        notice: "Имя сервера был успешно обновлен ."
+        notice_: "Name server has been updated successfully."
+  network_groups: 
+    create: 
+      flash: 
+        error: "Сеть зона не была создана ."
+        error_: "Network zone has not been created."
+        notice: "Сеть зона была успешно создана."
+        notice_: "Network zone has been created successfully."
+    destroy: 
+      flash: 
+        error: "Сеть зоне не был удален : %{msg}"
+        error_: "Network zone has not been deleted: %{msg}"
+        notice: "Сеть зона была успешно удалена."
+        notice_: "Network zone has been deleted successfully."
+    update: 
+      flash: 
+        error: "Сеть зона не была обновлена."
+        error_: "Network zone has not been updated."
+        notice: "Сеть зоне был успешно обновлен ."
+        notice_: "Network zone has been updated successfully."
+  network_interfaces: 
+    create: 
+      flash: 
+        error: "Сетевой интерфейс не был добавлен . "
+        error_: "Network interface has not been added. %{msg}"
+        notice: "Сетевой интерфейс был успешно добавлен ."
+        notice_: "Network interface has been added successfully."
+    destroy: 
+      flash: 
+        error: "Сетевой интерфейс не был удален : %{msg}"
+        error_: "Network interface has not been removed: %{msg}"
+        notice: "Сетевой интерфейс был успешно удален."
+        notice_: "Network interface has been removed successfully."
+    update: 
+      flash: 
+        error: "Сетевой интерфейс не обновляется ."
+        error_: "Network interface has not been updated."
+        notice: "Сетевой интерфейс был успешно обновлен ."
+        notice_: "Network interface has been updated successfully."
+  network_joins: 
+    create: 
+      flash: 
+        error: "Сеть %{network} не были прикреплены к %{target_join} . "
+        error_: "Network %{network} has not been attached to %{target_join}. %{msg}"
+        notice: "Сеть %{network} была присоединена к %{target_join} успешно."
+        notice_: "Network %{network} has been attached to %{target_join} successfully."
+    destroy: 
+      flash: 
+        error: "Сеть %{network} не была отделена от %{target_join} : %{msg}"
+        error_: "Network %{network} has not been detached from %{target_join}: %{msg}"
+        notice: "Сеть %{network} была отделена от %{target_join} успешно."
+        notice_: "Network %{network} has been detached from %{target_join} successfully."
+  networks: 
+    attach: 
+      flash: 
+        error: "Сеть не прилагаются: %{msg}"
+        error_: "Network has not been attached: %{msg}"
+        notice: "Сеть была присоединена успешно."
+        notice_: "Network has been attached successfully."
+    create: 
+      flash: 
+        error: "Сеть не была создана ."
+        error_: "Network has not been created."
+        notice: "Сеть была успешно создана."
+        notice_: "Network has been created successfully."
+    destroy: 
+      flash: 
+        error: "Сеть не была удалена . "
+        error_: "Network has not been removed. %{msg}"
+        notice: "Сеть была успешно удалена."
+        notice_: "Network has been removed successfully."
+    detach: 
+      flash: 
+        error: "Сеть не была отделена : %{msg}"
+        error_: "Network has not been detached: %{msg}"
+        notice: "Сеть была отделена успешно."
+        notice_: "Network has been detached successfully."
+    update: 
+      flash: 
+        error: "Сеть не была обновлена ​​. "
+        error_: "Network has not been updated. %{msg}"
+        notice: "Сеть была успешно обновлена ​​."
+        notice_: "Network has been updated successfully."
+  payments: 
+    create: 
+      flash: 
+        error: "Оплата не была установлена ​​."
+        error_: "Payment has not been set."
+        notice: "Оплата была успешно создана."
+        notice_: "Payment has been created successfully."
+    destroy: 
+      flash: 
+        error: "Оплата не был удален : %{msg}"
+        error_: "Payment has not been deleted: %{msg}"
+        notice: "Оплата была успешно удалена."
+        notice_: "Payment has been deleted successfully."
+    update: 
+      flash: 
+        error: "Оплата не была обновлена ​​."
+        error_: "Payment has not been updated."
+        notice: "Оплата была успешно обновлена ​​."
+        notice_: "Payment has been updated successfully."
+  permissions: 
+    update: 
+      flash: 
+        error: "Разрешение не было обновлено ."
+        error_: "Permission has not been updated."
+        notice: "Разрешение были успешно обновлены."
+        notice_: "Permission has been updated successfully."
+  relation_group_templates: 
+    create: 
+      flash: 
+        error: "Шаблон не была добавлена ​​."
+        error_: "Template has not been added."
+        notice: "Шаблон был успешно добавлен ."
+        notice_: "Template has been added successfully."
+    destroy: 
+      flash: 
+        error: "Шаблон не был удален : %{msg}"
+        error_: "Template has not been deleted: %{msg}"
+        notice: "Шаблон был успешно удален."
+        notice_: "Template has been deleted successfully."
+  resource_limits: 
+    create: 
+      flash: 
+        error: "Ограничения на ресурсы не были установлены ."
+        error_: "Resource limits have not been set."
+        notice: "Ограничение ресурсов были установлены успешно."
+        notice_: "Resource limits have been set successfully."
+    update: 
+      flash: 
+        error: "Ограничения на ресурсы не были обновлены ."
+        error_: "Resource limits have not been updated."
+        notice: "Ограничения на ресурсы были успешно обновлены ."
+        notice_: "Resource limits have been updated successfully."
+  roles: 
+    create: 
+      flash: 
+        error: "Роль не была добавлена ​​."
+        error_: "Role has not been added."
+        notice: "Роль была успешно добавлена."
+        notice_: "Role has been added successfully."
+        permission_error: "Разрешения не найдено."
+        permission_error_: "Permissions not found."
+    destroy: 
+      flash: 
+        error1: "Роль не была удалена ."
+        error1_: "Role has not been removed."
+        error2: "Роль не был удален - вы должны отменить назначение всех пользователей из этой роли первого."
+        error2_: "Role has not been removed - you should unassign all users from this role first."
+        notice: "Роль была успешно удалена."
+        notice_: "Role has been removed successfully."
+    update: 
+      flash: 
+        error: "Роль не была обновлена ​​."
+        error_: "Role has not been updated."
+        notice: "Роль была успешно обновлена ​​."
+        notice_: "Role has been updated successfully."
+        permission_error: "Разрешения не найдено."
+        permission_error_: "Permissions not found."
+  sessions: 
+    create: 
+      flash: 
+        error: "Не удается войти в систему как '%{login} \""
+        error_: "Couldn't log you in as '%{login}'"
+        notice: "Зашли успешно"
+        notice_: "Logged in successfully"
+        suspended: "Не удается войти дюйма Ваш пользователь приостановлено."
+        suspended_: "Couldn't log you in. Your user is suspended."
+    destroy: 
+      flash: 
+        notice: "Вы вышли из ."
+        notice_: "You have been logged out."
+    drop_others: 
+      flash: 
+        error: "Не удалось удалить другие сеансы"
+        error_: "Couldn't drop other sessions"
+        notice: "Все остальные сеансы успешно упали"
+        notice_: "All the other sessions are successfully dropped"
+  settings: 
+    update: 
+      flash: 
+        error: "Конфигурация не была обновлена ​​: %{msg}"
+        error_: "Configuration has not been updated: %{msg}"
+        notice: "Конфигурация была обновлена ​​успешно."
+        notice_: "Configuration has been updated successfully."
+  settings_dns: 
+    create: 
+      flash: 
+        error: "Не удалось сохранить новый домен."
+        error_: "Couldn't save new domain."
+        notice: "Домен был успешно сохранен."
+        notice_: "The domain was successfully saved."
+    update: 
+      flash: 
+        error: "Не удалось сохранить домен."
+        error_: "Couldn't save domain."
+        notice: "Домен был успешно сохранен."
+        notice_: "The domain was successfully saved."
+  settings_hypervisors: 
+    cloud_boot_is_disabled: "CloudBoot отключена"
+    cloud_boot_is_disabled_: "CloudBoot is disabled"
+    create: 
+      flash: 
+        error: "Гипервизор не была добавлена ​​."
+        error_: "Hypervisor has not been added."
+        notice: "Гипервизор был успешно добавлен ."
+        notice_: "Hypervisor has been added successfully."
+    destroy: 
+      flash: 
+        error1: "Гипервизор не была удалена ."
+        error1_: "Hypervisor has not been removed."
+        error2: "Гипервизор не был удален - вы должны перенести все виртуальные машины из этой гипервизор первого."
+        error2_: "Hypervisor has not been removed - you should migrate all virtual machines from this hypervisor first."
+        notice: "Гипервизор были успешно удалены ."
+        notice2: "Гипервизор был запланирован для удаления."
+        notice2_: "Hypervisor has been scheduled for removal."
+        notice_: "Hypervisor has been removed successfully."
+    edit: 
+      flash: 
+        error: "Не удалось получить доступ к гипервизору для запроса аппаратных изменений"
+        error2: "Ошибка при проверке гипервизора на аппаратные изменения:  %{msg}"
+        error2_: "Error while exploring hypervisor hardware changes: %{msg}"
+        error_: "Couldn't access hypervisor to query hardware changes"
+    new: 
+      flash: 
+        error: "Не удается получить доступ гипервизора , пожалуйста, повторите попытку через несколько минут."
+        error2: "Ошибка при изучении гипервизора : %{msg}"
+        error2_: "Error while exploring hypervisor: %{msg}"
+        error_: "Cannot access hypervisor, please retry in few minutes."
+    reboot: 
+      flash: 
+        confirmation_required: "Перезагрузкагипервизор не была подтверждена ."
+        confirmation_required_: "Reboot of the hypervisor has not been confirmed."
+        error: "Гипервизор не была запланирована на перезагрузку."
+        error2: "Перезагрузке VMware гипервизоров не допускается."
+        error2_: "The reboot of VMware hypervisors is not allowed."
+        error_: "Hypervisor has not been scheduled for reboot."
+        notice: "Гипервизор успешно запланировано на перезагрузку."
+        notice_: "Hypervisor has been successfully scheduled for reboot."
+    update: 
+      flash: 
+        error: "Гипервизор не была обновлена ​​."
+        error_: "Hypervisor has not been updated."
+        notice: "Гипервизор был успешно обновлен ."
+        notice_: "Hypervisor has been updated successfully."
+  software_licenses: 
+    create: 
+      flash: 
+        error: "Лицензия не была добавлена ​​."
+        error_: "License has not been added."
+        notice: "Лицензия была добавлена."
+        notice_: "License has been added."
+    destroy: 
+      flash: 
+        error: "Лицензия не была уничтожена. "
+        error_: "License has not been destroyed. %{msg}"
+        notice: "Лицензия была уничтожена."
+        notice_: "License has been destroyed."
+    update: 
+      flash: 
+        error: "Лицензия не была добавлена ​​."
+        error_: "License has not been added."
+        notice: "Лицензия была обновлена."
+        notice_: "License has been updated."
+  ssh_keys: 
+    create: 
+      flash: 
+        error: "Не удалось сохранить новый ключ SSH"
+        error_: "Couldn't save new ssh key"
+        notice: "Ключ был успешно создан"
+        notice_: "The key was successfully created"
+    destroy: 
+      flash: 
+        error: "Не удалось удалить ключ"
+        error_: "Couldn't delete the key"
+        notice: "SSH- ключ был успешно удален"
+        notice_: "SSH-key was successfully deleted"
+    update: 
+      flash: 
+        error: "Не удалось обновить ключ"
+        error_: "Couldn't update the key"
+        notice: "Ключ был успешно обновлен"
+        notice_: "The key was successfully updated"
+  storage/data_stores: 
+    create: 
+      flash: 
+        error: "Хранилище данных не было создано : %{msg}"
+        error_: "Data Store was not created: %{msg}"
+        notice: "Хранилище данных была успешно создана."
+        notice_: "Data Store was successfully created."
+    destroy: 
+      flash: 
+        error: "Хранилище данных не была разрушена : %{msg}"
+        error_: "Data Store was not destroyed: %{msg}"
+        notice: "Хранилище данных была успешно уничтожена."
+        notice_: "Data Store was successfully destroyed."
+    update: 
+      flash: 
+        error: "Хранилище данных не обновляется : ​​%{msg}"
+        error_: "Data Store was not updated: %{msg}"
+        notice: "Data Store был успешно обновлен."
+        notice_: "Data Store was successfully updated."
+  storage/disks: 
+    create: 
+      flash: 
+        error: "Диск не был создан : %{msg}"
+        error_: "Disk was not created: %{msg}"
+        notice: "Диск был успешно создан."
+        notice_: "Disk was successfully created."
+    destroy: 
+      flash: 
+        error: "Диск не был уничтожен : %{msg}"
+        error_: "Disk was not destroyed: %{msg}"
+        notice: "Диск был успешно уничтожен."
+        notice_: "Disk was successfully destroyed."
+    rebalance: 
+      flash: 
+        error: "Диск не сбалансированы : %{msg}"
+        error_: "Disk rebalance was not scheduled: %{msg}"
+        notice: "Диск был успешно сбалансированы ."
+        notice_: "Disk rebalance was successfully scheduled."
+    repair: 
+      flash: 
+        error: "Диск не был восстановлен : %{msg}"
+        error_: "Disk repair was not scheduled: %{msg}"
+        notice: "Диск был успешно отремонтирован."
+        notice_: "Disk repair was successfully scheduled."
+  storage/drives: 
+    assign: 
+      flash: 
+        error: "Диск хранилища не был присвоен: %{msg}"
+        error_: "Storage Drive wasn't assigned: %{msg}"
+        notice: "Диск хранилища был успешно присвоен."
+        notice_: "Storage Drive was successfully assigned."
+    prepare: 
+      flash: 
+        error: "Диск хранилища не был приготовлен: %{msg}"
+        error_: "Storage Drive wasn't prepared: %{msg}"
+        notice: "Диск хранилища был успешно приготовлен."
+        notice_: "Storage Drive was successfully prepared."
+  storage/endpoints: 
+    update: 
+      flash: 
+        notice: "Конечная точка была успешно сохранена."
+        notice_: "Endpoint was successfully saved."
+  storage/nodes: 
+    forget: 
+      flash: 
+        error: "Нода хранилища была успешно забыта: %{msg}"
+        error_: "Storage Node wasn't forgotten: %{msg}"
+        notice: "Нода хранилища была успешно забыта."
+        notice_: "Storage Node was successfully forgotten"
+    unassign: 
+      flash: 
+        error: "Нода хранилища не была отключена: %{msg}"
+        error_: "Storage Node wasn't unassigned: %{msg}"
+        notice: "Нода хранилища была успешно отключена"
+        notice_: "Storage Node was successfully unassigned"
+    update: 
+      flash: 
+        error: "Нода хранилища не была обновлена: %{msg}"
+        error_: "Storage Node wasn't updated: %{msg}"
+        notice: "Нода хранилища была успешно обновлена."
+        notice_: "Storage Node was successfully updated."
+  storage_servers: 
+    build: 
+      flash: 
+        error: "Хранение сервер сборки не было очередей : %{msg}"
+        error_: "Storage server build has not been queued: %{msg}"
+        error_base: "сборка не удалось"
+        error_base_: "Build failed"
+        notice: "Хранение сервер сборки был поставлен в очередь , и будет проходить вданный момент."
+        notice_: "Storage server build has been queued, and will take place in a moment."
+    change_owner: 
+      flash: 
+        error: "Владелец сервера хранения не были изменены ."
+        error_: "Storage server owner has not been changed."
+        error_base: "Не удалось изменить владельца"
+        error_base_: "Failed to change owner"
+        notice: "Владелец хранения сервер был успешно изменен."
+        notice_: "Storage server owner has been changed successfully."
+    choose_location: 
+      flash: 
+        error: "Хранение сервер был успешно создан , но еще не были построены : %{msg} ."
+        error1: "Сервер хранения не была создана : %{msg}"
+        error1_: "Storage server has not been created: %{msg}"
+        error_: "Storage server has been created successfully, but has not been built: %{msg}."
+        error_base: "Создание удалось: неверные параметры"
+        error_base_: "Creation failed: incorrect parameters"
+        notice: "Хранение сервер был успешно создан , и его сборка была очередь."
+        notice1: "Сервер хранения была успешно создана."
+        notice1_: "Storage server has been created successfully."
+        notice_: "Storage server has been created successfully, and its build has been queued."
+    console: 
+      flash: 
+        console_popup: "Удаленный доступ сессия не была найдена."
+        console_popup_: "Remote access session has not been found."
+        error: "Удаленный доступ сессия не была создана ."
+        error_: "Remote access session has not been created."
+    create: 
+      flash: 
+        error: "Хранение сервер был успешно создан , но еще не были построены : %{msg} ."
+        error1: "Сервер хранения не была создана : %{msg}"
+        error1_: "Storage server has not been created: %{msg}"
+        error_: "Storage server has been created successfully, but has not been built: %{msg}."
+        error_base: "Создание удалось: неверные параметры"
+        error_base_: "Creation failed: incorrect parameters"
+        notice: "Хранение сервер был успешно создан , и его сборка была очередь."
+        notice1: "Сервер хранения была успешно создана."
+        notice1_: "Storage server has been created successfully."
+        notice_: "Storage server has been created successfully, and its build has been queued."
+    destroy: 
+      flash: 
+        error: "Сервер хранения не была удалена . "
+        error_: "Storage server has not been removed. %{msg}."
+        notice: "Сервер хранения была запланирована на уничтожение."
+        notice_: "Storage server has been scheduled for destruction."
+    new: 
+      flash: 
+        error: "[FAIL] "
+        error_: ""
+    popup_console: 
+      flash: 
+        error: "Удаленный доступ сессия не была создана ."
+        error_: "Remote access session has not been created."
+    reboot: 
+      flash: 
+        error: "Сервер хранения не может быть перезагружен в данный момент."
+        error_: "Storage server cannot be rebooted at the moment."
+        error_base: "Перезагрузка не удалось"
+        error_base_: "Reboot failed"
+        notice: "Хранение перезагрузки сервера была очередь."
+        notice_: "Storage server reboot has been queued."
+    rebuild_network: 
+      flash: 
+        error: "Сетевой интерфейс не может быть восстановлен на данный момент."
+        error2: "Вы должны иметь по крайней мере одного основного сетевого интерфейса."
+        error2_: "You must have at least one primary Network Interface."
+        error_: "Network interface cannot be rebuilt at the moment."
+        notice: "Сетевой интерфейс будет перестроен для этого сервера хранения данных."
+        notice_: "Network interface will be rebuilt for this Storage server."
+    rerun_edge_scripts: 
+      flash: 
+        error: "Сервер хранения не была запланирована , чтобы перезапустить создания скриптов: Storage Server не построили или не имеет публичный адрес IP."
+        error_: "Storage server hadn't been scheduled to rerun creation scripts: Storage Server not built or has no public IP address."
+        notice: "Сервер хранения было запланировано повторного создания скриптов"
+        notice_: "Storage server had been scheduled to rerun creation scripts"
+    reset_password: 
+      flash: 
+        error: "Хранение корневого сервера пароль не может быть сброшен на данный момент."
+        error_: "Storage server root password cannot be reset at the moment."
+        error_base: "Не удалось остановить"
+        error_base_: "Stop failed"
+        notice: "Сервер хранения пароля будут сброшены."
+        notice_: "Storage server root password will be reset."
+    shutdown: 
+      flash: 
+        error: "Сервер хранения не может быть закрыта в данный момент."
+        error_: "Storage server cannot be shut down at the moment."
+        error_base: "Завершить работу не удалось"
+        error_base_: "Shut down failed"
+        notice: "Хранение сервер будет закрыта в ближайшее время."
+        notice_: "Storage server will be shut down shortly."
+    startup: 
+      flash: 
+        error: "Сервер хранения не может быть запущено в данный момент. "
+        error_: "Storage server cannot be started at the moment. (%{msg})"
+        error_base: "Запустить не удалось"
+        error_base_: "Start up failed"
+        notice: "Хранение запуске сервера была очередь."
+        notice_: "Storage server startup has been queued."
+    stop: 
+      flash: 
+        error: "Машина не может быть остановлен в данный момент."
+        error_: " machine cannot be stopped at the moment."
+        error_base: "Не удалось остановить"
+        error_base_: "Stop failed"
+        notice: "Хранение сервер будет остановлен в ближайшее время."
+        notice_: "Storage server will be stopped shortly."
+    strict_vm: 
+      flash: 
+        error: "Раздельные сервер хранения не были изменены"
+        error_: "Segregated Storage server has not been changed"
+        notice: "Раздельные сервер хранения изменилась"
+        notice_: "Segregated Storage server has changed"
+    update: 
+      flash: 
+        error: "Сервер хранения не была обновлена ​​: %{msg}"
+        error_: "Storage server has not been updated: %{msg}"
+        notice: "Ресурсы успешно обновлены."
+        notice_: "Resources updated successfully."
+  sysadmin_tools: 
+    backups: 
+      flash: 
+        error1: "Максимальное количество процессов резервного копирования достигнута."
+        error1_: "Maximum number of backup processes reached."
+        error2: "Нет процессы резервного копирования найден остановить."
+        error2_: "No backup processes found to stop."
+        error3: "Резервное копирование процесс не был запущен ."
+        error3_: "Backup process has not been started."
+        error4: "Резервное копирование процесс не был остановлен."
+        error4_: "Backup process has not been stopped."
+        notice1: "Резервное копирование процесс начался."
+        notice1_: "Backup process started."
+        notice2: "Резервное копирование процесс остановился."
+        notice2_: "Backup process stopped."
+    cdn_sync: 
+      flash: 
+        error1: "Максимальное количество процессов CDN синхронизации бегун достигнута."
+        error1_: "Maximum number of CDN Sync runner processes reached."
+        error2: "Нет синхронизации CDN бегун процессы найден остановить."
+        error2_: "No CDN Sync runner processes found to stop."
+        error3: "CDN синхронизации бегун процесс не был запущен ."
+        error3_: "CDN Sync runner process has not been started."
+        error4: "CDN синхронизации бегун процесс не был остановлен."
+        error4_: "CDN Sync runner process has not been stopped."
+        error5: "CDN синхронизации бегун демон не был перезапущен."
+        error5_: "CDN Sync runner daemon has not been restarted."
+        notice1: "CDN синхронизации бегун процесс начался."
+        notice1_: "CDN Sync runner process started."
+        notice2: "CDN синхронизации бегун процесс остановился."
+        notice2_: "CDN Sync runner process stopped."
+        notice3: "CDN синхронизации бегун демон был перезапущен ."
+        notice3_: "CDN Sync runner daemon has been restarted."
+    tasks: 
+      flash: 
+        error1: "Максимальное количество процессов сделка бегун достигнута."
+        error1_: "Maximum number of transaction runner processes reached."
+        error2: "Нет процессы сделки бегун найден остановить."
+        error2_: "No transaction runner processes found to stop."
+        error3: "Процесс транзакции бегун не был запущен ."
+        error3_: "Transaction runner process has not been started."
+        error4: "Процесс транзакции бегун не был остановлен."
+        error4_: "Transaction runner process has not been stopped."
+        error5: "Демон транзакций бегун не был перезапущен."
+        error5_: "Transaction runner daemon has not been restarted."
+        notice1: "Процесс транзакции бегун начал."
+        notice1_: "Transaction runner process started."
+        notice2: "Процесс транзакции бегуна остановился."
+        notice2_: "Transaction runner process stopped."
+        notice3: "Демон транзакций бегун был перезапущен ."
+        notice3_: "Transaction runner daemon has been restarted."
+  system: 
+    access_denied: "Доступ запрещен!"
+    access_denied_: "Access denied!"
+    api_auth: "%{app_name} API проверки подлинности"
+    api_auth_: "%{app_name} API Authentication"
+    error403: "У вас нет прав для этого действия"
+    error403_: "You do not have permissions for this action"
+    error404: "Ресурс не найден."
+    error404_: "Resource not found."
+    error503: "Сервис недоступен ."
+    error503_: "Service unavailable."
+    error503cdn: "CDN сервис временно недоступен."
+    error503cdn_: "CDN Service is temporarily unavailable."
+    permissions_denied: "Доступ запрещен!"
+    permissions_denied_: Permission denied!
+  themes: 
+    create: 
+      flash: 
+        error: "Тема не была создана"
+        error_: "Theme was not created"
+        notice: "Тема была успешно создана"
+        notice_: "Theme was successfully created"
+    destroy: 
+      flash: 
+        error: "Тема не была удалена"
+        error_: "Theme was not removed"
+        notice: "Тема была успешно удалена"
+        notice_: "Theme was successfully removed"
+    update: 
+      flash: 
+        error: "Тема не обновлялась"
+        error_: "Theme was not updated"
+        notice: "Тема была успешно обновлена"
+        notice_: "Theme was successfully updated"
+  user_additional_fields: 
+    create: 
+      flash: 
+        error: "Пользователь дополнительное поле не было создано : %{msg}"
+        error_: "User additional field was not created: %{msg}"
+        notice: "Пользователь дополнительные поля была успешно создана."
+        notice_: "User additional field was successfully created."
+    destroy: 
+      flash: 
+        error: "Пользователь дополнительные поля не был удален : %{msg}"
+        error_: "User additional field was not deleted: %{msg}"
+        notice: "Пользователь дополнительные поля был удален."
+        notice_: "User additional field  was successfully deleted."
+    update: 
+      flash: 
+        error: "Пользователь дополнительное поле не обновляется : ​​%{msg}"
+        error_: "User additional field was not updated: %{msg}"
+        notice: "Пользователь дополнительные поля был успешно обновлен"
+        notice_: "User additional field was successfully updated"
+  user_groups: 
+    create: 
+      flash: 
+        error: "Пользователь группа не была создана!"
+        error_: "User group was not created!"
+        notice: "Пользователь Группа была успешно создана."
+        notice_: "User group was successfully created."
+    destroy: 
+      flash: 
+        error: "Пользователь Группа не была удалена."
+        error_: "User group has not been deleted."
+        notice: "Пользователь Группа была успешно удалена."
+        notice_: "User group has been deleted successfully."
+    update: 
+      flash: 
+        error: "Пользователь Группа не была обновлена ​​."
+        error_: "User group has not been updated."
+        notice: "Пользователь группы были успешно обновлены."
+        notice_: "User group has been updated successfully."
+  user_white_lists: 
+    create: 
+      flash: 
+        error: "IP пользователя белых не было создано !"
+        error_: "User white IP was not created!"
+        notice: "IP пользователя белых была успешно создана."
+        notice_: "User white IP was successfully created."
+    destroy: 
+      flash: 
+        error: "Пользователь белый IP не был удален ."
+        error_: "User white IP has not been deleted."
+        notice: "Пользователь белый IP был успешно удален."
+        notice_: "User white IP has been deleted successfully."
+    update: 
+      flash: 
+        error: "Пользователь белый IP не был обновлен ."
+        error_: "User white IP has not been updated."
+        notice: "Пользователь белый IP был успешно обновлен ."
+        notice_: "User white IP has been updated successfully."
+  users: 
+    activate: 
+      flash: 
+        error: "Пользователь активация не удалась."
+        error2: "Пользователь уже активно"
+        error2_: "User is already active"
+        error_: "User activation failed."
+        notice: "Пользователь была успешно активирована."
+        notice_: "User was successfully activated."
+    activate_user: 
+      flash: 
+        error1: "Код активации не хватает. "
+        error1_: "The activation code was missing.  Please follow the URL from your email."
+        error2: "Мы не смогли найтипользователя с кодом активации - пожалуйста, проверьте свою электронную почту . "
+        error2_: "We couldn't find a user with that activation code - please check your email. Or maybe you've already activated - try signing in."
+        notice: "Регистрация завершена! "
+        notice_: "Signup complete! Please sign in to continue."
+    create: 
+      flash: 
+        error: "Мы не могли создать этот счет , извините. "
+        error_: "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
+        notice: "Пользователь %{login} создан."
+        notice_: "User %{login} created."
+    destroy: 
+      flash: 
+        error: "Пользователь не был удален . "
+        error403: "Пожалуйста подождите, пока Пользователь сделки будут завершены."
+        error403_: "Please wait while User transactions will be finished."
+        error_: "User has not been deleted. %{msg}"
+        error_destroy_iso: "Не удается удалить ISO-образы всех пользователей."
+        error_destroy_iso_: "Could not delete all user's ISOs."
+        error_destroy_template: "Не удается удалить шаблоны всех пользователей."
+        error_destroy_template_: "Could not delete all user's templates."
+        error_destroy_user_status: "Не удалось удалить статус пользователя."
+        error_destroy_user_status_: "Could not delete user's Status."
+        error_destroy_vm: "Не удается удалить все виртуальные машины пользователей."
+        error_destroy_vm_: "Could not delete all user's Virtual Machines."
+        notice: "Пользователь был успешно удален."
+        notice1: "Уничтожить Пользователь сделка была запланирована успешно."
+        notice1_: "Destroy User transaction has been scheduled successfully."
+        notice_: "User has been deleted successfully."
+    login_as: 
+      flash: 
+        notice: "Вы вошли как %{user}"
+        notice_: "You are logged in as %{user}"
+    suspend: 
+      flash: 
+        error: "Пользователь статус не изменился."
+        error2: "Пользователь уже приостановлена"
+        error2_: "User is already suspended"
+        error_: "User status has not been changed."
+        notice: "Пользователь был успешно приостановлены."
+        notice_: "User was successfully suspended."
+    unlock_account: 
+      flash: 
+        error: "Пользователь разблокировки не удалось"
+        error2: "Пользователь уже разблокирован"
+        error2_: "User is already unlocked"
+        error_: "User unlocking failed"
+        notice: "Пользователь был успешно разблокирован."
+        notice_: "User was successfully unlocked."
+    update: 
+      flash: 
+        error: "Пользователь не были обновлены. "
+        error_: "User has not been updated. %{msg}"
+        notice: "Пользователь был успешно обновлен ."
+        notice_: "User has been updated successfully."
+    update_usergroup: 
+      flash: 
+        error: "Пользователь Группа не была изменена ."
+        error_: "User group has not been changed."
+        notice: "Пользователь группы был успешно изменен."
+        notice_: "User group has been changed successfully."
+  virtual_machine_snapshots: 
+    create: 
+      flash: 
+        error: "Снимок не была создана . "
+        error_: "Snapshot has not been created. %{msg}"
+        notice: "Снимок был успешно запланирован на создание."
+        notice_: "Snapshot has been successfully scheduled for creation."
+    destroy: 
+      flash: 
+        error: "Снимки не были удалены. "
+        error_: "Snapshot has not been removed. %{msg}"
+        notice: "Снимок был успешно запланирован на удаление."
+        notice_: "Snapshot has been successfully scheduled for removal."
+  virtual_machines: 
+    build: 
+      flash: 
+        error: "Виртуальная машина сборки не было очередей : %{msg}"
+        error2: "Шаблон недоступны"
+        error2_: "Template unavailable"
+        error3: "Основной сетевой интерфейс должен иметь по крайней мере один адрес IPv4."
+        error3_: "Primary Network Interface should have at least one IPv4 address."
+        error_: "Virtual machine build has not been queued: %{msg}"
+        error_base: "сборка не удалось"
+        error_base_: "Build failed"
+        notice: "Виртуальная машина сборки был поставлен в очередь , и будет проходить вданный момент."
+        notice_: "Virtual machine build has been queued, and will take place in a moment."
+    change_owner: 
+      flash: 
+        already_owner: "уже Virtual Machine владелец"
+        already_owner_: "already Virtual Machine's owner"
+        available_data_store: "Хранилище данных не доступно."
+        available_data_store_: "Data store is not available"
+        error: "Виртуальный владелец машины не изменилась : %{msg}"
+        error_: "Virtual machine owner has not been changed: %{msg}"
+        error_base: "Не удалось изменить владельца"
+        error_base_: "Failed to change owner"
+        notice: "Виртуальный владельца машины была изменена успешно."
+        notice_: "Virtual machine owner has been changed successfully."
+        vm_needs_more_disk_space: "Не хватает места на диске для резервного копирования виртуальных машин / шаблоны"
+        vm_needs_more_disk_space_: "not enough disk space for Virtual Machine's backups/templates"
+    console: 
+      flash: 
+        console_popup: "Удаленный доступ сессия не была найдена."
+        console_popup_: "Remote access session has not been found."
+        error: "Удаленный доступ сессия не была создана ."
+        error_: "Remote access session has not been created."
+    console_remote: 
+      flash: 
+        error: "Удаленный доступ сессия не была создана ."
+        error_: "Remote access session has not been created."
+    create: 
+      flash: 
+        error: "Виртуальная машина успешно создан , но еще не были построены : %{msg} ."
+        error1: "Виртуальная машина не была создана : %{msg}"
+        error1_: "Virtual machine has not been created: %{msg}"
+        error_: "Virtual machine has been created successfully, but has not been built: %{msg}."
+        error_base: "Создание удалось: неверные параметры"
+        error_base_: "Creation failed: incorrect parameters"
+        notice: "Виртуальная машина была успешно создана , и ее сборка была очередь."
+        notice1: "Виртуальная машина была успешно создана."
+        notice1_: "Virtual machine has been created successfully."
+        notice_: "Virtual machine has been created successfully, and its build has been queued."
+    destroy: 
+      flash: 
+        error: "Виртуальная машина не была удалена . "
+        error_: "Virtual machine has not been removed. %{msg}."
+        notice: "В.М. было запланировано на уничтожение."
+        notice_: "VM has been scheduled for destruction."
+    disable_autobackups: 
+      flash: 
+        notice: "Автоматический бекап был отключен для этой виртуальной машины."
+        notice_: "Autobackup has been disabled for this Virtual Machine."
+    new: 
+      flash: 
+        error: "[FAIL] "
+        error_: ""
+    popup_console: 
+      flash: 
+        error: "Удаленный доступ сессия не была создана ."
+        error_: "Remote access session has not been created."
+    reboot: 
+      flash: 
+        error: "Виртуальная машина не может быть перезагружен в данный момент."
+        error_: "Virtual machine cannot be rebooted at the moment."
+        error_base: "Перезагрузка не удалось"
+        error_base_: "Reboot failed"
+        notice: "Виртуальный перезагрузки машины были поставлены в очередь."
+        notice2: "Виртуальные машины будет запущен."
+        notice2_: "Virtual machine will be now started."
+        notice_: "Virtual machine reboot has been queued."
+    rebuild_network: 
+      flash: 
+        error: "Сетевой интерфейс не может быть восстановлен на данный момент. "
+        error2: "Вы должны иметь по крайней мере одного основного сетевого интерфейса."
+        error2_: "You must have at least one primary Network Interface."
+        error3: "Основной сетевой интерфейс должен иметь по крайней мере один адрес IPv4."
+        error3_: "Primary Network Interface should have at least one IPv4 address."
+        error_: "Network interface cannot be rebuilt at the moment. %{msg}"
+        notice: "Сетевой интерфейс будет перестроен для этой виртуальной машины."
+        notice_: "Network interface will be rebuilt for this Virtual machine."
+    reset_password: 
+      flash: 
+        error: "Виртуальный пароль администратора машины не могут быть сброшены на данный момент. "
+        error_: "Virtual machine root password cannot be reset at the moment. %{msg}"
+        error_base: "Не удалось остановить"
+        error_base_: "Stop failed"
+        notice: "Виртуальный пароль администратора машины будут сброшены."
+        notice_: "Virtual machine root password will be reset."
+    shutdown: 
+      flash: 
+        error: "Виртуальная машина не может быть закрыта в данный момент."
+        error_: "Virtual machine cannot be shut down at the moment."
+        error_base: "Завершить работу не удалось"
+        error_base_: "Shut down failed"
+        notice: "Виртуальная машина будет закрыта в ближайшее время."
+        notice_: "Virtual machine will be shut down shortly."
+    startup: 
+      flash: 
+        error: "Виртуальная машина не может быть запущена в данный момент. "
+        error_: "Virtual machine cannot be started at the moment. (%{msg})"
+        error_base: "Запустить не удалось"
+        error_base_: "Start up failed"
+        notice: "Запуске виртуальной машины были поставлены в очередь."
+        notice_: "Virtual machine startup has been queued."
+    stop: 
+      flash: 
+        error: "Виртуальная машина не может быть остановлен в данный момент."
+        error_: "Virtual machine cannot be stopped at the moment."
+        error_base: "Не удалось остановить"
+        error_base_: "Stop failed"
+        notice: "Виртуальная машина будет остановлена ​​в ближайшее время."
+        notice_: "Virtual machine will be stopped shortly."
+    strict_vm: 
+      flash: 
+        error: "Раздельные Virtual Machine не изменилась"
+        error_: "Segregated Virtual Machine has not been changed"
+        notice: "Раздельные Virtual Machine изменилась"
+        notice_: "Segregated Virtual Machine has changed"
+    update: 
+      flash: 
+        error: "Виртуальная машина не была обновлена ​​: %{msg}"
+        error_: "Virtual machine has not been updated: %{msg}"
+        notice: "Ресурсы успешно обновлены."
+        notice_: "Resources updated successfully."
+    update_firewall_rules: 
+      flash: 
+        error: "Обновление правил брандмауэра не может быть запущено в данный момент."
+        error_: "An update of firewall rules cannot be started at the moment."
+        error_base: "Не удалось обновить правила брандмауэра. "
+        error_base_: "Failed to update firewall rules. Please shut down Virtual Machine before update."
+        notice: "Обновление правил брандмауэра была очередь."
+        notice_: "An update of firewall rules has been queued."
+        uniq: "Комбинация из трех : IP -адрес, порт и протокол должен быть уникальным"
+        uniq_: "The combination of three: IP address, port and protocol must be unique"

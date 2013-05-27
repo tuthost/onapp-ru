@@ -1,0 +1,72 @@
+--- 
+ru: 
+  datetime: 
+    human: 
+      time_units: 
+        units: 
+          hour: час
+          hour_: hour
+          minute: минут
+          minute_: minute
+          second: секунд
+          second_: second
+  number: 
+    currency: 
+      format: 
+        delimiter: ","
+        delimiter_: ","
+        format: "%u%n"
+        format_: "%u%n"
+        precision: "5"
+        precision_: "5"
+        separator: "."
+        separator_: "."
+        significant: "false"
+        significant_: "false"
+        strip_insignificant_zeros: "false"
+        strip_insignificant_zeros_: "false"
+        unit: $
+        unit_: $
+    human: 
+      decimal_units: 
+        units: 
+          billion: B
+          million: M
+          quadrillion: Q
+          thousand: K
+          trillion: T
+      format: 
+        significant: "false"
+        significant_: "false"
+      storage_units: 
+        units: 
+          byte: Б
+          byte_: B
+          gb: ГБ
+          gb_: GB
+          gbit: Гб
+          gbit_: Gb
+          kb: КБ
+          kb_: KB
+          mb: МБ
+          mb_: MB
+          mbit: Мб
+          mbit_: Mb
+          miops: "M запросы"
+          miops_: "M requests"
+          mrequests: "1M запрос"
+          mrequests_: "1M requests"
+          request: запрос
+          request_: request
+          tb: ТБ
+          tb_: TB
+  time: 
+    formats: 
+      default: "%d/%m/%Y"
+      default_: "%d/%m/%Y"
+      long: "%B %d, %Y"
+      long_: "%B %d, %Y"
+      moth_year: "%B, %Y"
+      moth_year_: "%B, %Y"
+      short: "%b %d"
+      short_: "%b %d"

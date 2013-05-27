@@ -1,0 +1,28 @@
+--- 
+ru: 
+  simple_form: 
+    error_notification: 
+      default_message: "Обнаружены ошибки, пожалуйста, посмотрите:"
+      default_message_: "Some errors were found, please take a look:"
+    labels: 
+      disk: 
+        min_iops: "Гарантированный IOPS"
+        min_iops_: "Guaranteed IOPS"
+      virtual_machine: 
+        primary_disk_min_iops: "Гарантированный IOPS"
+        primary_disk_min_iops_: "Guaranteed IOPS"
+        swap_disk_min_iops: "Гарантированный IOPS"
+        swap_disk_min_iops_: "Guaranteed IOPS"
+    ? "no"
+    : Нет
+    no_: "No"
+    required: 
+      html: html
+      html_: ""
+      mark: "*"
+      mark_: "*"
+      text: обязательно
+      text_: required
+    ? "yes"
+    : Да
+    yes_: "Yes"

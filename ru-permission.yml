@@ -1,0 +1,2621 @@
+--- 
+ru: 
+  permission: 
+    auto_scalings: 
+      create: 
+        desc: "Пользователь может создавать конфигурацию автомасштабирование"
+        desc_: "The user can create autoscaling configuration"
+        label: "Создать Автомасштабирование конфигурации"
+        label_: "Create autoscaling configuration"
+        own: 
+          desc: "Пользователь может создать собственную конфигурацию автомасштабирование"
+          desc_: "The user can only create own autoscaling configuration"
+          label: "Создать собственную Автомасштабирование конфигурации"
+          label_: "Create own autoscaling configuration"
+      delete: 
+        desc: "Пользователь может удалить автомасштабирование конфигурации"
+        desc_: "The user can delete autoscaling configuration"
+        label: "Уничтожить любой конфигурации Автомасштабирование"
+        label_: "Destroy any autoscaling configuration"
+        own: 
+          desc: "Пользователь может удалять только собственные конфигурации автомасштабирование"
+          desc_: "The user can only delete own autoscaling configuration"
+          label: "Уничтожить собственную Автомасштабирование конфигурации"
+          label_: "Destroy own autoscaling configuration"
+      desc: "Пользователь может принимать любые действия с автомасштабирование конфигурации"
+      desc_: "The user can take any action on autoscaling configuration"
+      group: "Автомасштабирование конфигурации"
+      group_: "Autoscaling Configuration"
+      label: "Любые действия с Автомасштабирование конфигурации"
+      label_: "Any action on autoscaling configuration"
+      read: 
+        desc: "Пользователь может читать автомасштабирование конфигурации"
+        desc_: "The user can read autoscaling configuration"
+        label: "Читать все Автомасштабирование конфигурации"
+        label_: "Read all autoscaling configuration"
+        own: 
+          desc: "Пользователь может читать только собственную конфигурацию автомасштабирование"
+          desc_: "The user can only read own autoscaling configuration"
+          label: "Читайте собственной конфигурации Автомасштабирование"
+          label_: "Read own autoscaling configuration"
+      update: 
+        desc: "Пользователь может изменять конфигурацию автомасштабирование"
+        desc_: "The user can edit autoscaling configuration"
+        label: "Обновить все Автомасштабирование конфигурации"
+        label_: "Update all autoscaling configuration"
+        own: 
+          desc: "Пользователь может редактировать только собственные конфигурации автомасштабирование"
+          desc_: "The user can only edit own autoscaling configuration"
+          label: "Обновление собственной конфигурации Автомасштабирование"
+          label_: "Update own autoscaling configuration"
+    autobackup_templates: 
+      desc: "Пользователь может выполнять любые действия на пресетов автоматического резервного копирования , которые были подкреплены автоматически"
+      desc_: "The user can take any action on autobackup presets that have been backed up automatically"
+      group: "Autobackup Presets"
+      group_: "Autobackup Presets"
+      label: "Любые действия по пресетов Autobackup"
+      label_: "Any action on autobackup presets"
+      read: 
+        desc: "Пользователь может просмотреть все Autobackup пресетов, которые были подкреплены автоматически"
+        desc_: "The user can see all autobackup presets that have been backed up automatically"
+        label: "Посмотреть все Autobackup пресеты"
+        label_: "See all autobackup presets"
+      update: 
+        desc: "Пользователь может редактировать любой Autobackup пресетов, которые были подкреплены автоматически"
+        desc_: "The user can edit any autobackup presets that has been backed up automatically"
+        label: "Обновите Autobackup пресеты"
+        label_: "Update any autobackup presets"
+    backup_server_zones: 
+      create: 
+        desc: "Пользователь может создать новую зону сервера резервного копирования"
+        desc_: "The user can create a new backup server zone"
+        label: "Создать новую зону сервера резервного копирования"
+        label_: "Create a new backup server zone"
+      delete: 
+        desc: "Пользователь может удалить любой резервной копии сервера зоны"
+        desc_: "The user can delete any backup server zone"
+        label: "Удалить любую резервную копию сервера зоны"
+        label_: "Delete any backup server zone"
+      desc: "Пользователь может выполнять любые действия на сервере резервного копирования зоны"
+      desc_: "The user can take any action on backup server zones"
+      group: "Резервное копирование серверов зоны"
+      group_: "Backup Server Zones"
+      label: "Любые действия на резервный сервер зоны"
+      label_: "Any action on backup server zones"
+      list: 
+        desc: "Пользователь может увидеть список всех резервных зон сервера"
+        desc_: "The user can see list of all backup server zones"
+        label: "Посмотреть список всех резервных зон сервера"
+        label_: "See list of all backup server zones"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых резервного копирования сервера зоны"
+        desc_: "The user can see details of any backup server zone"
+        label: "Подробнее любой резервной копии сервера зоны"
+        label_: "See details of any backup server zone"
+      update: 
+        desc: "Пользователь может редактировать любой резервной копии сервера зоны"
+        desc_: "The user can edit any backup server zone"
+        label: "Обновление любую резервную копию сервера зоны"
+        label_: "Update any backup server zone"
+    backup_servers: 
+      create: 
+        desc: "Пользователь может добавить сервер резервного копирования"
+        desc_: "The user can add a backup server"
+        label: "Добавить новый сервер резервного копирования"
+        label_: "Add a new backup server"
+      delete: 
+        desc: "Пользователь может удалить любой сервер резервного копирования"
+        desc_: "The user can delete any backup server"
+        label: "Удалить все Резервное копирование серверов"
+        label_: "Delete any backup server"
+      desc: "Пользователь может предпринимать никаких действий на любом сервере резервного копирования"
+      desc_: "The user can take any action on any Backup server"
+      group: "Резервное копирование серверов"
+      group_: "Backup Servers"
+      label: "Любые действия по Резервное копирование серверов"
+      label_: "Any action on backup servers"
+      read: 
+        desc: "Пользователь может просмотреть все резервные серверы"
+        desc_: "The user can see all backup servers"
+        label: "Посмотреть все Резервное копирование серверов"
+        label_: "See all backup servers"
+      update: 
+        desc: "Пользователь может редактировать любой сервер резервного копирования"
+        desc_: "The user can edit any backup server"
+        label: "Обновите сервер резервного копирования"
+        label_: "Update any backup server"
+    backups: 
+      convert: 
+        desc: "Пользователь может принять любую резервную копию любой виртуальной машины, и преобразовать его в шаблон"
+        desc_: "The user can take any backup of any virtual machine, and convert it to a template"
+        label: "Конвертировать любой резервной копии шаблонов"
+        label_: "Convert any backup to template"
+        own: 
+          desc: "Пользователь может только конвертировать свои резервные копии шаблонов"
+          desc_: "The user can only convert their own backups to templates"
+          label: "Преобразование собственного резервного копирования шаблонов"
+          label_: "Convert own backup to template"
+      create: 
+        desc: "Пользователь может создавать резервные копии любых виртуальных машин"
+        desc_: "The user can create a backup of any virtual machine"
+        label: "Создать резервную копию для любого VM"
+        label_: "Create backup for any VM"
+        own: 
+          desc: "Пользователь может создавать резервные копии своих виртуальных машин"
+          desc_: "The user can only create backups of their own virtual machines"
+          label: "Создать резервную копию для собственного VM"
+          label_: "Create backup for own VM"
+      delete: 
+        desc: "Пользователь может удалить любой резервной копии"
+        desc_: "The user can delete any backup"
+        label: "Уничтожить любой резервной копии"
+        label_: "Destroy any backup"
+        own: 
+          desc: "Пользователь может удалять только свои собственные резервные копии"
+          desc_: "The user can only delete their own backups"
+          label: "Уничтожить собственную резервного копирования"
+          label_: "Destroy own backup"
+      desc: "Пользователь может выполнять любые действия на любую резервную копию"
+      desc_: "The user can take any action on any backup"
+      group: "Резервные копии"
+      group_: Backups
+      label: "Любые действия на резервных копий"
+      label_: "Any action on backups"
+      read: 
+        desc: "Пользователь может видеть все резервные копии"
+        desc_: "The user can see all backups"
+        label: "Посмотреть все резервные копии"
+        label_: "See all backups"
+        own: 
+          desc: "Пользователь может видеть только свои собственные резервные копии"
+          desc_: "The user can only see their own backups"
+          label: "См. собственных резервных копий"
+          label_: "See own backups"
+      update: 
+        desc: "Пользователь может редактировать любой резервной копии"
+        desc_: "The user can edit any backup"
+        label: "Обновите резервного копирования"
+        label_: "Update any backup"
+        own: 
+          desc: "Пользователь может редактировать только свои собственные резервные копии"
+          desc_: "The user can only edit their own backups"
+          label: "Обновление собственных резервных"
+          label_: "Update own backup"
+    base_resources: 
+      create: 
+        desc: "Пользователь может создать новую ресурсную базу"
+        desc_: "The user can create a new base resource"
+        label: "Создание нового ресурса"
+        label_: "Create a new resource"
+      delete: 
+        desc: "Пользователь может удалить любой ресурсной базы"
+        desc_: "The user can delete any base resource"
+        label: "Удаление любого ресурса"
+        label_: "Delete any resource"
+      desc: "Пользователь может предпринимать никаких действий на основе ресурсов"
+      desc_: "The user can take any action on base resources"
+      group: "База ресурсов"
+      group_: "Base Resources"
+      label: "Любые действия по ресурсам"
+      label_: "Any action on resources"
+      list: 
+        desc: "Пользователь может увидеть список всех базовых ресурсов"
+        desc_: "The user can see list of all base resources"
+        label: "Список всех ресурсов"
+        label_: "See list of all resources"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых ресурсной базы"
+        desc_: "The user can see details of any base resource"
+        label: "Подробнее любого ресурса"
+        label_: "See details of any resource"
+        own: 
+          desc: "Пользователь может видеть только собственную сырьевую базу"
+          desc_: "The user can only see own base resources"
+          label: "См. собственной сырьевой базы"
+          label_: "See own base resources"
+      update: 
+        desc: "Пользователь может редактировать любой ресурсной базы"
+        desc_: "The user can edit any base resource"
+        label: "Обновление любого ресурса"
+        label_: "Update any resource"
+    billing_plans: 
+      create: 
+        desc: "Пользователь может создать новый тарифного плана"
+        desc_: "The user can create a new billing plan"
+        label: "Создайте новый тарифного плана"
+        label_: "Create a new billing plan"
+      delete: 
+        desc: "Пользователь может удалить любые тарифные планы"
+        desc_: "The user can delete any billing plan"
+        label: "Удалить все тарифные планы"
+        label_: "Delete any billing plan"
+      desc: "Пользователь может выполнять любые действия на любые тарифные планы"
+      desc_: "The user can take any action on any billing plan"
+      group: "тарифные планы"
+      group_: "Billing Plans"
+      label: "Любые действия на тарифные планы"
+      label_: "Any action on billing plans"
+      list: 
+        desc: "Пользователь может увидеть список всех тарифные планы"
+        desc_: "The user can see list of all billing plans"
+        label: "Посмотреть список всех тарифные планы"
+        label_: "See list of all billing plans"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых тарифного плана"
+        desc_: "The user can see details of any billing plan"
+        label: "См. подробную информацию о любых тарифного плана"
+        label_: "See details of any billing plan"
+        own: 
+          desc: "Пользователь может видеть только собственные тарифного плана"
+          desc_: "The user can only see own billing plan"
+          label: "См. собственного тарифного плана"
+          label_: "See own billing plan"
+      update: 
+        desc: "Пользователь может редактировать любые тарифные планы"
+        desc_: "The user can edit any billing plan"
+        label: "Обновление любого тарифного плана"
+        label_: "Update any billing plan"
+    cdn_resources: 
+      create: 
+        desc: "Пользователь может создать новый ресурс CDN"
+        desc_: "The user can create a new CDN resource"
+        label: "Создание нового ресурса CDN"
+        label_: "Create a new CDN resource"
+      delete: 
+        desc: "Пользователь может удалить ресурс CDN"
+        desc_: "The user can delete a CDN resource"
+        label: "Уничтожить любой ресурс CDN"
+        label_: "Destroy any CDN resource"
+        own: 
+          desc: "Пользователь может удалять только свои собственные ресурсы CDN"
+          desc_: "The user can only delete their own CDN resources"
+          label: "Уничтожить собственные ресурсы CDN"
+          label_: "Destroy own CDN resources"
+      desc: "Пользователь может выполнять любые действия на CDN ресурсов"
+      desc_: "The user can take any action on CDN resources"
+      group: "CDN ресурсов"
+      group_: "CDN resources"
+      label: "Любые действия по CDN ресурсов"
+      label_: "Any action on CDN resources"
+      read: 
+        desc: "Пользователь может видеть все ресурсы CDN"
+        desc_: "The user can see all CDN resources"
+        label: "Посмотреть все CDN ресурсов"
+        label_: "See all CDN resources"
+        own: 
+          desc: "Пользователь может видеть только свои собственные ресурсы CDN"
+          desc_: "The user can only see their own CDN resources"
+          label: "См. собственные ресурсы CDN"
+          label_: "See own CDN resources"
+      update: 
+        desc: "Пользователь может редактировать любой ресурс CDN"
+        desc_: "The user can edit any CDN resource"
+        label: "Обновление любого ресурса CDN"
+        label_: "Update any CDN resource"
+        own: 
+          desc: "Пользователь может редактировать только свои собственные ресурсы CDN"
+          desc_: "The user can only edit their own CDN resources"
+          label: "Обновление собственные ресурсы CDN"
+          label_: "Update own CDN resources"
+    cdn_usage_stats: 
+      desc: "Пользователь может просматривать подробную информацию о статистике использования CDN"
+      desc_: "The user can see details of CDN usage statistics"
+      group: "CDN Статистика"
+      group_: "CDN Usage Statistics"
+      label: "Подробнее о статистике использования CDN"
+      label_: "See details of CDN usage statistics"
+      read: 
+        desc: "Пользователь может видеть статистику использования CDN"
+        desc_: "The user can see CDN usage statistics"
+        label: "Пользователь может видеть статистику использования CDN"
+        label_: "User can see CDN usage statistics"
+        own: 
+          desc: "Пользователь может видеть собственную статистику использования CDN"
+          desc_: "The user can see own CDN usage statistics"
+          label: "Пользователь может видеть собственную статистику использования CDN"
+          label_: "User can see own CDN usage statistics"
+    cloud_boot: 
+      desc: "Пользователь может управлять конфигурациями CloudBoot"
+      desc_: "The user can manage CloudBoot configurations"
+      group: CloudBoot
+      group_: CloudBoot
+      label: "Управление конфигурациями CloudBoot"
+      label_: "Manage CloudBoot configurations"
+    currencies: 
+      create: 
+        desc: "Пользователь может создать новую валюту"
+        desc_: "The user can create a new currency"
+        label: "Создать новую валюту"
+        label_: "Create new currency"
+      delete: 
+        desc: "Пользователь может удалить любой валюте"
+        desc_: "The user can delete any currency"
+        label: "Удалить все валюты"
+        label_: "Delete any currency"
+      desc: "Пользователь может предпринимать никаких действий по валютам"
+      desc_: "The user can take any action on currencies"
+      group: Валюты
+      group_: Currencies
+      label: "Любые действия с валютами"
+      label_: "Any action on currencies"
+      read: 
+        desc: "Пользователь может просматривать любой валюте"
+        desc_: "The user can view any currency"
+        label: "Посмотреть список всех валютах"
+        label_: "See list of all currencies"
+      update: 
+        desc: "Пользователь может обновить любой валюте"
+        desc_: "The user can update any currency"
+        label: "Обновление всех валютах"
+        label_: "Update all currencies"
+    customer_networks: 
+      create: 
+        desc: "Пользователь может создать новую сеть клиентов"
+        desc_: "The user can create a new customer network"
+        label: "Создать новую сеть клиентов"
+        label_: "Create a new customer network"
+        own: 
+          desc: "Пользователь может создать собственную сеть клиентов"
+          desc_: "The user can create own customer network"
+          label: "Создайте собственную сеть клиентов"
+          label_: "Create own customer network"
+      delete: 
+        desc: "Пользователь может удалитьклиентскую сеть"
+        desc_: "The user can delete a customer network"
+        label: "Уничтожить любого клиента сети"
+        label_: "Destroy any customer network"
+        own: 
+          desc: "Пользователь может удалить собственную сеть клиентов"
+          desc_: "The user can delete own customer network"
+          label: "Уничтожить собственную сеть клиентов"
+          label_: "Destroy own customer network"
+      desc: "Пользователь может выполнять любые действия на клиента Сети"
+      desc_: "The user can take any action on customer networks"
+      group: "Клиент сети"
+      group_: "Customer Networks"
+      label: "Любые действия на клиента Сети"
+      label_: "Any action on customer networks"
+      read: 
+        desc: "Пользователь может просмотреть все клиентами сети"
+        desc_: "The user can see all customer networks"
+        label: "Посмотреть все клиентами сети"
+        label_: "See all customer networks"
+        own: 
+          desc: "Пользователь может видеть собственную сеть клиентов"
+          desc_: "The user can see own customer networks"
+          label: "См. собственной сети клиентов"
+          label_: "See own customer networks"
+    customer_vlans: 
+      create: 
+        desc: "Пользователь может создать новый Клиент VLAN"
+        desc_: "The user can create a new customer VLAN"
+        label: "Создайте новый Клиент VLAN"
+        label_: "Create a new customer VLAN"
+      delete: 
+        desc: "Пользователь может удалитьКлиент VLAN"
+        desc_: "The user can delete a customer VLAN"
+        label: "Уничтожить любого клиента VLAN"
+        label_: "Destroy any customer VLAN"
+      desc: "Пользователь может выполнять любые действия на клиентов сети VLAN"
+      desc_: "The user can take any action on customer VLANs"
+      group: "Клиент сети VLAN"
+      group_: "Customer VLANs"
+      label: "Любые действия на клиента VLAN"
+      label_: "Any action on customer VLAN"
+      read: 
+        desc: "Пользователь может просмотреть все клиентами сети VLAN"
+        desc_: "The user can see all customer VLANs"
+        label: "Посмотреть все клиентами сети VLAN"
+        label_: "See all customer VLANs"
+      update: 
+        desc: "Пользователь может редактировать любой Клиент VLAN"
+        desc_: "The user can edit any customer VLAN"
+        label: "Обновление любого клиента VLAN"
+        label_: "Update any customer VLAN"
+    dashboard: 
+      alerts: 
+        desc: "Пользователь может увидеть предупреждения на приборной панели , в том числе зомби виртуальных машин и операции, и фоновые процессы"
+        desc_: "The user can see alerts on the dashboard, including zombie VMs and transactions, and background processes"
+        label: "См. агент"
+        label_: "See alerts"
+      desc: "Пользователь может просмотреть все доступные действия приборной панели"
+      desc_: "The user can see all available dashboard actions"
+      global_stats: 
+        desc: "Пользователь может просмотреть статистику для всего облака на приборной панели"
+        desc_: "The user can see statistics for the entire cloud on the dashboard"
+        label: "См. Глобальная статистика"
+        label_: "See global statistic"
+      group: "приборная панель"
+      group_: Dashboard
+      label: "Все действия на панели"
+      label_: "All actions on dashboard"
+      licensing: 
+        desc: "Пользователь может видеть лицензию детали на приборной панели"
+        desc_: "The user can see license details on the dashboard"
+        label: "См. подробности лицензии"
+        label_: "See license details"
+    data_store_joins: 
+      create: 
+        desc: "Пользователь может добавитьхранилище данных любого гипервизора"
+        desc_: "The user can add a data store to any hypervisor"
+        label: "Добавить хранилища данных любого гипервизора"
+        label_: "Add data store to any hypervisor"
+      delete: 
+        desc: "Пользователь может отделитьхранилище данных с любого гипервизора"
+        desc_: "The user can detach a data store from any hypervisor"
+        label: "Удалите хранилище данных с любого гипервизора"
+        label_: "Remove data store from any hypervisor"
+      desc: "Пользователь может предпринимать никаких действий по хранилищам данных прикреплен к гипервизор"
+      desc_: "The user can take any action on data stores attached to a hypervisor"
+      group: "Хранилище данных играя"
+      group_: "Data Store Joins"
+      label: "Все действия по хранилищам данных на гипервизор"
+      label_: "All actions on datastores on hypervisor"
+    data_store_zones: 
+      create: 
+        desc: "Пользователь может создать новое хранилище данных зоны"
+        desc_: "The user can create a new data store zone"
+        label: "Создать новое хранилище данных зоны"
+        label_: "Create a new data store zone"
+      delete: 
+        desc: "Пользователь может удалить любой зоне хранилища данных"
+        desc_: "The user can delete any data store zone"
+        label: "Удалите любой зоне хранилища данных"
+        label_: "Delete any data store zone"
+      desc: "Пользователь может выполнять любые действия на зоны хранилища данных"
+      desc_: "The user can take any action on data store zones"
+      group: "Зоны Data Store"
+      group_: "Data Store Zones"
+      label: "Любые действия по зонам хранения данных"
+      label_: "Any action on data store zones"
+      list: 
+        desc: "Пользователь может увидеть список всех зонах хранилища данных"
+        desc_: "The user can see list of all data store zones"
+        label: "Список всех зонах хранилища данных"
+        label_: "See list of all data store zones"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых зоне хранилища данных"
+        desc_: "The user can see details of any data store zone"
+        label: "Подробнее любой зоне хранилища данных"
+        label_: "See details of any data store zone"
+      update: 
+        desc: "Пользователь может редактировать любой зоне хранилища данных"
+        desc_: "The user can edit any data store zone"
+        label: "Обновление любой зоне хранилища данных"
+        label_: "Update any data store zone"
+    data_stores: 
+      create: 
+        desc: "Пользователь может создать новое хранилище данных"
+        desc_: "The user can create a new data store"
+        label: "Создайте новый data_store"
+        label_: "Create a new data store"
+      delete: 
+        desc: "Пользователь может удалить любые хранилища данных"
+        desc_: "The user can delete any data store"
+        label: "Уничтожить любой data_store"
+        label_: "Destroy any data store"
+      desc: "Пользователь может предпринимать никаких действий по хранилищам данных"
+      desc_: "The user can take any action on data stores"
+      group: "Хранилища данных"
+      group_: "Data Stores"
+      label: "Любые действия по data_stores"
+      label_: "Any action on data stores"
+      read: 
+        desc: "Пользователь может видеть все данные магазинах"
+        desc_: "The user can see all data stores"
+        label: "Посмотреть все data_stores"
+        label_: "See all data stores"
+      update: 
+        desc: "Пользователь может редактировать любые хранилища данных"
+        desc_: "The user can edit any data store"
+        label: "Обновите data_store"
+        label_: "Update any data store"
+    disks: 
+      autobackup: 
+        desc: "Пользователь может запланироватьавтоматическое резервное копирование на любой диск"
+        desc_: "The user can schedule an automatic backup on any disk"
+        label: "Autobackup для любого диска"
+        label_: "Autobackup for any disk"
+        own: 
+          desc: "Пользователь может запланировать автоматическое резервное копирование на своих дисках"
+          desc_: "The user can only schedule automatic backups on their own disks"
+          label: "Autobackup для собственных дисков"
+          label_: "Autobackup for own disk"
+      create: 
+        desc: "Пользователь может создать новый диск"
+        desc_: "The user can create a new disk"
+        label: "Создание нового диска"
+        label_: "Create a new disk"
+      delete: 
+        desc: "Пользователь может удалить любой диск"
+        desc_: "The user can delete any disk"
+        label: "Уничтожить любой диск"
+        label_: "Destroy any disk"
+        own: 
+          desc: "Пользователь может удалять только свои собственные диски"
+          desc_: "The user can only delete their own disks"
+          label: "Уничтожить собственный диск"
+          label_: "Destroy own disk"
+      desc: "Пользователь может предпринимать никаких действий на дисках"
+      desc_: "The user can take any action on disks"
+      group: Диски
+      group_: Disks
+      label: "Любые действия на дисках"
+      label_: "Any action on disks"
+      read: 
+        desc: "Пользователь может видеть все диски"
+        desc_: "The user can see all disks"
+        label: "Посмотреть все диски"
+        label_: "See all disks"
+        own: 
+          desc: "Пользователь может видеть только свои собственные диски"
+          desc_: "The user can only see their own disks"
+          label: "См. собственных дисков"
+          label_: "See own disks"
+      unlock: 
+        desc: "Пользователь может разблокировать любой диск"
+        desc_: "The user can unlock any disk"
+        label: "Открой любой диск"
+        label_: "Unlock any disk"
+      update: 
+        desc: "Пользователь может редактировать любой диск"
+        desc_: "The user can edit any disk"
+        label: "Обновление любого диска"
+        label_: "Update any disk"
+        own: 
+          desc: "Пользователь может редактировать только свои собственные диски"
+          desc_: "The user can only edit their own disks"
+          label: "Обновить собственный диск"
+          label_: "Update own disk"
+    dns_zone: 
+      create: 
+        desc: "Пользователь может создать новый DNS- зоны"
+        desc_: "The user can create a new DNS zone"
+        label: "Создайте новый DNS зоны"
+        label_: "Create a new DNS zone"
+      delete: 
+        desc: "Пользователь может удалятьDNS зоны"
+        desc_: "The user can delete a DNS zone"
+        label: "Уничтожить любой DNS- зоны"
+        label_: "Destroy any DNS zone"
+        own: 
+          desc: "Пользователь может удалять только свои собственные зоны DNS"
+          desc_: "The user can only delete their own DNS zones"
+          label: "Уничтожить собственную DNS- зону"
+          label_: "Destroy own DNS zone"
+      desc: "Пользователь может выполнять любые действия на DNS- зоны"
+      desc_: "The user can take any action on DNS zone"
+      group: "DNS- зоны"
+      group_: "DNS Zones"
+      label: "Любые действия по DNS зоны"
+      label_: "Any action on DNS zone"
+      read: 
+        desc: "Пользователь может просмотреть все DNS- зон"
+        desc_: "The user can see all DNS zones"
+        label: "Посмотреть все DNS- зон"
+        label_: "See all DNS zones"
+        own: 
+          desc: "Пользователь может видеть только свои собственные зоны DNS"
+          desc_: "The user can only see their own DNS zones"
+          label: "См. собственных зон DNS"
+          label_: "See own DNS zones"
+      record: 
+        create: 
+          desc: "Пользователь может создать новую запись DNS"
+          desc_: "The user can create a new DNS record"
+          label: "Создать новую запись DNS"
+          label_: "Create a new DNS record"
+        delete: 
+          desc: "Пользователь может удалить запись DNS"
+          desc_: "The user can delete a DNS record"
+          label: "Уничтожить любую запись DNS"
+          label_: "Destroy any DNS record"
+        desc: "Пользователь может выполнять любые действия на запись DNS"
+        desc_: "The user can take any action on DNS record"
+        label: "Любые действия по записи DNS"
+        label_: "Any action on DNS record"
+        read: 
+          desc: "Пользователь может просмотреть все DNS- записи"
+          desc_: "The user can see all DNS records"
+          label: "Посмотреть все записи DNS"
+          label_: "See all DNS records"
+          own: 
+            desc: "Пользователь может видеть собственные DNS- записей"
+            desc_: "The user can see own DNS records"
+            label: "См. собственных DNS записей"
+            label_: "See own DNS records"
+        update: 
+          desc: "Пользователь может обновлять записи DNS"
+          desc_: "The user can update any DNS record"
+          label: "Обновите DNS записей"
+          label_: "Update any DNS records"
+          own: 
+            desc: "Пользователь может обновить собственную DNS- записей"
+            desc_: "The user can update own DNS records"
+            label: "Обновление собственных DNS записей"
+            label_: "Update own DNS records"
+      setup: 
+        desc: "Пользователь может настроить DNS"
+        desc_: "The user can set up DNS"
+        label: "Установка DNS"
+        label_: "DNS setup"
+    edge_groups: 
+      create: 
+        desc: "Пользователь может создать новую группу края"
+        desc_: "The user can create a new edge group"
+        label: "Создать новую группу края"
+        label_: "Create a new edge group"
+      delete: 
+        desc: "Пользователь может удалить любой группы границ"
+        desc_: "The user can delete any edge group"
+        label: "Уничтожить любой край группе"
+        label_: "Destroy any edge group"
+      desc: "Пользователь может выполнять любые действия на краю группы"
+      desc_: "The user can take any action on edge groups"
+      group: "пограничный группы"
+      group_: "Edge Groups"
+      label: "Любые действия по краю групп"
+      label_: "Any action on edge groups"
+      read: 
+        desc: "Пользователь может видеть все краем групп"
+        desc_: "The user can see all edge groups"
+        label: "Посмотреть все края групп"
+        label_: "See all edge groups"
+      update: 
+        desc: "Пользователь может редактировать любой группы границ"
+        desc_: "The user can edit any edge group"
+        label: "Обновите краю группе"
+        label_: "Update any edge group"
+    edge_servers: 
+      change_owner: 
+        desc: "Пользователь может сменить владельца любого пограничного сервера"
+        desc_: "The user can change the owner of any edge server"
+        label: "Изменениевладельца любого Edge Server"
+        label_: "Change an owner of any edge server"
+      console: 
+        desc: "Пользователь может получить доступ к любому краю сервера через консоль"
+        desc_: "The user can access any edge server via console"
+        label: "Консоль для любых Edge Server"
+        label_: "Console to any edge server"
+        own: 
+          desc: "Пользователь может получить доступ к собственным серверам края через консоль"
+          desc_: "The user can access own edge servers via console"
+          label: "Консоль для собственных серверов Пограничный"
+          label_: "Console to own edge servers"
+      create: 
+        desc: "Пользователь может создать новый сервер краю"
+        desc_: "The user can create a new edge server"
+        label: "Создать новую сервера Edge"
+        label_: "Create a new edge server"
+      delete: 
+        desc: "Пользователь может уничтожить любого пограничного сервера"
+        desc_: "The user can destroy any edge server"
+        label: "Уничтожить любой Edge Server"
+        label_: "Destroy any edge server"
+        own: 
+          desc: "Пользователь может разрушить собственные серверы края"
+          desc_: "The user can destroy own edge servers"
+          label: "Уничтожить собственных серверов Пограничный"
+          label_: "Destroy own edge servers"
+      desc: "Пользователь может осуществлять любые действия по краю серверов"
+      desc_: "The user can take any actions on edge servers"
+      group: "Edge Servers"
+      group_: "Edge Servers"
+      label: "Любые действия по Edge Server"
+      label_: "Any action on edge server"
+      migrate: 
+        desc: "Пользователь может перенести любые пограничного сервера"
+        desc_: "The user can migrate any edge server"
+        label: "Миграция любых Edge Server"
+        label_: "Migrate any edge server"
+        own: 
+          desc: "Пользователь может перенести собственные серверы края"
+          desc_: "The user can migrate own edge servers"
+          label: "Миграция собственных серверов Пограничный"
+          label_: "Migrate own edge servers"
+      power: 
+        desc: "Пользователь может взять любую степень действий, связанных с пограничного сервера"
+        desc_: "The user can take any power-related action on edge server"
+        label: "Любая власть действий на пограничных серверов"
+        label_: "Any power action on edge servers"
+        own: 
+          desc: "Пользователь может взять любую степень действий, связанных на собственных серверах края"
+          desc_: "The user can take any power-related action on own edge servers"
+          label: "Любая власть действие на собственных серверах Пограничный"
+          label_: "Any power action on own edge servers"
+      read: 
+        desc: "Пользователь может просмотреть все пограничные серверы"
+        desc_: "The user can see all edge servers"
+        label: "Смотреть все пограничные серверы"
+        label_: "See all edge servers"
+        own: 
+          desc: "Пользователь может видеть собственные серверы края"
+          desc_: "The user can see own edge servers"
+          label: "См. собственных серверов Пограничный"
+          label_: "See own edge servers"
+      rebuild_network: 
+        desc: "Пользователь может восстановить сеть любого пограничного сервера"
+        desc_: "The user can rebuild network on any edge server"
+        label: "Восстановление сети на любой Edge Server"
+        label_: "Rebuild network on any edge server"
+        own: 
+          desc: "Пользователь может только восстановление сети на собственных серверах края"
+          desc_: "The user can only rebuild network on own edge servers"
+          label: "Восстановление сети на собственных серверах Пограничный"
+          label_: "Rebuild network on own edge servers"
+      reset_root_password: 
+        desc: "Пользователь может сбросить пароль суперпользователя на любой пограничный сервер"
+        desc_: "The user can reset root password on any edge server"
+        label: "Сброс пароля на любой Edge Server"
+        label_: "Reset root password on any edge server"
+        own: 
+          desc: "Пользователь может сбросить пароль администратора на собственных серверах края"
+          desc_: "The user can reset root password on own edge servers"
+          label: "Сброс пароля на собственные сервера Edge"
+          label_: "Reset root password on own edge server"
+      suspend: 
+        desc: "Пользователь может изменить статус Подвесные для любого пограничного сервера"
+        desc_: "The user can change Suspended status for any edge server"
+        label: "Изменение Подвесные статус Edge Server"
+        label_: "Change Suspended status for edge server"
+      unlock: 
+        desc: "Пользователь может разблокировать любой пограничный сервер"
+        desc_: "The user can unlock any edge server"
+        label: "Открой любой Edge Server"
+        label_: "Unlock any edge server"
+      update: 
+        desc: "Пользователь может обновить все пограничного сервера"
+        desc_: "The user can update any edge server"
+        label: "Обновите Edge Server"
+        label_: "Update any edge server"
+        own: 
+          desc: "Пользователь может обновить собственные серверы края"
+          desc_: "The user can update own edge servers"
+          label: "Обновление собственных серверов Пограничный"
+          label_: "Update own edge servers"
+    firewall_rules: 
+      create: 
+        desc: "Пользователь может создавать правила брандмауэра для тех, кто"
+        desc_: "The user can create firewall rules for anyone"
+        label: "Создание правил брандмауэра для тех, кто"
+        label_: "Create firewall rules for anyone"
+        own: 
+          desc: "Пользователь может создавать собственные правила брандмауэра"
+          desc_: "The user can only create own firewall rules"
+          label: "Создание собственных правил брандмауэра"
+          label_: "Create own firewall rules"
+      delete: 
+        desc: "Пользователь может удалить все правила брандмауэра"
+        desc_: "The user can delete any firewall rules"
+        label: "Уничтожить любой Firewall Rules"
+        label_: "Destroy any firewall rules"
+        own: 
+          desc: "Пользователь может удалять только собственные правила брандмауэра"
+          desc_: "The user can only delete own firewall rules"
+          label: "Уничтожить собственные правила брандмауэра"
+          label_: "Destroy own firewall rules"
+      desc: "Пользователь может предпринимать любые действия с правилами брандмауэра"
+      desc_: "The user can take any action on firewall rules"
+      group: "Правила брандмауэра"
+      group_: "Firewall Rules"
+      label: "Любые действия с Firewall Rules"
+      label_: "Any action on firewall rules"
+      read: 
+        desc: "Пользователь может читать все правила брандмауэра"
+        desc_: "The user can read all firewall rules"
+        label: "Читать все правила брандмауэра"
+        label_: "Read all firewall rules"
+        own: 
+          desc: "Пользователь может читать только собственные правила брандмауэра"
+          desc_: "The user can only read own firewall rules"
+          label: "Читайте собственные правила брандмауэра"
+          label_: "Read own firewall rules"
+      update: 
+        desc: "Пользователь может изменить все правила брандмауэра"
+        desc_: "The user can edit all firewall rules"
+        label: "Обновить все правила брандмауэра"
+        label_: "Update all firewall rules"
+        own: 
+          desc: "Пользователь может редактировать только собственные правила брандмауэра"
+          desc_: "The user can only edit own firewall rules"
+          label: "Обновление собственные правила брандмауэра"
+          label_: "Update own firewall rules"
+    global_search: 
+      desc: "Глобальный поиск по всей базе данных"
+      desc_: "Global search through the whole database"
+      group: "Глобальный поиск"
+      group_: "Global Search"
+      label: "Глобальный поиск"
+      label_: "Global search"
+    groups: 
+      create: 
+        desc: "Пользователь может создать новую группу"
+        desc_: "The user can create a new group"
+        label: "Создать новую группу"
+        label_: "Create a new group"
+      delete: 
+        desc: "Пользователь может удалить группу"
+        desc_: "The user can delete a group"
+        label: "Уничтожить любой группы"
+        label_: "Destroy any group"
+      desc: "Пользователь может выполнять любые действия на группы"
+      desc_: "The user can take any action on groups"
+      group: Группы
+      group_: Groups
+      label: "Любые действия по группам"
+      label_: "Any action on groups"
+      read: 
+        desc: "Пользователь может видеть все группы"
+        desc_: "The user can see all groups"
+        label: "Просмотреть все группы"
+        label_: "See all groups"
+      update: 
+        desc: "Пользователь может редактировать любой группы"
+        desc_: "The user can edit any group"
+        label: "Обновление любой группы"
+        label_: "Update any group"
+    help: 
+      desc: "Пользователь может предпринимать любые действия в меню Справка"
+      desc_: "The user can take any action under the Help menu"
+      group: Помогите
+      group_: Help
+      label: "Все действия на помощь"
+      label_: "All actions on help"
+      read: 
+        desc: "Пользователь может отправлять запросы от меню Справка"
+        desc_: "The user can send support requests from the Help menu"
+        label: "Отправить Просьбы о помощи"
+        label_: "Send support requests"
+    http_storage_origins: 
+      change_owner: 
+        desc: "Пользователь может сменить владельца любого Origin Storage HTTP"
+        desc_: "The user can change the owner of any HTTP storage origin"
+        label: "Изменениевладельца любого Origin Storage HTTP"
+        label_: "Change an owner of any HTTP storage origin"
+      create: 
+        desc: "Пользователь может создать новую хранения HTTP происхождения"
+        desc_: "The user can create a new HTTP storage origin"
+        label: "Создать новую хранения HTTP происхождения"
+        label_: "Create a new HTTP storage origin"
+      delete: 
+        desc: "Пользователь может удалить любой HTTP Origin Storage"
+        desc_: "The user can delete any HTTP storage origin"
+        label: "Удаление любого происхождения HTTP хранения"
+        label_: "Delete any HTTP storage origin"
+        own: 
+          desc: "Пользователь может удалять свои хранения HTTP происхождения"
+          desc_: "The user can delete own HTTP storage origin"
+          label: "Удалить собственного хранения HTTP происхождения"
+          label_: "Delete own HTTP storage origin"
+      desc: "Пользователь может выполнять любые действия на Origins HTTP хранения"
+      desc_: "The user can take any action on HTTP storage origins"
+      group: "Происхождение HTTP хранения"
+      group_: "HTTP Storage Origins"
+      label: "Любые действия по Origins HTTP хранения"
+      label_: "Any action on HTTP storage origins"
+      migrate: 
+        desc: "Пользователь может перенести любые HTTP Origin Storage"
+        desc_: "The user can migrate any HTTP storage origin"
+        label: "Миграция любого происхождения HTTP хранения"
+        label_: "Migrate any HTTP storage origin"
+        own: 
+          desc: "Пользователь может перенести собственную хранения HTTP происхождения"
+          desc_: "The user can migrate own HTTP storage origin"
+          label: "Миграция собственных хранения HTTP Origins"
+          label_: "Migrate own HTTP storage origins"
+      power: 
+        desc: "Пользователь может взять любую степень действий, связанных с Origins HTTP хранения"
+        desc_: "The user can take any power-related action on HTTP storage origins"
+        label: "Любая власть действие на Origins HTTP хранения"
+        label_: "Any power action on HTTP storage origins"
+        own: 
+          desc: "Пользователь может только взять власть действий, связанных с их собственным Origins хранения HTTP"
+          desc_: "The user can only take power-related actions on their own HTTP storage origins"
+          label: "Любая власть действие на собственном хранения Origins HTTP"
+          label_: "Any power action on own HTTP storage origins"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых Origin Storage HTTP"
+        desc_: "The user can see details of any HTTP storage origin"
+        label: "См. подробную информацию о любых Origin Storage HTTP"
+        label_: "See details of any HTTP storage origin"
+        own: 
+          desc: "Пользователь может просматривать подробную информацию о собственной Origin Storage HTTP"
+          desc_: "The user can see details of own HTTP storage origin"
+          label: "Подробнее собственных Origin Storage HTTP"
+          label_: "See details of own HTTP storage origin"
+      rebuild_network: 
+        desc: "Пользователь может восстановить сеть любого Origin Storage HTTP"
+        desc_: "The user can rebuild network of any HTTP storage origin"
+        label: "Восстановление сети любого Origin Storage HTTP"
+        label_: "Rebuild network of any HTTP storage origin"
+        own: 
+          desc: "Пользователь может восстановить сеть собственных Origin Storage HTTP"
+          desc_: "The user can only rebuild network of own HTTP storage origin"
+          label: "Перестроить сеть собственных Origin Storage HTTP"
+          label_: "Rebuild network of own HTTP storage origin"
+      suspend: 
+        desc: "Пользователь может изменить статус Подвесные для любого Origin Storage HTTP"
+        desc_: "The user can change suspended status for any HTTP storage origin"
+        label: "Изменение Подвесные статус Origin Storage HTTP"
+        label_: "Change suspended status for HTTP storage origin"
+      unlock: 
+        desc: "Пользователь может разблокировать любой Origin Storage HTTP"
+        desc_: "The user can unlock any HTTP storage origin"
+        label: "Открой любой Origin Storage HTTP"
+        label_: "Unlock any HTTP storage origin"
+      update: 
+        desc: "Пользователь может редактировать любой Origin Storage HTTP"
+        desc_: "The user can edit any HTTP storage origin"
+        label: "Обновление любого происхождения HTTP хранения"
+        label_: "Update any HTTP storage origin"
+        own: 
+          desc: "Пользователь может редактировать собственные хранения HTTP происхождения"
+          desc_: "The user can edit own HTTP storage origin"
+          label: "Обновление собственной хранения HTTP происхождения"
+          label_: "Update own HTTP storage origin"
+    hypervisor_zones: 
+      create: 
+        desc: "Пользователь может создать новый гипервизор зоны"
+        desc_: "The user can create a new hypervisor zone"
+        label: "Создайте новый гипервизор зоны"
+        label_: "Create a new hypervisor zone"
+      delete: 
+        desc: "Пользователь может удалить любой зоне гипервизор"
+        desc_: "The user can delete any hypervisor zone"
+        label: "Удалить любую зону гипервизор"
+        label_: "Delete any hypervisor zone"
+      desc: "Пользователь может выполнять любые действия на гипервизор зон"
+      desc_: "The user can take any action on hypervisor zones"
+      group: "гипервизор зоны"
+      group_: "Hypervisor Zones"
+      label: "Любые действия по гипервизора зон"
+      label_: "Any action on hypervisor zones"
+      list: 
+        desc: "Пользователь может увидеть список всех гипервизора зон"
+        desc_: "The user can see list of all hypervisor zones"
+        label: "Посмотреть список всех гипервизора зон"
+        label_: "See list of all hypervisor zones"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых гипервизора зоны"
+        desc_: "The user can see details of any hypervisor zone"
+        label: "Подробнее любой гипервизор зоны"
+        label_: "See details of any hypervisor zone"
+      read_vm_creation: 
+        desc: "Показать гипервизора зон добавлять новые виртуальные машины экране"
+        desc_: "Display hypervisor zones on Add New Virtual Machine screen"
+        label: "Показать гипервизора зон на создание VirtualMachine"
+        label_: "Show hypervisor zones on virtual machine creation"
+      update: 
+        desc: "Пользователь может редактировать любой зоне гипервизор"
+        desc_: "The user can edit any hypervisor zone"
+        label: "Обновление любого гипервизора зоны"
+        label_: "Update any hypervisor zone"
+    hypervisors: 
+      create: 
+        desc: "Пользователь может создать новый гипервизор"
+        desc_: "The user can create a new hypervisor"
+        label: "Создайте новый гипервизор"
+        label_: "Create a new hypervisor"
+      delete: 
+        desc: "Пользователь может удалить любой гипервизор"
+        desc_: "The user can delete any hypervisor"
+        label: "Уничтожить любой гипервизор"
+        label_: "Destroy any hypervisor"
+      desc: "Пользователь может выполнять любые действия на гипервизоров"
+      desc_: "The user can take any action on hypervisors"
+      group: Гипервизоры
+      group_: Hypervisors
+      label: "Любые действия по гипервизоров"
+      label_: "Any action on hypervisors"
+      read: 
+        desc: "Пользователь может просмотреть все гипервизоры"
+        desc_: "The user can see all hypervisors"
+        label: "Посмотреть все гипервизоры"
+        label_: "See all hypervisors"
+      read_vm_creation: 
+        desc: "Показать гипервизоры на добавлять новые виртуальные машины экране"
+        desc_: "Display hypervisors on Add New Virtual Machine screen"
+        label: "Показать Гипервизоры на создание VirtualMachine"
+        label_: "Show Hypervisors on virtual machine creation"
+      reboot: 
+        desc: "Пользователь может перезагрузить любого гипервизора"
+        desc_: "The user can reboot any hypervisor"
+        label: "Перезагрузка любого гипервизора"
+        label_: "Reboot any hypervisor"
+      update: 
+        desc: "Пользователь может редактировать любой гипервизор"
+        desc_: "The user can edit any hypervisor"
+        label: "Обновление любого гипервизора"
+        label_: "Update any hypervisor"
+    i18n: 
+      desc: "[FAIL] "
+      desc_: ""
+      group: интернационализация
+      group_: Internationalization
+      label: "[FAIL] "
+      label_: ""
+      manage: 
+        desc: "Пользователь может просматривать и редактировать все не- английских фраз языка."
+        desc_: "The user can view and edit all non-English language phrases"
+        label: "Изменить интернационализации Языки"
+        label_: "Edit internationalization locales"
+    image_template_groups: 
+      create: 
+        desc: "Пользователь может создать новую группу шаблонов"
+        desc_: "The user can create a new template group"
+        label: "Создать новую группу шаблонов"
+        label_: "Create a new template group"
+      delete: 
+        desc: "Пользователь может удалить шаблон группы"
+        desc_: "The user can delete a template group"
+        label: "Удалите все группы шаблонов"
+        label_: "Delete any template group"
+      desc: "Пользователь может предпринимать любые действия по шаблону групп"
+      desc_: "The user can take any action on template groups"
+      group: "Шаблон группы"
+      group_: "Template Groups"
+      label: "Любые действия по шаблону группы"
+      label_: "Any action on template group"
+      list: 
+        desc: "Пользователь может просмотреть все шаблоны групп"
+        desc_: "The user can see all template groups"
+        label: "Посмотреть список всех шаблонов групп"
+        label_: "See list of all template groups"
+      read: 
+        desc: "Пользователь может просмотреть сведения шаблон группы"
+        desc_: "The user can view template group details"
+        label: "См. подробную информацию о любых шаблонов группе"
+        label_: "See details of any template group"
+      update: 
+        desc: "Пользователь может редактировать любой шаблон группы"
+        desc_: "The user can edit any template group"
+        label: "Обновление любой шаблон группы"
+        label_: "Update any template group"
+    integrated_storage: 
+      desc: "Пользователь может управлять OnApp хранения"
+      desc_: "The user can manage OnApp storage"
+      group: "OnApp хранения"
+      group_: "OnApp Storage"
+      label: "Управление OnApp хранения"
+      label_: "Manage OnApp storage"
+    io_stats: 
+      desc: "Пользователь имеет полный доступ к статистике IO"
+      desc_: "The user has full access to IO statistics"
+      group: "IO статистика"
+      group_: "IO Statistics"
+      label: "Полный доступ к IO статистика"
+      label_: "Full access to IO statistics"
+      own: 
+        desc: "Пользователь может видеть собственную статистику"
+        desc_: "The user can see own statistics"
+        label: "См. собственной статистики"
+        label_: "See own statistics"
+      read: 
+        desc: "Пользователь может просмотреть все IO статистика"
+        desc_: "The user can see all IO statistics"
+        label: "Посмотреть все IO статистика"
+        label_: "See all IO statistics"
+        own: 
+          desc: "Пользователь может видеть собственными IO статистика"
+          desc_: "The user can see own IO Statistics"
+          label: "См. собственной IO статистика"
+          label_: "See own IO statistics"
+    ip_address_joins: 
+      create: 
+        desc: "Пользователь может добавитьIP -адрес любой виртуальной машины"
+        desc_: "The user can add an IP address to any virtual machine"
+        label: "Добавить IP -адрес любой виртуальной машины"
+        label_: "Add IP address to any virtual machine"
+        own: 
+          desc: "Пользователь может только добавить IP- адреса своих виртуальных машин"
+          desc_: "The user can only add IP addresses to their own virtual machines"
+          label: "Добавить IP -адрес собственной виртуальной машины"
+          label_: "Add IP address to own virtual machine"
+      delete: 
+        desc: "Пользователь может удалитьIP- адрес с любой виртуальной машине"
+        desc_: "The user can remove an IP address from any virtual machine"
+        label: "Удалить IP адрес из anyvirtual машины"
+        label_: "Remove IP address from anyvirtual machine"
+        own: 
+          desc: "Пользователь может удалить только IP- адреса из собственных виртуальных машин"
+          desc_: "The user can only remove IP addresses from their own virtual machines"
+          label: "Удалить IP адрес из собственной виртуальной машине"
+          label_: "Remove IP address from own virtual machine"
+      desc: "Пользователь может выполнять любые действия на виртуальных адресов IP машины"
+      desc_: "The user can take any action on virtual machine IP addresses"
+      group: "IP виртуальной машины Адреса"
+      group_: "Virtual Machine's IP Addresses"
+      label: "Все действия по IP- адреса виртуальной машины"
+      label_: "All actions on virtual machine's IP addresses"
+      read: 
+        desc: "Пользователь может видеть IP -адреса, назначенные любой виртуальной машины"
+        desc_: "The user can see IP addresses assigned to any virtual machine"
+        label: "См. IP -адреса, назначенные любой виртуальной машины"
+        label_: "See IP addresses assigned to any virtual machines"
+        own: 
+          desc: "Пользователь может видеть только IP -адреса, назначенные свои собственные виртуальные машины"
+          desc_: "The user can only see IP addresses assigned to their own virtual machines"
+          label: "См. IP -адреса, назначенные собственной виртуальной машины"
+          label_: "See IP addresses assigned to own virtual machines"
+    ip_address_pools: 
+      create: 
+        desc: "Пользователь может создать новый IP адрес Бассейн"
+        desc_: "The user can create a new IP address pool"
+        label: "Создайте новый IP адрес Бассейн"
+        label_: "Create a new IP address pool"
+      delete: 
+        desc: "Пользователь может удалитьIP- адрес Бассейн"
+        desc_: "The user can delete a IP address pool"
+        label: "Уничтожить любой IP- адрес Бассейн"
+        label_: "Destroy any IP address pool"
+      desc: "Пользователь может выполнять любые действия на IP адрес Бассейны"
+      desc_: "The user can take any action on IP address pools"
+      group: "Бассейны IP адреса"
+      group_: "IP Address Pools"
+      label: "Любые действия по IP адресов бассейн"
+      label_: "Any action on IP address pool"
+      read: 
+        desc: "Пользователь может просмотреть все IP- адреса бассейнов"
+        desc_: "The user can see all IP address pools"
+        label: "Посмотреть все IP- адреса бассейнов"
+        label_: "See all IP address pools"
+    ip_addresses: 
+      assign: 
+        desc: "Пользователь может назначить IP -адрес пользователя"
+        desc_: "The user can assign IP address to user"
+        label: "Назначение IP -адреса пользователей"
+        label_: "Assign IP address to user"
+      create: 
+        desc: "Пользователь может создать новый IP адрес"
+        desc_: "The user can create a new IP address"
+        label: "Создайте новый IP адрес"
+        label_: "Create a new IP address"
+      delete: 
+        desc: "Пользователь может удалить любой IP- адрес"
+        desc_: "The user can delete any IP address"
+        label: "Уничтожить любой IP- адрес"
+        label_: "Destroy any IP address"
+      desc: "Пользователь может выполнять любые действия на IP- адресов"
+      desc_: "The user can take any action on IP addresses"
+      group: IP-адреса
+      group_: "IP Addresses"
+      label: "Любые действия по IP- адресам"
+      label_: "Any action on IP addresses"
+      read: 
+        desc: "Пользователь может просмотреть все IP- адреса"
+        desc_: "The user can see all IP addresses"
+        label: "Посмотреть все IP- адреса"
+        label_: "See all IP addresses"
+      unassign: 
+        desc: "Пользователь может отменить назначение IP- адреса от пользователей"
+        desc_: "The user can unassign IP address from user"
+        label: "Отменить назначение IP адресов от пользователей"
+        label_: "Unassign IP address from user"
+      update: 
+        desc: "Пользователь может редактировать любые настройки IP адреса"
+        desc_: "The user can edit any IP address settings"
+        label: "Обновите настройки IP адреса"
+        label_: "Update any IP address settings"
+    iso_joins: 
+      create: 
+        desc: "Пользователь может установить любую ISO"
+        desc_: "The user can mount any ISO"
+        label: "Установить любую ISO"
+        label_: "Mount any ISO"
+        own: 
+          desc: "Пользователь может установить собственные ISO"
+          desc_: "The user can only mount own ISO"
+          label: "Установите собственные ISO"
+          label_: "Mount own ISO"
+      delete: 
+        desc: "Пользователь может отключить все монтируются ISO-образов"
+        desc_: "The user can unmount any mounted ISOs"
+        label: "Отключите все смонтированные ISO-образов"
+        label_: "Unmount any mounted ISOs"
+        own: 
+          desc: "Пользователь может отключить собственные установлен ISO-образов"
+          desc_: "The user can only unmount own mounted ISOs"
+          label: "Размонтируйте собственные установлен ISO-образов"
+          label_: "Umount own mounted ISOs"
+      desc: "Пользователь может выполнять любые действия на монтаж ISO"
+      desc_: "The user can take any action on mounting ISO"
+      group: "Монтаж ISO"
+      group_: "Mounting ISO"
+      label: "Любые действия по монтажу ISO"
+      label_: "Any action on mounting ISO"
+      read: 
+        desc: "Пользователь может видеть всю гору"
+        desc_: "The user can see all mount"
+        label: "Посмотреть все крепления"
+        label_: "See all mount"
+        own: 
+          desc: "Пользователь может видеть только собственные установлен ISO-образов"
+          desc_: "The user can only see own mounted ISOs"
+          label: "См. собственных установлен ISO-образов"
+          label_: "See own mounted ISOs"
+    isos: 
+      create: 
+        desc: "Пользователь может создать новый шаблон ISO"
+        desc_: "The user can create a new ISO template"
+        label: "Создание нового шаблона ISO"
+        label_: "Create a new ISO template"
+      delete: 
+        desc: "Пользователь может удалить любой шаблон ISO"
+        desc_: "The user can delete any ISO template"
+        label: "Уничтожить любой шаблон ISO"
+        label_: "Destroy any ISO template"
+        own: 
+          desc: "Пользователь может удалять только собственные шаблоны ISO"
+          desc_: "The user can only delete own ISO template"
+          label: "Уничтожить собственный шаблон ISO"
+          label_: "Destroy own ISO template"
+      desc: "Пользователь может выполнять любые действия на ОМС"
+      desc_: "The user can take any action on ISOs"
+      group: ISO-образов
+      group_: ISOs
+      label: "Любые действия по ОМС"
+      label_: "Any action on ISOs"
+      make_public: 
+        desc: "Пользователь может делать никаких публичных ISO"
+        desc_: "The user can make any ISO public"
+        label: "Сделать каких ISO"
+        label_: "Make any ISO public"
+        own: 
+          desc: "Пользователь может создавать собственные общественные ISO"
+          desc_: "The user can make own ISO public"
+          label: "Сделайте собственную общественность ISO"
+          label_: "Make own ISO public"
+      manage: 
+        own: 
+          desc: "Пользователь может создавать и управлять ОМС"
+          desc_: "The user can create and Manage ISOs"
+          label: "Создание и управление ОМС"
+          label_: "Create and manage ISOs"
+        public: 
+          desc: "Пользователь может управлять глобальной ISO-образов"
+          desc_: "The user can manage Global ISOs"
+          label: "Управление глобальной ISO-образов"
+          label_: "Manage global ISOs"
+      read: 
+        desc: "Пользователь может просмотреть все ISO-образов"
+        desc_: "The user can see all ISOs"
+        label: "Посмотреть все ISO-образов"
+        label_: "See all ISOs"
+        own: 
+          desc: "Пользователь может видеть только собственные ISO-образов"
+          desc_: "The user can only see own ISOs"
+          label: "См. собственных ISO-образов"
+          label_: "See own ISOs"
+        public: 
+          desc: "Пользователь может читать все государственные ISO-образов"
+          desc_: "The user can read all public ISOs"
+          label: "Читать все общественные ISO-образов"
+          label_: "Read all public ISOs"
+      update: 
+        desc: "Пользователь может редактировать любой шаблон ISO"
+        desc_: "The user can edit any ISO template"
+        label: "Обновление любого шаблона ISO"
+        label_: "Update any ISO template"
+        own: 
+          desc: "Пользователь может редактировать только собственные шаблоны ISO"
+          desc_: "The user can only edit own ISO template"
+          label: "Обновить собственный шаблон ISO"
+          label_: "Update own ISO template"
+    last_access_log_items: 
+      desc: "Пользователь может выполнять любые действия на последний журнал доступ любого пользователя"
+      desc_: "The user can perform any action on last access log of any user"
+      group: "Последнее Вход Access"
+      group_: "Last Access Log"
+      label: "Любые действия на последнем журнале доступа"
+      label_: "Any action on last access log"
+      read: 
+        desc: "Пользователь может видеть последнего журнала доступа других пользователей"
+        desc_: "The user can see the last access log of other users"
+        label: "См. последний журнал доступ любого пользователя"
+        label_: "See the last access log of any user"
+        own: 
+          desc: "Пользователь может видеть только свой ​​последний журнал доступа"
+          desc_: "The user can only see their own last access log"
+          label: "См. собственной последний журнал доступа"
+          label_: "See own last access log"
+    load_balancers: 
+      desc: "Пользователь может выполнять любые действия на нагрузки"
+      desc_: "The user can take any action on load balancer"
+      group: "балансировки нагрузки"
+      group_: "Load Balancers"
+      label: "Любые действия по балансировки нагрузки"
+      label_: "Any action on load balancer"
+      migrate: 
+        desc: "Пользователь может перенести любые нагрузки"
+        desc_: "The user can migrate any load balancer"
+        label: "Миграция любые нагрузки"
+        label_: "Migrate any load balancer"
+        own: 
+          desc: "Пользователь может переносить свои собственные балансировки нагрузки"
+          desc_: "The user can only migrate their own load balancer"
+          label: "Миграция собственной балансировки нагрузки"
+          label_: "Migrate own load balancer"
+    load_balancing_clusters: 
+      asout: 
+        desc: "Пользователь может настроить Autoscale Out при создании / обновлениикластер балансировки нагрузки"
+        desc_: "The user can configure Autoscale Out when creating/updating a load balancing cluster"
+        label: "Настройка AutoScale из параметров кластера балансировки нагрузки"
+        label_: "Configure autoscale out parameter of load balancing cluster"
+      create: 
+        desc: "Пользователь может создать новый кластер балансировки нагрузки"
+        desc_: "The user can create a new load balancing cluster"
+        label: "Создайте новый кластер балансировки нагрузки"
+        label_: "Create a new load balancing cluster"
+      delete: 
+        desc: "Пользователь может удалить любой кластер балансировки нагрузки"
+        desc_: "The user can delete any load balancing cluster"
+        label: "Удалить все кластер балансировки нагрузки"
+        label_: "Delete any load balancing cluster"
+        own: 
+          desc: "Пользователь может удалять только собственные кластеры балансировки нагрузки"
+          desc_: "The user can only delete own load balancing clusters"
+          label: "Удалить собственных кластеров балансировки нагрузки"
+          label_: "Delete own load balancing clusters"
+      desc: "Пользователь может делать любые действия от нагрузки кластера балансировки"
+      desc_: "The user can make any action on load balancing cluster"
+      group: "Балансировка нагрузки кластеров"
+      group_: "Load Balancing Clusters"
+      label: "Любые действия по нагрузке кластер балансировки"
+      label_: "Any action on load balancing cluster"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых кластер балансировки нагрузки"
+        desc_: "The user can see details of any load balancing cluster"
+        label: "Подробнее любой кластер балансировки нагрузки"
+        label_: "See details of any load balancing cluster"
+        own: 
+          desc: "Пользователь может только просматривать подробную информацию о собственном кластере балансировки нагрузки"
+          desc_: "The user can only see details of own load balancing cluster"
+          label: "Подробнее собственных кластеров балансировки нагрузки"
+          label_: "See details of own load balancing clusters"
+      update: 
+        desc: "Пользователь может вносить изменения на любом кластере балансировки нагрузки"
+        desc_: "The user can make changes on any load balancing cluster"
+        label: "Изменение любой кластер балансировки нагрузки"
+        label_: "Change any load balancing cluster"
+        own: 
+          desc: "Пользователь может изменить только собственные кластеры балансировки нагрузки"
+          desc_: "The user can only change own load balancing clusters"
+          label: "Изменение собственного кластера балансировки нагрузки"
+          label_: "Change own load balancing clusters"
+    log_items: 
+      delete: 
+        desc: "Пользователь может удалить любой элемент журнала"
+        desc_: "The user can delete any log item"
+        label: "Удалите любые журнала пункта"
+        label_: "Delete any log item"
+        own: 
+          desc: "Пользователь может удалять только свои собственные элементы журнала"
+          desc_: "The user can only delete their own log items"
+          label: "Удалить собственный пункт журнал"
+          label_: "Delete own log item"
+      desc: "Пользователь может выполнять любые действия на журнал пунктов"
+      desc_: "The user can take any action on log items"
+      group: "Вход товары"
+      group_: "Log Items"
+      label: "Любые действия по журналов пунктов"
+      label_: "Any action on log items"
+      list: 
+        desc: "Пользователь может видеть всех элементов журнала"
+        desc_: "The user can see all log items"
+        label: "Список всех журналов пунктов"
+        label_: "See list of all log items"
+        own: 
+          desc: "Пользователь может видеть только свои собственные элементы журнала"
+          desc_: "The user can only see their own log items"
+          label: "Список собственные элементы журнала"
+          label_: "See list of own log items"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых журнал пункта"
+        desc_: "The user can see details of any log item"
+        label: "Подробнее любой журнал пункта"
+        label_: "See details of any log item"
+        own: 
+          desc: "Пользователь может видеть детали их собственные пункты журнала"
+          desc_: "The user can only see details of their own log items"
+          label: "Подробнее собственной пункта журнала"
+          label_: "See details of own log item"
+    monitis_monitors: 
+      desc: "Пользователь может принимать любые действия по отношению автомасштабирование мониторов"
+      desc_: "The user can take any actions on relation autoscaling monitors"
+      group: "Автомасштабирование мониторы"
+      group_: "Autoscaling Monitors"
+      label: "Любые действия по отношению автомасштабирование мониторов"
+      label_: "Any Actions on relation autoscaling monitors"
+      read: 
+        desc: "Пользователь может просматривать информацию автомасштабирование монитор"
+        desc_: "The user can view autoscaling monitor information"
+        label: "Посмотреть информацию автомасштабирование монитор"
+        label_: "View autoscaling monitor information"
+    monthly_bills: 
+      desc: "Пользователь имеет полный доступ к ежемесячной статистики счетов"
+      desc_: "The user has full access to monthly bills statistics"
+      group: "Ежемесячная статистика Billing"
+      group_: "Monthly Billing Statistics"
+      label: "Полный доступ к Ежемесячная статистика законопроектов"
+      label_: "Full access to monthly bills statistics"
+      read: 
+        desc: "Пользователь может просмотреть все ежемесячную статистику счета"
+        desc_: "The user can see all monthly bills statistics"
+        label: "Посмотреть все Ежемесячная статистика законопроектов"
+        label_: "See all monthly bills statistics"
+        own: 
+          desc: "Пользователь может видеть только собственную ежемесячную статистику счета"
+          desc_: "The user can only see own monthly bills statistics"
+          label: "Смотрите только собственные Ежемесячная статистика законопроектов"
+          label_: "See only own monthly bills statistics"
+    nameservers: 
+      create: 
+        desc: "Пользователь может создать новый сервер имен"
+        desc_: "The user can create a new nameserver"
+        label: "Создайте новый сервер имен"
+        label_: "Create a new nameserver"
+      delete: 
+        desc: "Пользователь может удалить любой сервер имен"
+        desc_: "The user can delete any nameserver"
+        label: "Уничтожить любой сервер имен"
+        label_: "Destroy any nameserver"
+      desc: "Пользователь может выполнять любые действия на серверы имен"
+      desc_: "The user can take any action on nameservers"
+      group: Nameservers
+      group_: Nameservers
+      label: "Любые действия на серверы имен"
+      label_: "Any action on nameservers"
+      read: 
+        desc: "Пользователь может видеть все сервера имен"
+        desc_: "The user can see all nameservers"
+        label: "Посмотреть все серверы имен"
+        label_: "See all nameservers"
+      update: 
+        desc: "Пользователь может редактировать любой сервер имен"
+        desc_: "The user can edit any nameserver"
+        label: "Обновите настройки сервера имен"
+        label_: "Update any nameserver settings"
+    network_zones: 
+      create: 
+        desc: "Пользователь может создать новую зону сети"
+        desc_: "The user can create a new network zone"
+        label: "Создать новую зону сети"
+        label_: "Create a new network zone"
+      delete: 
+        desc: "Пользователь может удалить любой сетевой зоны"
+        desc_: "The user can delete any network zone"
+        label: "Удалите любые сетевые зоны"
+        label_: "Delete any network zone"
+      desc: "Пользователь может выполнять любые действия на сетевых зон"
+      desc_: "The user can take any action on network zones"
+      group: "Сеть зон"
+      group_: "Network Zones"
+      label: "Любые действия по сети зон"
+      label_: "Any action on network zones"
+      list: 
+        desc: "Пользователь может видеть список всех сетевых зон"
+        desc_: "The user can see list of all network zones"
+        label: "Посмотреть список всех сетевых зон"
+        label_: "See list of all network zones"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых сетевых зон"
+        desc_: "The user can see details of any network zone"
+        label: "См. подробную информацию о любых сетевых зон"
+        label_: "See details of any network zone"
+      update: 
+        desc: "Пользователь может обновить любую сетевую зону"
+        desc_: "The user can update any network zone"
+        label: "Обновление любой сети зоне"
+        label_: "Update any network zone"
+    networks: 
+      create: 
+        desc: "Пользователь может создать новую сеть"
+        desc_: "The user can create a new network"
+        label: "Создать новую сеть"
+        label_: "Create a new network"
+      delete: 
+        desc: "Пользователь может удалить любой сети"
+        desc_: "The user can delete any network"
+        label: "Уничтожить любой сети"
+        label_: "Destroy any network"
+      desc: "Пользователь может предпринимать любые действия в сети"
+      desc_: "The user can take any action on networks"
+      group: сети
+      group_: Networks
+      label: "Любые действия в сети"
+      label_: "Any action on networks"
+      read: 
+        desc: "Пользователь может видеть все сети"
+        desc_: "The user can see all networks"
+        label: "Посмотреть все сети"
+        label_: "See all networks"
+      update: 
+        desc: "Пользователь может редактировать любой сети"
+        desc_: "The user can edit any network"
+        label: "Обновление любой сети"
+        label_: "Update any network"
+    payments: 
+      create: 
+        desc: "Пользователь может создать новый платеж"
+        desc_: "The user can create a new payment"
+        label: "Создать новый платеж"
+        label_: "Create a new payment"
+      delete: 
+        desc: "Пользователь может удалить любой платеж"
+        desc_: "The user can delete any payment"
+        label: "Уничтожить любой платеж"
+        label_: "Destroy any payment"
+      desc: "Пользователь может предпринимать никаких действий по платежам"
+      desc_: "The user can take any action on payments"
+      group: платежи
+      group_: Payments
+      label: "Любые действия по платежам"
+      label_: "Any action on payments"
+      read: 
+        desc: "Пользователь может видеть все платежи"
+        desc_: "The user can see all payments"
+        label: "Посмотреть все платежи"
+        label_: "See all payments"
+        own: 
+          desc: "Пользователь может видеть только свои собственные платежи"
+          desc_: "The user can only see their own payments"
+          label: "См. собственные платежи"
+          label_: "See own payments"
+      update: 
+        desc: "Пользователь может редактировать любой платеж"
+        desc_: "The user can edit any payment"
+        label: "Обновление любой платеж"
+        label_: "Update any payment"
+    permissions: 
+      create: 
+        desc: "Пользователь может создаватьновые разрешения"
+        desc_: "The user can create a new permission"
+        label: "Создайте новый разрешения"
+        label_: "Create a new permission"
+      delete: 
+        desc: "Пользователь может удалить любые разрешения"
+        desc_: "The user can delete any permission"
+        label: "Уничтожить любого разрешения"
+        label_: "Destroy any permission"
+      desc: "Пользователь может выполнять любые действия на разрешениях"
+      desc_: "The user can take any action on permissions"
+      group: Разрешения
+      group_: Permissions
+      label: "Любые действия разрешения на"
+      label_: "Any action on permissions"
+      read: 
+        desc: "Пользователь может видеть все разрешения"
+        desc_: "The user can see all permissions"
+        label: "Смотреть все разрешения"
+        label_: "See all permissions"
+      update: 
+        desc: "Пользователь может редактировать любые разрешения"
+        desc_: "The user can edit any permission"
+        label: "Обновление любого разрешения"
+        label_: "Update any permission"
+    relation_group_templates: 
+      create: 
+        desc: "Пользователь может создать новый шаблон группе отношения"
+        desc_: "The user can create a new relation group template"
+        label: "Создание нового шаблона группа отношении"
+        label_: "Create a new relation group template"
+      delete: 
+        desc: "Пользователь может удалить любой шаблон отношении группы"
+        desc_: "The user can delete any relation group template"
+        label: "Уничтожить любой шаблон отношении группы"
+        label_: "Destroy any relation group template"
+      desc: "Пользователь может предпринимать никаких действий по отношению шаблоны группе"
+      desc_: "The user can take any action on relation group templates"
+      group: "Шаблоны Групповой"
+      group_: "Relation Group Templates"
+      label: "Любые действия по отношению шаблоны группе"
+      label_: "Any action on relation group templates"
+      list: 
+        desc: "Пользователь может увидеть список всех шаблонов отношении группы"
+        desc_: "The user can see a list of all relation group templates"
+        label: "Список всех шаблонов отношении группы"
+        label_: "See list of all relation group templates"
+      read: 
+        desc: "Пользователь может просмотреть все шаблоны отношении группы"
+        desc_: "The user can see all relation group templates"
+        label: "Посмотреть все шаблоны отношении группы"
+        label_: "See all relation group templates"
+      update: 
+        desc: "Пользователь может обновить цена на отношение группы шаблонов"
+        desc_: "The user can update price for relation group template"
+        label: "Обновление цен на отношение группы шаблонов"
+        label_: "Update price for relation group template"
+    resource_limits: 
+      create: 
+        desc: "Пользователь может создать новый предельный ресурс"
+        desc_: "The user can create a new resource limit"
+        label: "Создайте новый предельный ресурс"
+        label_: "Create a new resource limit"
+      delete: 
+        desc: "Пользователь может удалить любые ограничения ресурсов"
+        desc_: "The user can delete any resource limit"
+        label: "Уничтожить любой ресурс предел"
+        label_: "Destroy any resource limit"
+      desc: "Пользователь может выполнять любые действия на ограничения ресурсов"
+      desc_: "The user can take any action on resource limits"
+      group: "Ограничения ресурсов"
+      group_: "Resource Limits"
+      label: "Любые действия на предел ресурсов"
+      label_: "Any action on resource limit"
+      read: 
+        desc: "Пользователь может просмотреть все ограничения ресурсов"
+        desc_: "The user can see all resource limits"
+        label: "Посмотреть все ограничения ресурсов"
+        label_: "See all resource limits"
+        own: 
+          desc: "Пользователь может видеть только свои собственные ограничения ресурсов"
+          desc_: "The user can only see their own resource limits"
+          label: "См. собственные пределы ресурса"
+          label_: "See own resource limits"
+      update: 
+        desc: "Пользователь может редактировать ограничения ресурсов для любой учетной записи пользователя"
+        desc_: "The user can edit resource limits for any user account"
+        label: "Обновите предел ресурсов"
+        label_: "Update any resource limit"
+    roles: 
+      create: 
+        desc: "Пользователь может создать новую роль"
+        desc_: "The user can create a new role"
+        label: "Создать новую роль"
+        label_: "Create a new role"
+      delete: 
+        desc: "Пользователь может удалить любой роли"
+        desc_: "The user can delete any role"
+        label: "Уничтожить любой роли"
+        label_: "Destroy any role"
+      desc: "Пользователь может предпринимать любые действия по ролям"
+      desc_: "The user can take any action on roles"
+      group: Роли
+      group_: Roles
+      label: "Любые действия по ролям"
+      label_: "Any action on roles"
+      read: 
+        desc: "Пользователь может видеть все роли"
+        desc_: "The user can see all roles"
+        label: "Посмотреть все роли"
+        label_: "See all roles"
+        own: 
+          desc: "Пользователь может видеть только роли , возложенные на него"
+          desc_: "The user can see only roles assigned to him"
+          label: "См. собственной роли пользователя"
+          label_: "See user's own roles"
+      update: 
+        desc: "Пользователь может редактировать любой роли"
+        desc_: "The user can edit any role"
+        label: "Обновите роль"
+        label_: "Update any role"
+    schedule_logs: 
+      create: 
+        desc: "Пользователь может создать новый журнал графику"
+        desc_: "The user can create a new schedule log"
+        label: "Создайте новый журнал графику"
+        label_: "Create a new schedule log"
+      delete: 
+        desc: "Пользователь может уничтожить любую графику журнала"
+        desc_: "The user can destroy any schedule log"
+        label: "Уничтожить любой график журнала"
+        label_: "Destroy any schedule log"
+      desc: "Пользователь может предпринимать любые действия по расписанию журналы"
+      desc_: "The user can take any action on schedule logs"
+      group: "Расписание Журналы"
+      group_: "Schedule Logs"
+      label: "Любые действия по графику журналы"
+      label_: "Any action on schedule logs"
+      read: 
+        desc: "Пользователь может просмотреть все графиком журналы"
+        desc_: "The user can see all schedule logs"
+        label: "Посмотреть все графиком журналы"
+        label_: "See all schedule logs"
+        own: 
+          desc: "Пользователь может видеть только свои собственные журналы графику"
+          desc_: "The user can only see their own schedule logs"
+          label: "См. собственные журналы графику"
+          label_: "See own schedule logs"
+      update: 
+        desc: "Пользователь может редактировать любой график журнала"
+        desc_: "The user can edit any schedule log"
+        label: "Обновите график журнала"
+        label_: "Update any schedule log"
+    schedules: 
+      create: 
+        desc: "Пользователь может создать новый график"
+        desc_: "The user can create a new schedule"
+        label: "Создайте новый график"
+        label_: "Create a new schedule"
+      delete: 
+        desc: "Пользователь может удалить любой график"
+        desc_: "The user can delete any schedule"
+        label: "Уничтожить любой график"
+        label_: "Destroy any schedule"
+        own: 
+          desc: "Пользователь может удалять только свои собственные графики"
+          desc_: "The user can only delete their own schedules"
+          label: "Уничтожить собственное расписание"
+          label_: "Destroy own schedule"
+      desc: "Пользователь может предпринимать любые действия по расписанию"
+      desc_: "The user can take any action on schedules"
+      group: Расписания
+      group_: Schedules
+      label: "Любые действия по расписанию"
+      label_: "Any action on schedules"
+      read: 
+        desc: "Пользователь может видеть все графики"
+        desc_: "The user can see all schedules"
+        label: "Посмотреть все графики"
+        label_: "See all schedules"
+        own: 
+          desc: "Пользователь может видеть только свои собственные графики"
+          desc_: "The user can only see their own schedules"
+          label: "См. собственных графиков"
+          label_: "See own schedules"
+      update: 
+        desc: "Пользователь может редактировать любой график"
+        desc_: "The user can edit any schedule"
+        label: "Обновите график"
+        label_: "Update any schedule"
+        own: 
+          desc: "Пользователь может редактировать только свои собственные графики"
+          desc_: "The user can only edit their own schedules"
+          label: "Обновление собственному графику"
+          label_: "Update own schedule"
+    sessions: 
+      desc: "Пользователь может выполнять любые действия на сессиях"
+      desc_: "The user can take any action on sessions"
+      drop_all: 
+        desc: "Пользователь может удалить все существующие сеансы включая свою собственную"
+        desc_: "The user can drop all the existing sessions including their own"
+        label: "Отбросьте всесуществующие сеансы"
+        label_: "Drop all the existing sessions"
+      drop_others: 
+        desc: "Пользователь может удалить все сеансов, созданных под их счет, но их текущее"
+        desc_: "The user can delete all the sessions created under their account but their current"
+        label: "Отбросьте всепользовательские сессии , но текущее"
+        label_: "Drop all the user sessions but the current"
+      group: сессии
+      group_: Sessions
+      label: "Любые действия на сессиях"
+      label_: "Any actions on sessions"
+    settings: 
+      desc: "Пользователь может предпринимать любые действия по настройке"
+      desc_: "The user can take any action on settings"
+      group: настройки
+      group_: Settings
+      label: "Любые действия по настройке"
+      label_: "Any action on settings"
+      read: 
+        desc: "Пользователь может просмотреть все параметры"
+        desc_: "The user can see all settings"
+        label: "Смотрите читать Настройки"
+        label_: "See read settings"
+      restart_dashboard_client: 
+        desc: "Пользователь может перезапустить панель клиента"
+        desc_: "The user can restart the dashboard client"
+        label: "Перезапустите панель клиента"
+        label_: "Restart dashboard client"
+      update: 
+        desc: "Пользователь может редактировать все, в меню Настройки"
+        desc_: "The user can edit everything in the Settings menu"
+        label: "Настройки обновления"
+        label_: "Update settings"
+      version: 
+        desc: "Пользователь может перейти к / версию , чтобы увидеть , какая версия установлена ​​OnApp"
+        desc_: "User can navigate to /version to see which version of OnApp is installed"
+        label: "Посмотреть OnApp версия"
+        label_: "View OnApp version"
+    ssh_keys: 
+      add: 
+        desc: "Пользователь может добавить SSH- ключей для всехвиртуальных машин"
+        desc_: "The user can add SSH keys for all the virtual machines"
+        label: "Добавить SSH- ключей для всехвиртуальных машин"
+        label_: "Add SSH keys for all the virtual machines"
+        own: 
+          desc: "Пользователь может добавить только SSH ключи для собственных виртуальных машин"
+          desc_: "The user can only add SSH keys for own virtual machines"
+          label: "Добавить SSH- ключей для собственных виртуальных машин"
+          label_: "Add SSH keys for own virtual machines"
+      group: "ключей SSH"
+      group_: "SSH Keys"
+    storage_servers: 
+      change_owner: 
+        desc: "Пользователь может сменить владельца любого Storage Server"
+        desc_: "The user can change the owner of any storage server"
+        label: "Изменениевладельца любого Storage Server"
+        label_: "Change an owner of any storage server"
+      console: 
+        desc: "Пользователь может получить доступ к любому Storage Server через консоль"
+        desc_: "The user can access any storage server via console"
+        label: "Консоль для любого Storage Server"
+        label_: "Console to any storage server"
+        own: 
+          desc: "Пользователь может получить доступ к собственным серверы хранения через консоль"
+          desc_: "The user can access own storage servers via console"
+          label: "Консоль для собственных серверов хранения"
+          label_: "Console to own storage servers"
+      create: 
+        desc: "Пользователь может создать новый сервер хранения"
+        desc_: "The user can create a new storage server"
+        label: "Создайте новый сервер хранения"
+        label_: "Create a new storage server"
+      delete: 
+        desc: "Пользователь может уничтожить любую Storage Server"
+        desc_: "The user can destroy any storage server"
+        label: "Уничтожить любой Storage Server"
+        label_: "Destroy any storage server"
+        own: 
+          desc: "Пользователь может разрушить собственные серверы хранения"
+          desc_: "The user can destroy own storage servers"
+          label: "Уничтожить собственные серверы хранения"
+          label_: "Destroy own storage servers"
+      desc: "Пользователь может предпринимать никаких действий на серверы хранения"
+      desc_: "The user can take any actions on storage servers"
+      group: "Система хранения данных Серверы"
+      group_: "Storage Servers"
+      label: "Любые действия по Storage Server"
+      label_: "Any action on storage server"
+      migrate: 
+        desc: "Пользователь может перенести любые Storage Server"
+        desc_: "The user can migrate any storage server"
+        label: "Миграция любых Storage Server"
+        label_: "Migrate any storage server"
+        own: 
+          desc: "Пользователь может перенести собственные серверы хранения"
+          desc_: "The user can migrate own storage servers"
+          label: "Миграция собственные серверы хранения"
+          label_: "Migrate own storage servers"
+      power: 
+        desc: "Пользователь может взять любую степень действий, связанных с Storage Server"
+        desc_: "The user can take any power-related action on storage server"
+        label: "Любая власть действие на серверы хранения"
+        label_: "Any power action on storage servers"
+        own: 
+          desc: "Пользователь может взять любую степень действий, связанных с собственными серверами хранения"
+          desc_: "The user can take any power-related action on own Storage Servers"
+          label: "Любая власть действие на собственные серверы хранения"
+          label_: "Any power action on own storage servers"
+      read: 
+        desc: "Пользователь может видеть все серверы хранения"
+        desc_: "The user can see all storage servers"
+        label: "Смотреть все серверы хранения"
+        label_: "See all storage servers"
+        own: 
+          desc: "Пользователь может видеть собственные серверы хранения"
+          desc_: "The user can see own storage servers"
+          label: "См. собственных серверов хранения"
+          label_: "See own storage servers"
+      rebuild_network: 
+        desc: "Пользователь может восстановить сеть на любом Storage Server"
+        desc_: "The user can rebuild network on any storage server"
+        label: "Восстановление сети на любой Storage Server"
+        label_: "Rebuild network on any storage server"
+        own: 
+          desc: "Пользователь может восстановить сеть на собственные серверы хранения"
+          desc_: "The user can only rebuild network on own storage servers"
+          label: "Восстановление сети на собственных серверах хранения"
+          label_: "Rebuild network on own storage servers"
+      reset_root_password: 
+        desc: "Пользователь может сбросить пароль суперпользователя на любой Storage Server"
+        desc_: "The user can reset root password on any storage server"
+        label: "Сброс пароля на любой Storage Server"
+        label_: "Reset root password on any storage server"
+        own: 
+          desc: "Пользователь может сбросить пароль администратора на собственных серверах хранения"
+          desc_: "The user can reset root password on own storage servers"
+          label: "Сброс пароля на собственном сервере хранения"
+          label_: "Reset root password on own storage server"
+      suspend: 
+        desc: "Пользователь может изменить статус Подвесные для любого Storage Server"
+        desc_: "The user can change suspended status for any storage server"
+        label: "Изменение Подвесные статус Storage Server"
+        label_: "Change suspended status for storage server"
+      unlock: 
+        desc: "Пользователь может разблокировать любой Storage Server"
+        desc_: "The user can unlock any storage server"
+        label: "Открой любой Storage Server"
+        label_: "Unlock any storage server"
+      update: 
+        desc: "Пользователь может обновлять Storage Server"
+        desc_: "The user can update any storage server"
+        label: "Обновите Storage Server"
+        label_: "Update any storage server"
+        own: 
+          desc: "Пользователь может обновить собственные серверы хранения"
+          desc_: "The user can update own storage servers"
+          label: "Обновление собственные серверы хранения"
+          label_: "Update own storage servers"
+    streaming_storage_origins: 
+      change_owner: 
+        desc: "Пользователь может сменить владельца любого Streaming Origin Storage"
+        desc_: "The user can change the owner of any streaming storage origin"
+        label: "Изменениевладельца любого Streaming Origin Storage"
+        label_: "Change an owner of any streaming storage origin"
+      create: 
+        desc: "Пользователь может создать новый Streaming Origin Storage"
+        desc_: "The user can create a new streaming storage origin"
+        label: "Создайте новый Streaming Origin Storage"
+        label_: "Create a new streaming storage origin"
+      delete: 
+        desc: "Пользователь может удалить любой Streaming Origin Storage"
+        desc_: "The user can delete any streaming storage origin"
+        label: "Удалить все Streaming Origin Storage"
+        label_: "Delete any streaming storage origin"
+        own: 
+          desc: "Пользователь может удалять собственные Streaming Origin Storage"
+          desc_: "The user can delete own streaming storage origin"
+          label: "Удалить собственные Streaming Origin Storage"
+          label_: "Delete own streaming storage origin"
+      desc: "Пользователь может принимать любые действия по Streaming Origin Storage"
+      desc_: "The user can take any actions on streaming storage origin"
+      group: "Потоковое Origins хранения"
+      group_: "Streaming Storage Origins"
+      label: "Любые действия по Streaming Origin Storage"
+      label_: "Any action on streaming storage origin"
+      migrate: 
+        desc: "Пользователь может перенести любое потоковое Origin Storage"
+        desc_: "The user can migrate any streaming storage origin"
+        label: "Миграция любых Streaming Origin Storage"
+        label_: "Migrate any streaming storage origin"
+        own: 
+          desc: "Пользователь может перенести собственные Streaming Origin Storage"
+          desc_: "The user can migrate own streaming storage origin"
+          label: "Миграция собственного потокового Origins хранения"
+          label_: "Migrate own streaming storage origins"
+      power: 
+        desc: "Пользователь может взять любую степень действий, связанных с потоковой Origins хранения"
+        desc_: "The user can take any power-related action on streaming storage origins"
+        label: "Любая власть действие на потоковое Origins хранения"
+        label_: "Any power action on streaming storage origins"
+        own: 
+          desc: "Пользователь может только взять власть действий, связанных с их собственным Streaming Origins хранения"
+          desc_: "The user can only take power-related actions on their own streaming storage origins"
+          label: "Любая власть действие на собственные Streaming Origin Storage"
+          label_: "Any power action on own streaming storage origin"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых Streaming Origin Storage"
+        desc_: "The user can see details of any streaming storage origin"
+        label: "См. подробную информацию о любых Streaming Origin Storage"
+        label_: "See details of any streaming storage origin"
+        own: 
+          desc: "Пользователь может просматривать подробную информацию о собственной Streaming Origin Storage"
+          desc_: "The user can see details of own streaming storage origin"
+          label: "Подробнее собственных Streaming Origin Storage"
+          label_: "See details of own streaming storage origin"
+      rebuild_network: 
+        desc: "Пользователь может восстановить сеть любого Streaming Origin Storage"
+        desc_: "The user can rebuild network of any streaming storage origin"
+        label: "Восстановление сети любого Streaming Origin Storage"
+        label_: "Rebuild network of any streaming storage origin"
+        own: 
+          desc: "Пользователь может восстановить сеть собственных Streaming Origin Storage"
+          desc_: "The user can only rebuild network of own streaming storage origin"
+          label: "Перестроить сеть собственных Streaming Origin Storage"
+          label_: "Rebuild network of own streaming storage origin"
+      suspend: 
+        desc: "Пользователь может изменить статус Подвесные для любого Streaming Origin Storage"
+        desc_: "The user can change suspended status for any streaming storage origin"
+        label: "Изменение статуса Подвесные для любого Streaming Origin Storage"
+        label_: "Change suspended status for any streaming storage origin"
+      unlock: 
+        desc: "Пользователь может разблокировать любой Streaming Origin Storage"
+        desc_: "The user can unlock any streaming storage origin"
+        label: "Открой любой Streaming Origin Storage"
+        label_: "Unlock any streaming storage origin"
+      update: 
+        desc: "Пользователь может редактировать любой Streaming Origin Storage"
+        desc_: "The user can edit any streaming storage origin"
+        label: "Обновите Streaming Origin Storage"
+        label_: "Update any streaming storage origin"
+        own: 
+          desc: "Пользователь может редактировать собственные Streaming Origins хранения"
+          desc_: "The user can edit own streaming storage origins"
+          label: "Обновление собственные Streaming Origins хранения"
+          label_: "Update own streaming storage origins"
+    sysadmin_tools: 
+      desc: "Пользователь может предпринимать любые действия в меню Инструменты сисадмина"
+      desc_: "The user can take any action on the Sysadmin Tools menu"
+      group: "Сисадмин Инструменты"
+      group_: "Sysadmin Tools"
+      label: "Любые действия по Сисадмин Инструменты"
+      label_: "Any actions on sysadmin tools"
+    templates: 
+      create: 
+        desc: "Пользователь может создать новый шаблон"
+        desc_: "The user can create a new template"
+        label: "Создать новый шаблон"
+        label_: "Create a new template"
+      delete: 
+        desc: "Пользователь может удалить любой шаблон"
+        desc_: "The user can delete any template"
+        label: "Уничтожить любой шаблон"
+        label_: "Destroy any template"
+        own: 
+          desc: "Пользователь может удалять только свои собственные шаблоны"
+          desc_: "The user can only delete their own templates"
+          label: "Уничтожить собственный шаблон"
+          label_: "Destroy own template"
+        user: 
+          desc: "Пользователь может удалять пользовательские шаблоны"
+          desc_: "The user can delete user templates"
+          label: "Уничтожить пользовательских шаблонов"
+          label_: "Destroy user template"
+      desc: "Пользователь может выполнять любые действия на шаблонах"
+      desc_: "The user can take any action on templates"
+      group: Шаблоны
+      group_: Templates
+      inactive: 
+        desc: "Пользователь может просмотреть список неактивных шаблоны"
+        desc_: "User can see the list of inactive templates"
+        label: "См. список неактивных шаблоны"
+        label_: "See the list of inactive templates"
+      label: "Любые действия по шаблонам"
+      label_: "Any action on templates"
+      make_public: 
+        desc: "Пользователь может сделать любой шаблон общественности"
+        desc_: "The user can make any template public"
+        label: "Сделать любой шаблон общественности"
+        label_: "Make any template public"
+        own: 
+          desc: "Пользователь может сделать свои собственные шаблоны общественности"
+          desc_: "The user can only make their own templates public"
+          label: "Сделать собственный публичный шаблон"
+          label_: "Make own template public"
+        user: 
+          desc: "Пользователь может создавать шаблоны пользователей общественного"
+          desc_: "The user can make user templates public"
+          label: "Сделать общественных пользовательских шаблонов"
+          label_: "Make user template public"
+      manage: 
+        own: 
+          desc: "Пользователь может создавать и управлять своими собственными шаблонами"
+          desc_: "The user can create and manage their own templates"
+          label: "Управление собственных шаблонов"
+          label_: "Manage own templates"
+        public: 
+          desc: "Пользователь может управлять любым общественным шаблон"
+          desc_: "The user can manage any public template"
+          label: "Управление глобальных шаблонов"
+          label_: "Manage global templates"
+        user: 
+          desc: "Пользователь может создавать и управлять пользовательскими шаблонами"
+          desc_: "The user can create and manage user templates"
+          label: "Управление пользовательскими шаблонами"
+          label_: "Manage user templates"
+      read: 
+        desc: "Пользователь может просмотреть все шаблоны"
+        desc_: "The user can see all templates"
+        label: "Посмотреть все шаблоны"
+        label_: "See all templates"
+        own: 
+          desc: "Пользователь может видеть только свои собственные шаблоны"
+          desc_: "The user can only see their own templates"
+          label: "См. собственные шаблоны"
+          label_: "See own templates"
+        public: 
+          desc: "Пользователь может видеть все государственные шаблоны"
+          desc_: "The user can see all public templates"
+          label: "Посмотреть все общественные шаблоны"
+          label_: "See all public templates"
+        user: 
+          desc: "Пользователь может видеть пользователь шаблоны"
+          desc_: "The user can see user templates"
+          label: "См. шаблонов пользователя"
+          label_: "See user templates"
+      update: 
+        desc: "Пользователь может редактировать любой шаблон"
+        desc_: "The user can edit any template"
+        label: "Обновление любой шаблон"
+        label_: "Update any template"
+        own: 
+          desc: "Пользователь может редактировать только свои собственные шаблоны"
+          desc_: "The user can only edit their own templates"
+          label: "Обновить собственный шаблон"
+          label_: "Update own template"
+        user: 
+          desc: "Пользователь может обновить пользовательские шаблоны"
+          desc_: "The user can update user templates"
+          label: "Обновление пользовательских шаблонов"
+          label_: "Update user template"
+    themes: 
+      create: 
+        desc: "Пользователь может создавать новые темы"
+        desc_: "The user can create new themes"
+        label: "Создать тему"
+        label_: "Create theme"
+      delete: 
+        desc: "Пользователь может удалить темы"
+        desc_: "The user can delete themes"
+        label: "Уничтожить тему"
+        label_: "Destroy theme"
+      desc: "Пользователь может делать любые действия по темам"
+      desc_: "The user can make any action on themes"
+      group: Темы
+      group_: Themes
+      label: "Любые действия на темы"
+      label_: "Any action on themes"
+      read: 
+        desc: "Пользователь может читать темы"
+        desc_: "The user can read themes"
+        label: "Читайте тему"
+        label_: "Read theme"
+      update: 
+        desc: "Пользователь может вносить изменения в темах"
+        desc_: "The user can make changes in themes"
+        label: "Обновление темы"
+        label_: "Update theme"
+    transactions: 
+      cancel_zombie: 
+        desc: "Пользователь может отменить операции , которые идут слишком долго, и , скорее всего, не удалось"
+        desc_: "The user can cancel transactions which run too long and are most likely failed"
+        label: "Отмена операции зомби"
+        label_: "Cancel zombie transactions"
+        own: 
+          desc: "Пользователь может отменить операции , которые идут слишком долго, и , скорее всего, не удалось, и относятся к этому пользователю"
+          desc_: "The user can cancel transactions which run too long and are most likely failed and belong to this user"
+          label: "Отмена собственных операций зомби"
+          label_: "Cancel own zombie transactions"
+      delete: 
+        desc: "Пользователь может удалить все транзакции изжурнала"
+        desc_: "The user can delete all transactions from a log"
+        label: "Удалить все транзакции из журнала"
+        label_: "Delete all transactions from log"
+        own: 
+          desc: "Пользователь может удалять только свои операции из журнала"
+          desc_: "The user can only delete their own transactions from a log"
+          label: "Удалить свои операции из оцилиндрованного бревна"
+          label_: "Delete own transactions from logs"
+      desc: "Пользователь может предпринимать никаких действий по сделкам"
+      desc_: "The user can take any action on transactions"
+      group: Сделки
+      group_: Transactions
+      label: "Любые действия по операциям"
+      label_: "Any action on transactions"
+      list: 
+        desc: "Пользователь может видеть все операции"
+        desc_: "The user can see all transactions"
+        label: "Список всех сделок"
+        label_: "See list of all transactions"
+        own: 
+          desc: "Пользователь может видеть только свои операции"
+          desc_: "The user can only see their own transactions"
+          label: "Список собственных операций"
+          label_: "See list of own transactions"
+      read: 
+        desc: "Пользователь может просматривать подробную информацию о любой сделке"
+        desc_: "The user can see details of any transaction"
+        label: "См. подробную информацию о всех операциях"
+        label_: "See details of all transactions"
+        own: 
+          desc: "Пользователь может только просматривать подробную информацию о своих операциях"
+          desc_: "The user can only see details of their own transactions"
+          label: "Подробнее о собственной транзакции"
+          label_: "See details of own transaction"
+    user_additional_fields: 
+      create: 
+        desc: "Пользователь может создавать дополнительные поля пользователя"
+        desc_: "The user can create user additional fields"
+        label: "Создайте пользователя дополнительных полей"
+        label_: "Create user additional fields"
+      delete: 
+        desc: "Пользователь может удалить любой пользователь дополнительных полей"
+        desc_: "The user can delete any user additional fields"
+        label: "Уничтожить любой пользователь дополнительных полей"
+        label_: "Destroy any user additional fields"
+      desc: "Пользователь может выполнять любые действия на дополнительных полей для пользователей"
+      desc_: "The user can perform any action on additional fields for user"
+      group: "Пользователь Дополнительные поля"
+      group_: "User Additional Fields"
+      label: "Любое действие пользователя на дополнительных полях"
+      label_: "Any action on user additional fields"
+      read: 
+        desc: "Пользователь может читать все пользовательские дополнительных полей"
+        desc_: "The user can read all user additional fields"
+        label: "Читать все дополнительные поля"
+        label_: "Read all user additional fields"
+      update: 
+        desc: "Пользователь может редактировать все пользовательские дополнительных полей"
+        desc_: "The user can edit all user additional fields"
+        label: "Обновление всех пользователей дополнительными полями"
+        label_: "Update all user additional fields"
+    user_groups: 
+      create: 
+        desc: "Пользователь может создать новую группу пользователей"
+        desc_: "The user can create a new user group"
+        label: "Создать новую группу пользователей"
+        label_: "Create a new user group"
+      delete: 
+        desc: "Пользователь может удалить любой группы пользователей"
+        desc_: "The user can delete any user group"
+        label: "Уничтожить группу пользователей"
+        label_: "Destroy user group"
+      desc: "Пользователь может предпринимать никаких действий по группам пользователей"
+      desc_: "The user can take any action on user groups"
+      group: "Группы пользователей"
+      group_: "User Groups"
+      label: "Любые действия по группам пользователей"
+      label_: "Any action on user groups"
+      list: 
+        desc: "Пользователь может просмотреть список всех групп пользователей"
+        desc_: "The user can see the list of all user groups"
+        label: "Список всех групп пользователей"
+        label_: "See list of all user groups"
+      read: 
+        desc: "Пользователь может увидеть подробную информацию о любых групп пользователей"
+        desc_: "The user can see details of any user group"
+        label: "См. подробную информацию о любых групп пользователей"
+        label_: "See details of any user group"
+      update: 
+        desc: "Пользователь может редактировать любой пользователь группы"
+        desc_: "The user can edit any user group"
+        label: "Обновление любой группы пользователей"
+        label_: "Update any user group"
+    user_hourly_stats: 
+      desc: "Пользователь имеет полный доступ к пользовательским почасовая статистика"
+      desc_: "The user has full access to user hourly statistics"
+      group: "Пользователь Часовая статистика"
+      group_: "User Hourly Stats"
+      label: "Полный доступ к пользовательским почасовая статистика"
+      label_: "Full access to user hourly statistics"
+      read: 
+        desc: "Пользователь может видеть почасовая статистика"
+        desc_: "The user can see hourly statistics"
+        label: "Посмотреть все пользователь почасовая статистика"
+        label_: "See all user hourly statistics"
+        own: 
+          desc: "Пользователь может видеть только собственные почасовая статистика"
+          desc_: "The user can only see own hourly statistics"
+          label: "См. собственные пользовательские почасовая статистика"
+          label_: "See own user hourly statistics"
+    user_white_lists: 
+      create: 
+        desc: "Пользователь может создавать любой белый IP"
+        desc_: "The user can create any white IP"
+        label: "Создайте белый IP для всех пользователей"
+        label_: "Create white IP for all users"
+        own: 
+          desc: "Пользователь может создавать собственные белый IP"
+          desc_: "The user can create own white IP"
+          label: "Создать собственную белый IP"
+          label_: "Create own white IP"
+      delete: 
+        desc: "Пользователь может уничтожить любой белый IP"
+        desc_: "The user can destroy any white IP"
+        label: "Уничтожить белый IP для всех пользователей"
+        label_: "Destroy white IP for all users"
+        own: 
+          desc: "Пользователь может только разрушать собственные белый IP"
+          desc_: "The user can only destroy own white IP"
+          label: "Уничтожить собственную белых IP-адресов"
+          label_: "Destroy own white IPs"
+      desc: "Пользователь может предпринимать никаких действий на белом IP-адреса для пользователей"
+      desc_: "The user can take any action on white IPs for users"
+      group: "Белый IP-адреса"
+      group_: "White IPs"
+      label: "Управление всеми Белый IP-адреса для пользователей"
+      label_: "Manage all white IPs for users"
+      read: 
+        desc: "Пользователь может читать все белые IP-адресов"
+        desc_: "The user can read all white IPs"
+        label: "Читать все белые IP-адреса пользователей"
+        label_: "Read all white user IPs"
+        own: 
+          desc: "Пользователь может читать собственные белых IP-адресов"
+          desc_: "The user can read own white IPs"
+          label: "Читайте собственных белых IP-адресов"
+          label_: "Read own white IPs"
+      update: 
+        desc: "Пользователь может обновить любой белый IP"
+        desc_: "The user can update any white IP"
+        label: "Обновление белый IP для всех пользователей"
+        label_: "Update white IP for all users"
+        own: 
+          desc: "Пользователь может обновить собственную белый IP"
+          desc_: "The user can update own white IP"
+          label: "Обновление собственных белых IP-адресов"
+          label_: "Update own white IPs"
+    users: 
+      avatar: 
+        desc: "Позволяет загрузить аватар или использовать вместо Gravatar"
+        desc_: "Allow to upload avatar or use gravatar instead"
+        label: "Загрузить аватар"
+        label_: "Upload avatar"
+      change_password: 
+        desc: "Изменение пароля пользователя"
+        desc_: "Change user password"
+        label: "Изменение пароля пользователя"
+        label_: "Change user password"
+        own: 
+          desc: "Пользователь может изменить только собственный пароль"
+          desc_: "The user can only change own password"
+          label: "Изменить свой ​​пароль"
+          label_: "Change own password"
+      create: 
+        desc: "Пользователь может создать новую учетную запись пользователя"
+        desc_: "The user can create a new user account"
+        label: "Создание любого пользователя"
+        label_: "Create any user"
+      delete: 
+        desc: "Пользователь может удалить любой учетной записи пользователя"
+        desc_: "The user can delete any user account"
+        label: "Уничтожить любой пользователь"
+        label_: "Destroy any user"
+        own: 
+          desc: "Пользователь может удалять только свои собственные учетной записи пользователя"
+          desc_: "The user can only delete their own user account"
+          label: "Уничтожить собственную пользователей"
+          label_: "Destroy own user"
+      desc: "Пользователь может выполнять любые действия на учетные записи пользователей"
+      desc_: "The user can take any action on user accounts"
+      group: Пользователи
+      group_: Users
+      label: "Любые действия по пользователям"
+      label_: "Any action on users"
+      login_as: 
+        desc: "Пользователь может Войти , как пользователь"
+        desc_: "The user can login as another user"
+        label: "Пользователь может Войти как любой пользователь"
+        label_: "User can login as another user"
+      read: 
+        desc: "Пользователь может видеть все учетные записи пользователей"
+        desc_: "The user can see all user accounts"
+        label: "Посмотреть все пользователи"
+        label_: "See all users"
+        own: 
+          desc: "Пользователь может видеть только свои записи пользователя"
+          desc_: "The user can only see their own user account"
+          label: "См. собственных пользователей"
+          label_: "See own users"
+      read_prices: 
+        backups_templates: 
+          desc: "См. Пользователь резервного копирования / Templates цены"
+          desc_: "See user backups/templates prices"
+          label: "См. Пользователь резервного копирования / Templates цены"
+          label_: "See user backups/templates prices"
+        billing_plan: 
+          desc: "См. план Пользователь биллинга"
+          desc_: "See user billing plan"
+          label: "См. план Пользователь биллинга"
+          label_: "See user billing plan"
+        desc: "Пользователь может увидеть цены всех пользователей"
+        desc_: "The user can see all users' prices"
+        hourly_price: 
+          desc: "См. Пользователь почасовые цены"
+          desc_: "See user hourly prices"
+          label: "См. Пользователь почасовые цены"
+          label_: "See user hourly prices"
+        label: "Посмотреть все цены пользователей"
+        label_: "See all users prices"
+        monthly_price: 
+          desc: "См. пользователей ежемесячно цены"
+          desc_: "See user monthly prices"
+          label: "См. пользователей ежемесячно цены"
+          label_: "See user monthly prices"
+        outstanding_amount: 
+          desc: "См. Пользователь суммы задолженности"
+          desc_: "See user outstanding amount"
+          label: "См. Пользователь суммы задолженности"
+          label_: "See user outstanding amount"
+        summary_payments: 
+          desc: "См. платежей Пользователь резюме"
+          desc_: "See user summary payments"
+          label: "См. платежей Пользователь резюме"
+          label_: "See user summary payments"
+        total_cost: 
+          desc: "См. Пользователь общей стоимости"
+          desc_: "See user total cost"
+          label: "См. Пользователь общей стоимости"
+          label_: "See user total cost"
+        vm_prices: 
+          desc: "См. пользователей виртуальных машин ценам"
+          desc_: "See user virtual machine prices"
+          label: "См. пользователей виртуальных машин ценам"
+          label_: "See user virtual machine prices"
+      suspend: 
+        desc: "Пользователь может включить / отключить всех пользователей"
+        desc_: "the user can suspend and unsuspend other users' accounts"
+        label: "Включение / отключение пользователей"
+        label_: "Suspend and unsuspend users"
+      unlock: 
+        desc: "Пользователь может разблокировать любой учетной записи пользователя"
+        desc_: "The user can unlock any user account"
+        label: "Открой любой пользователь"
+        label_: "Unlock any user"
+      update: 
+        desc: "Пользователь может редактировать любой учетной записи пользователя"
+        desc_: "The user can edit any user account"
+        label: "Обновление любого пользователя"
+        label_: "Update any user"
+        own: 
+          desc: "Пользователь может редактировать только свою собственную учетную запись"
+          desc_: "The user can only edit their own user account"
+          label: "Обновление собственных пользователей"
+          label_: "Update own user"
+      update_api_key: 
+        desc: "Пользователь может генерировать ключ API для всех пользователей"
+        desc_: "The user can generate API Key for all users"
+        label: "Создание API ключ"
+        label_: "Generate API key"
+        own: 
+          desc: "Пользователь может создавать только собственным ключом"
+          desc_: "The user can only generate own key"
+          label: "Создать собственный ключ API"
+          label_: "Generate own API key"
+    virtual_machine_snapshots: 
+      create: 
+        desc: "Пользователь может создать новую или восстановитьсуществующие виртуальные машины Snapshot"
+        desc_: "The user can create a new or restore an existing virtual machine snapshot"
+        label: "Созданиеновых или восстановлениесуществующих виртуальных машин Snapshot"
+        label_: "Create a new or restore an existing virtual machine snapshot"
+        own: 
+          desc: "Пользователь может создавать или восстанавливать собственные виртуальные машины Snapshot"
+          desc_: "The user can create or restore own virtual machine snapshot"
+          label: "Создание или восстановление собственной виртуальной машины Snapshot"
+          label_: "Create or restore own virtual machine snapshot"
+      delete: 
+        desc: "Пользователь может удалить виртуальный снимок машины"
+        desc_: "The user can delete a virtual machine snapshot"
+        label: "Уничтожить любой виртуальной машины Snapshot"
+        label_: "Destroy any virtual machine snapshot"
+        own: 
+          desc: "Пользователь может удалить собственный виртуальный снимок машины"
+          desc_: "The user can delete own virtual machine snapshot"
+          label: "Уничтожить собственной виртуальной машины Snapshot"
+          label_: "Destroy own virtual machine snapshot"
+      desc: "Пользователь может выполнять любые действия на виртуальной снимки машины"
+      desc_: "The user can take any action on virtual machine snapshots"
+      group: "Виртуальная машина снимки"
+      group_: "Virtual Machine Snapshots"
+      label: "Любые действия на виртуальной снимки машины"
+      label_: "Any action on virtual machine snapshots"
+      read: 
+        desc: "Пользователь может просмотреть все снимки виртуальных машин"
+        desc_: "The user can see all virtual machine snapshots"
+        label: "Посмотреть все снимки виртуальных машин"
+        label_: "See all virtual machine snapshots"
+        own: 
+          desc: "Пользователь может видеть собственные виртуальные снимки машины"
+          desc_: "The user can see own virtual machine snapshots"
+          label: "См. собственной виртуальной машины снимки"
+          label_: "See own virtual machine snapshots"
+    virtual_machines: 
+      change_owner: 
+        desc: "Пользователь может сменить владельца любой виртуальной машины"
+        desc_: "The user can change the owner of any virtual machine"
+        label: "Изменениевладельца любой виртуальной машины"
+        label_: "Change an owner of any virtual machine"
+      console: 
+        desc: "Пользователь может получить доступ к любой виртуальной машине через консоль"
+        desc_: "The user can access any virtual machine via console"
+        label: "Консоль для любой виртуальной машины"
+        label_: "Console to any virtual machine"
+        own: 
+          desc: "Пользователь может получить доступ только к своей виртуальной машине через консоль"
+          desc_: "The user can only access their own virtual machine via console"
+          label: "Консоль для собственной виртуальной машины"
+          label_: "Console to own virtual machine"
+      create: 
+        desc: "Пользователь может создать новую виртуальную машину"
+        desc_: "The user can create a new virtual machine"
+        label: "Создайте новую виртуальную машину"
+        label_: "Create a new virtual machine"
+      delete: 
+        desc: "Пользователь может удалить любой виртуальной машине"
+        desc_: "The user can delete any virtual machine"
+        label: "Уничтожить любой виртуальной машины"
+        label_: "Destroy any virtual machine"
+        own: 
+          desc: "Пользователь может удалять только свои собственные виртуальные машины"
+          desc_: "The user can only delete their own virtual machines"
+          label: "Уничтожить собственную виртуальную машину"
+          label_: "Destroy own virtual machine"
+      desc: "Пользователь может предпринимать никаких действий на виртуальных машинах"
+      desc_: "The user can take any action on virtual machines"
+      group: "Виртуальные машины"
+      group_: "Virtual Machines"
+      label: "Любые действия на виртуальных машинах"
+      label_: "Any action on virtual machines"
+      migrate: 
+        desc: "Пользователь может перенести любую виртуальную машину"
+        desc_: "The user can migrate any virtual machine"
+        label: "Миграция любой виртуальной машины"
+        label_: "Migrate any virtual machine"
+        own: 
+          desc: "Пользователь может переносить свои собственные виртуальные машины"
+          desc_: "The user can only migrate their own virtual machines"
+          label: "Миграция собственную виртуальную машину"
+          label_: "Migrate own virtual machine"
+      power: 
+        desc: "Пользователь может взять любую степень действий, связанных с виртуальными машинами"
+        desc_: "The user can take any power-related action on virtual machines"
+        label: "Любая власть действие на виртуальных машинах"
+        label_: "Any power action on virtual machines"
+        own: 
+          desc: "Пользователь может только взять власть действий, связанных с их собственными виртуальными машинами"
+          desc_: "The user can only take power-related actions on their own virtual machines"
+          label: "Любая власть действие на собственные виртуальные машины"
+          label_: "Any power action on own virtual machines"
+      read: 
+        desc: "Пользователь может видеть все виртуальные машины"
+        desc_: "The user can see all virtual machines"
+        label: "Посмотреть все виртуальные машины"
+        label_: "See all virtual machines"
+        own: 
+          desc: "Пользователь может видеть только свои собственные виртуальные машины"
+          desc_: "The user can only see their own virtual machines"
+          label: "См. собственных виртуальных машин"
+          label_: "See own virtual machines"
+      read_vip: 
+        desc: "Пользователь может читать VIP статус виртуальных машин"
+        desc_: "The user can read VIP status of virtual machines"
+        label: "Читайте VIP статус"
+        label_: "Read VIP status"
+      rebuild_network: 
+        desc: "Пользователь может восстановить сеть любой виртуальной машине"
+        desc_: "The user can rebuild network of any virtual machine"
+        label: "Восстановление сети любой виртуальной машины"
+        label_: "Rebuild network of any virtual machine"
+        own: 
+          desc: "Пользователь может восстановить сеть собственных виртуальных машин"
+          desc_: "The user can only rebuild network of own virtual machine"
+          label: "Перестроить сеть собственных виртуальных машин"
+          label_: "Rebuild network of own virtual machine"
+      reset_root_password: 
+        desc: "Пользователь может сбросить пароль администратора для любой виртуальной машине"
+        desc_: "The user can reset the root password for any virtual machine"
+        label: "Сброс пароля на любой виртуальной машине"
+        label_: "Reset root password to any virtual machine"
+        own: 
+          desc: "Пользователь может сбросить пароль администратора для своих виртуальных машин"
+          desc_: "The user can only reset the root password for their own virtual machines"
+          label: "Сброс пароля в собственной виртуальной машине"
+          label_: "Reset root password to own virtual machine"
+      set_ssh_keys: 
+        desc: "Пользователь может устанавливать свои собственные ключей SSH после виртуальной машины создается"
+        desc_: "The user can set their own SSH keys after the virtual machine is created"
+        label: "Набор ключей SSH"
+        label_: "Set SSH keys"
+      set_vip: 
+        desc: "Пользователь может установить / удалить VIP- статус для виртуальных машин"
+        desc_: "The user can set/delete VIP status for virtual machines"
+        label: "Установить VIP- статус"
+        label_: "Set VIP status"
+      suspend: 
+        desc: "Пользователь может изменить статус Подвесные для виртуальной машины"
+        desc_: "The user can change Suspended status for a virtual machine"
+        label: "Изменение статуса Подвесные для виртуальных машин"
+        label_: "Change suspended status for Virtual Machine"
+      unlock: 
+        desc: "Пользователь может разблокировать любой виртуальной машине"
+        desc_: "The user can unlock any virtual machine"
+        label: "Открой любой виртуальной машине"
+        label_: "Unlock any virtual machine"
+      update: 
+        desc: "Пользователь может редактировать любой виртуальной машины"
+        desc_: "The user can edit any virtual machine"
+        label: "Обновление всех виртуальных машин"
+        label_: "Update all virtual machine"
+        own: 
+          desc: "Пользователь может редактировать только свои собственные виртуальные машины"
+          desc_: "The user can only edit their own virtual machines"
+          label: "Обновление собственной виртуальной машины"
+          label_: "Update own virtual machine"
+    vm_stats: 
+      desc: "Пользователь имеет полный доступ к статистике"
+      desc_: "The user has full access to statistics"
+      group: "Виртуальная машина Статистике"
+      group_: "Virtual Machine's Statistics"
+      label: "Полный доступ к статистике"
+      label_: "Full access to statistics"
+      read: 
+        desc: "Пользователь может видеть всю статистику"
+        desc_: "The user can see all statistics"
+        label: "Посмотреть всю статистику"
+        label_: "See all statistics"
+        own: 
+          desc: "Пользователь может видеть только собственную статистику"
+          desc_: "The user can only see their own statistics"
+          label: "См. собственной статистики"
+          label_: "See own statistics"

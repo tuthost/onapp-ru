@@ -1,0 +1,152 @@
+--- 
+ru: 
+  helpers: 
+    backups: 
+      not_built_yet: "еще не построен"
+      not_built_yet_: "not built yet"
+    disks: 
+      unlock_disk: отпереть
+      unlock_disk_: Unlock
+    hypervisors: 
+      locked: заблокированный
+      locked_: Locked
+      offline: автономно
+      offline_: Offline
+      online: Online
+      online_: Online
+    label: 
+      configuration: 
+        ajax_pagination_update_time: "Dashboard / Журналы / другие"
+        ajax_pagination_update_time_: Dashboard/logs/other
+        ajax_power_update_time: "В.М. статус"
+        ajax_power_update_time_: "VM status"
+        allow_hypervisor_password_encryption: "Разрешить гипервизора VMware шифрования пароля"
+        allow_hypervisor_password_encryption_: "Allow VMware Hypervisor password encryption"
+        allow_initial_root_password_encryption: "Разрешить VM шифрования пароля"
+        allow_initial_root_password_encryption_: "Allow VM password encryption"
+        app_name: "Имя приложения"
+        app_name_: "Application Name"
+        backup_taker_delay: "Резервное копирование Taker"
+        backup_taker_delay_: "Backup Taker"
+        backups_path: "Резервные копии"
+        backups_path_: Backups
+        billing_stat_updater_delay: "Платежная статистика монитор"
+        billing_stat_updater_delay_: "Billing Stats Monitor"
+        cloud_boot_enabled: "Включить CloudBoot"
+        cloud_boot_enabled_: "Enable CloudBoot"
+        cloud_boot_target: "CP сервера Cloudboot целевой"
+        cloud_boot_target_: "CP server Cloudboot target"
+        cluster_monitor_delay: "Кластер монитор"
+        cluster_monitor_delay_: "Cluster Monitor"
+        cpu_guarantee: "процессор гарантии"
+        cpu_guarantee_: "CPU guarantee"
+        default_firewall_policy: "Политика брандмауэра по умолчанию"
+        default_firewall_policy_: "Default firewall policy"
+        default_vm_os: "По умолчанию VM OS"
+        default_vm_os_: "Default VM OS"
+        default_vm_template: "Шаблон по умолчанию VM"
+        default_vm_template_: "Default VM template"
+        generate_comment: "Config комментарий"
+        generate_comment_: "Config comment"
+        guest_wait_time_before_destroy: "Тайм-аут перед выключением виртуальных машин (30-300 сек)"
+        guest_wait_time_before_destroy_: "Timeout Before Shutting Down VMs (30-600 sec)"
+        hypervisor_live_times: "Просит до помечены как не удалось"
+        hypervisor_live_times_: "Requests before marked as failed"
+        hypervisor_monitor_delay: "гипервизор монитор"
+        hypervisor_monitor_delay_: "Hypervisor Monitor"
+        license_key: ключ
+        license_key_: Key
+        nfs_root_ip: "Статические целевой Config"
+        nfs_root_ip_: "Static Config target"
+        pagination_max_items_limit: "Макс пунктов ограничить"
+        pagination_max_items_limit_: "Max items limit"
+        prefer_local_reads: "Использование местных прочитать путь"
+        prefer_local_reads_: "Use local read path"
+        recovery_templates_path: "Восстановление шаблонов"
+        recovery_templates_path_: "Recovery templates"
+        remote_access_session_last_port: "Последний порт"
+        remote_access_session_last_port_: "Last port"
+        remote_access_session_start_port: "Первый порт"
+        remote_access_session_start_port_: "First port"
+        remove_backups_on_destroy_vm: "Уничтожить резервных копий на уничтожение виртуальных машин"
+        remove_backups_on_destroy_vm_: "Destroy backups on destroy Virtual Machine"
+        schedule_runner_delay: "Расписание Runner"
+        schedule_runner_delay_: "Schedule Runner"
+        show_ip_address_selection_for_new_vm: "Укажитесетевой адрес на новой странице VM"
+        show_ip_address_selection_for_new_vm_: "Specify a network address on New VM page"
+        simultaneous_backups: "Общее количество позволено"
+        simultaneous_backups_: "Total number allowed"
+        simultaneous_backups_per_datastore: "Всего для хранилища данных"
+        simultaneous_backups_per_datastore_: "Total per data store"
+        simultaneous_backups_per_hypervisor: "Всего на гипервизор"
+        simultaneous_backups_per_hypervisor_: "Total per hypervisor"
+        simultaneous_transactions: "Количество одновременных операций"
+        simultaneous_transactions_: "Number of simultaneous transactions"
+        ssh_file_transfer_options: "SSH варианты"
+        ssh_file_transfer_options_: " SSH options"
+        ssh_file_transfer_server: "Сервер IP"
+        ssh_file_transfer_server_: "Server IP"
+        ssh_file_transfer_user: "вход для пользователей"
+        ssh_file_transfer_user_: "User login"
+        ssh_port: "SSH порт"
+        ssh_port_: "SSH Port"
+        storage_enabled: "Включить OnApp хранения"
+        storage_enabled_: "Enable OnApp Storage"
+        system_email: "ОТ:"
+        system_email_: "FROM:"
+        system_host: хост-системы
+        system_host_: "System host"
+        system_notification: "Отправлять уведомления ?"
+        system_notification_: "Send notifications?"
+        system_support_email: "TO:"
+        system_support_email_: "TO:"
+        template_path: Шаблоны
+        template_path_: Templates
+        transaction_runner_delay: "транзакция Runner"
+        transaction_runner_delay_: "Transaction Runner"
+        update_server_url: "Обновление сервера URL"
+        update_server_url_: "Update server URL"
+        use_ssh_file_transfer: "Используйте SSH File Transfer"
+        use_ssh_file_transfer_: "Use SSH file transfer"
+        wrong_activated_logical_volume_minutes: "Minutes not to duplicate WrongActivatedLogicalVolume alert"
+        wrong_activated_logical_volume_minutes_: "Minutes not to duplicate WrongActivatedLogicalVolume alert"
+        zombie_transaction_time: "Время Zombie сделки"
+        zombie_transaction_time_: "Zombie transaction time"
+      ? "load_balancing_cluster[config]"
+      : 
+        max_node_amount: "Максимальное количество узлов"
+        max_node_amount_: "Max node amount"
+        min_node_amount: "Минимальное количество узлов"
+        min_node_amount_: "Min node amount"
+      ? "load_balancing_cluster[node_attributes]"
+      : 
+        cpus: процессоры
+        cpus_: CPUs
+        memory: память
+        memory_: Memory
+        rate_limit: "Оценить предел"
+        rate_limit_: "Rate limit"
+      session: 
+        remember_me: "Запомнить меня"
+        remember_me_: "Remember me"
+      user: 
+        locale: местный
+        locale_: Locale
+        time_zone: "Часовой пояс"
+        time_zone_: "Time Zone"
+    user_groups: 
+      not_defined: "Пока не определен."
+      not_defined_: "Not defined yet."
+    virtual_machines: 
+      no_addresses: "нет адреса"
+      no_addresses_: "no addresses"
+      no_network_interface: "нет Интерфейсы"
+      no_network_interface_: "no interfaces"
+      not_built: "еще не построен ..."
+      not_built_: "not built yet..."
+      unlock_edge_server: "Разблокировать Edge Server"
+      unlock_edge_server_: "Unlock Edge Server"
+      unlock_load_balancer: "Разблокировка балансировки"
+      unlock_load_balancer_: "Unlock Balancer"
+      unlock_virtual_machine: "Разблокировка Virtual Machine"
+      unlock_virtual_machine_: "Unlock Virtual Machine"

@@ -1,0 +1,24 @@
+--- 
+ru: 
+  system_alert: 
+    all_hypervisors_status: 
+      subject: "[OnApp] Все гипервизоры не отвечают!"
+      subject_: "[OnApp] All Hypervisors are not responsive!"
+    failed_task: 
+      subject: "[OnApp] Сбой задач!"
+      subject_: "[OnApp] Failed tasks!"
+    hypervisor_group_responsive: 
+      subject: "[OnApp] Гипервизор из зоны начал отвечать!"
+      subject_: "[OnApp] Hypervisor from Zone starts to response!"
+    hypervisor_status: 
+      subject: "[OnApp] Гипервизор %{status}!"
+      subject_: "[OnApp] Hypervisor %{status}!"
+    processes_status: 
+      subject: "[OnApp] Статус процессов!"
+      subject_: "[OnApp] Processes Status!"
+    system_resources: 
+      subject: "[OnApp] Системные ресурсы!"
+      subject_: "[OnApp] System Resources!"
+    wrong_actived_logical_volume: 
+      subject: "[OnApp] Неправильно активирован логический том!"
+      subject_: "[OnApp] Wrong actived logical volume!"

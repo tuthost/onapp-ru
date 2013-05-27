@@ -1,0 +1,13 @@
+--- 
+ru: 
+  datetimepicker: 
+    closeText: Выполнено
+    closeText_: Done
+    currentText: Сейчас
+    currentText_: Now
+    hourText: Час
+    hourText_: Hour
+    minuteText: Минут
+    minuteText_: Minute
+    timeText: Время
+    timeText_: Time
