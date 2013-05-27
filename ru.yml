@@ -12,9 +12,9 @@ ru:
     activate_: Activate
     add: Добавить
     add_: Add
-    assign: назначать
+    assign: Назначить
     assign_: Assign
-    attach: присоединять
+    attach: Присоединить
     attach_: Attach
     backup: "Резервное копирование"
     backup_: Backup
@@ -802,7 +802,7 @@ ru:
     billing: 
       cost: стоить
       cost_: Cost
-      date: дата
+      date: Дата
       date_: Date
       edge_group: "группы границ"
       edge_group_: "Edge Group"
@@ -820,7 +820,7 @@ ru:
     billing_stats: 
       cost: стоить
       cost_: Cost
-      date: дата
+      date: Дата
       date_: Date
       edge_group: "группы границ"
       edge_group_: "Edge Group"
@@ -2577,7 +2577,7 @@ ru:
       price_: "Price per GB"
       source: источник
       source_: Source
-      status: статус
+      status: Статус
       status_: Status
       streaming: Потоковое
       streaming_: Streaming
@@ -3189,7 +3189,7 @@ ru:
     properties_: Properties
     search: Поиск
     search_: Search
-    status: статус
+    status: Статус
     status_: Status
     ttl: TTL
     ttl_: TTL
@@ -4202,7 +4202,7 @@ ru:
       reboot_: Reboot
       shutdown: "OFF"
       shutdown_: "OFF"
-      status: статус
+      status: Статус
       status_: Status
       template: шаблон
       template_: Template
@@ -4784,7 +4784,7 @@ ru:
       niceValue_: "Nice Value"
       nodata: "Нет данных"
       nodata_: "No data found"
-      status: статус
+      status: Статус
       status_: Status
       userValue: "ценность для потребителей"
       userValue_: "User Value"
@@ -4830,7 +4830,7 @@ ru:
       legend_: "Memory Last Results"
       nodata: "Нет данных"
       nodata_: "No data found"
-      status: статус
+      status: Статус
       status_: Status
       totalMemory: "Общий объем памяти (МБ)"
       totalMemory_: "Total memory (MB)"
@@ -5429,7 +5429,7 @@ ru:
       confirm: 
         delete_payment: "Вы уверены, что хотите удалить этот платеж?"
         delete_payment_: "Are you sure you wish to delete this payment?"
-      created_at: "дата платежа"
+      created_at: "Дата платежа"
       created_at_: "Payment Date"
       invoice_number: "номер накладной"
       invoice_number_: "Invoice Number"
@@ -6810,7 +6810,7 @@ ru:
       license_: License
       title: Лицензионное
       title_: "Software License"
-      total: общий
+      total: Всего
       total_: Total
     software_licenses: 
       confirm_deletion: "Вы уверены, что хотите удалить эту лицензию?"
@@ -7500,7 +7500,7 @@ ru:
       confirm_shutdown_: "Are you sure you want to shut down this Storage Server?"
       edge_status: "Пограничный статус"
       edge_status_: "Edge Status"
-      status: статус
+      status: Статус
       status_: Status
     virtual_machines: 
       confirm_power_off: "Вы уверены, что хотите , чтобы выключить эту Storage Server ?"
@@ -7618,7 +7618,7 @@ ru:
       confirm_stop_daemon_: "Are you sure you want to stop daemon?"
       daemon: "Демон фоновой задачи"
       daemon_: "Background Task Daemon"
-      daemon_status: статус
+      daemon_status: Статус
       daemon_status_: Status
       help: 
         description: "Вот инструменты для ряда задач системного администратора. "
@@ -9282,7 +9282,7 @@ ru:
       shutdown_: "OFF"
       snapshots: Снимки
       snapshots_: Snapshots
-      status: статус
+      status: Статус
       status_: Status
       template: шаблон
       template_: Template
@@ -9452,7 +9452,7 @@ ru:
     vm_stats: 
       costs: расходы
       costs_: Costs
-      date: дата
+      date: Дата
       date_: Date
       deleted_vm: "- Удаленные Кубка мира"
       deleted_vm_: "-Deleted VM-"
